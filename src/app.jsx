@@ -1,6 +1,6 @@
 import React from "react";
-import Box from "./comps/box";
-import NotFound from "./comps/not_found";
+import Demo from "./pages/demo";
+import NotFound from "./pages/not_found";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
     <Router>
       <div className="App">
         <Switch>
-          <Route exact path="/" render={() => <Box grid="1" />} />
+          <Route exact path="/" render={() => <Demo />} />
           <Route render={() => <NotFound />} />
         </Switch>
       </div>

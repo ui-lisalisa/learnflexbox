@@ -1,8 +1,17 @@
 import React from "react";
 import PropTypes from "prop-types";
 
+const defaults = {
+  height: "150px",
+  width: "150px",
+  borderRadius: "6px",
+  border: "1px solid #969696",
+  margin: "2px",
+  cursor: "pointer",
+};
+
 const Box = (props) => {
-  return <div className="box" grid={props.grid}></div>;
+  return <div style={defaults} grid={props.grid}></div>;
 };
 
 Box.propTypes = {
