@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"style='background: #2D2E2E'>
+<html lang="en"style='background: #EEEEEE'>
   <head>
     <meta charset="utf-8" />
     <!-- <link rel="icon" href="%PUBLIC_URL%/favicon.ico" /> -->
@@ -15,5 +15,22 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-analytics.js"></script>
+    <script>      
+      const firebaseConfig = {
+        apiKey: "AIzaSyAgG4im6FlXXmd1CV38vVRqQ4Kge4rF59Y",
+        authDomain: "flexbox-visualization.firebaseapp.com",
+        databaseURL: "https://flexbox-visualization.firebaseio.com",
+        projectId: "flexbox-visualization",
+        storageBucket: "flexbox-visualization.appspot.com",
+        messagingSenderId: "117222451130",
+        appId: "1:117222451130:web:23236374ad07ee31f75f83",
+        measurementId: "G-L10J96H7EL"
+      };
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>
   </body>
 </html>

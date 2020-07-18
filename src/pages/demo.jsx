@@ -3,15 +3,14 @@ import Grid from "../comps/grid";
 import Copy from "../comps/copy";
 
 const center = {
+  width: "50%",
   display: "flex",
   justifyContent: "center",
-  alignItems: "center",
 };
 
 const row = {
   display: "flex",
-  justifyContent: "space-between",
-  margin: "0 40px",
+  width: "100%",
 };
 
 const Demo = () => {
