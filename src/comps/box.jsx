@@ -8,17 +8,11 @@ const defaults = {
   border: "1px solid #969696",
   margin: "2px",
   cursor: "pointer",
-  background: "#AAAAAA"
+  background: "#AAAAAA",
 };
 
 const Box = (props) => {
-  return (
-    <div
-      style={defaults}
-      className={'sa'}
-      grid={props.grid}
-    ></div>
-  );
+  return <div style={defaults} className={"sa"} grid={props.grid}></div>;
 };
 
 Box.propTypes = {
