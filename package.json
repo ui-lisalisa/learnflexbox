@@ -21,7 +21,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "clean": "prettier --write .",
-    "linter": "./node_modules/.bin/eslint --max-warnings=0 .",
+    "linter": "./node_modules/.bin/eslint .",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
