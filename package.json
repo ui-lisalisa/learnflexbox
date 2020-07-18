@@ -2,7 +2,7 @@
   "name": "flexbox-visualization",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://hi-matbub.github.io/flexbox-visualization",
+  "homepage": "https://hi-matbub.github.io/flexbox-visualization/",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
