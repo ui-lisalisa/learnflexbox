@@ -2,24 +2,26 @@ import React from "react";
 import Grid from "../comps/grid";
 import Copy from "../comps/copy";
 
-const defaults = {
+const center = {
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
 };
 
+const row = {
+  display: "flex",
+  justifyContent: "space-between",
+  margin: "0 40px",
+};
+
 const Demo = () => {
   return (
-    <div>
-      <div className="container-fluid">
-        <div className="row">
-          <div style={defaults} className="col-6">
-            <Copy />
-          </div>
-          <div style={defaults} className="col-6">
-            <Grid />
-          </div>
-        </div>
+    <div style={row}>
+      <div style={center}>
+        <Copy />
+      </div>
+      <div style={center}>
+        <Grid />
       </div>
     </div>
   );

@@ -1,5 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
+import clsx from "clsx";
+import styles from "../lib/styles.module.css";
 
 const defaults = {
   height: "150px",
@@ -11,7 +13,13 @@ const defaults = {
 };
 
 const Box = (props) => {
-  return <div style={defaults} grid={props.grid}></div>;
+  return (
+    <div
+      style={defaults}
+      className={clsx(styles.effect)}
+      grid={props.grid}
+    ></div>
+  );
 };
 
 Box.propTypes = {
