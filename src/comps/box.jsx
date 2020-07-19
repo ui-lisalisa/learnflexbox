@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
-import styles from './styles.css'
+import './styles.css'
 import useHover from './helpers';
 
 const defaults = {
@@ -11,8 +11,6 @@ const defaults = {
   margin: "2px",
   cursor: "pointer"
 }
-
-
 
 const Box = (props) => {
   const [hoverRef, isHovered] = useHover(); 

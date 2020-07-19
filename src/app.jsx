@@ -2,7 +2,7 @@ import React from "react";
 
 import Header from "./comps/header";
 
-import Demo from "./pages/demo";
+import Demo from "./pages/demo/demo";
 import NotFound from "./pages/not_found";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
