@@ -1,6 +1,7 @@
 import React from "react";
-import Grid from "../comps/grid";
-import Copy from "../comps/copy";
+import Grid from "../../comps/grid";
+import Copy from "../../comps/copy";
+import './demo.css'
 
 const center = {
   width: "50%",
@@ -15,11 +16,11 @@ const row = {
 
 const Demo = () => {
   return (
-    <div style={row}>
-      <div style={center}>
+    <div className="row" style={row}>
+      <div className="center" style={center}>
         <Copy />
       </div>
-      <div style={center}>
+      <div className="center" style={center}>
         <Grid />
       </div>
     </div>
