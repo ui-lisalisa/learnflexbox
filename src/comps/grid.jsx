@@ -15,7 +15,6 @@ const Grid = () => {
   const handleControl = (status, id) => {
     status === true ? CONTROLLER.push(id) : handleRemove(CONTROLLER, id)
     console.log(status, id)
-    
   }
 
   return (
