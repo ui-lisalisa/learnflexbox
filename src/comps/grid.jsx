@@ -4,24 +4,28 @@ import Box from "./box";
 
 const row = { display: "flex" };
 
-const Grid = () => {
+const Grid = () => {  
   
+  const callback = (count) => {
+    console.log('yoooooo')
+  }
+
   return (
     <div>
       <div style={row}>
-        <Box grid={1} />
-        <Box grid={2} />
-        <Box grid={3} />
+        <Box grid={1} parentCallback={callback} />
+        <Box grid={2} parentCallback={callback} />
+        <Box grid={3} parentCallback={callback} />
       </div>
       <div style={row}>
-        <Box grid={4} />
-        <Box grid={5} />
-        <Box grid={6} />
+        <Box grid={4} parentCallback={callback} />
+        <Box grid={5} parentCallback={callback} />
+        <Box grid={6} parentCallback={callback} />
       </div>
       <div style={row}>
-        <Box grid={7} />
-        <Box grid={8} />
-        <Box grid={9} />
+        <Box grid={7} parentCallback={callback} />
+        <Box grid={8} parentCallback={callback} />
+        <Box grid={9} parentCallback={callback} />
       </div>
     </div>
   );
