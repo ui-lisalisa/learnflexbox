@@ -1,29 +1,27 @@
 {
+  "homepage": "https://hi-matbub.github.io/flexbox-visualization/",
   "name": "flexbox-visualization",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://hi-matbub.github.io/flexbox-visualization/",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "clsx": "^1.1.1",
-    "colorette": "^1.2.0",
-    "eslint": "^6.8.0",
+    "gh-pages": "^3.1.0",
+    "prettier": "^2.0.5",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "clean": "prettier --write .",
-    "linter": "./node_modules/.bin/eslint --max-warnings=0 .",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -39,21 +37,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^3.6.1",
-    "@typescript-eslint/parser": "^3.6.1",
-    "eslint-plugin-react": "^7.20.3",
-    "gh-pages": "^3.1.0",
-    "husky": "^4.2.5",
-    "prettier": "^2.0.5"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": [
-        "prettier --write .",
-        "./node_modules/.bin/eslint --max-warnings=0 ."
-      ]
-    }
   }
 }

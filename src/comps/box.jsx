@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import PropTypes from "prop-types";
+import styles from './styles.css'
+import useHover from './helpers';
 
 const defaults = {
   height: "150px",
@@ -7,16 +9,39 @@ const defaults = {
   borderRadius: "6px",
   border: "1px solid #969696",
   margin: "2px",
-  cursor: "pointer",
-  background: "#AAAAAA",
-};
+  cursor: "pointer"
+}
+
+
 
 const Box = (props) => {
-  return <div style={defaults} className={"sa"} grid={props.grid}></div>;
+  const [hoverRef, isHovered] = useHover();
+  // const [active, isActive] = useState('false');
+  const [isActive, setActive] = useState(null);
+
+  let handleClick = () => {
+    if (isActive === null){
+      return setActive('ACTIVE')
+    }
+    else return setActive(null)
+    
+    
+  }
+
+  return (           
+    <div 
+      ref={hoverRef} 
+      className={isActive}
+      style={defaults}
+      onClick={handleClick}
+      grid={props.grid}
+      id={props.grid}
+    ></div>    
+  );
 };
 
 Box.propTypes = {
-  grid: PropTypes.string,
+  grid: PropTypes.number,
 };
 
 export default Box;
