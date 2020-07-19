@@ -15,8 +15,13 @@ const defaults = {
 const Box = (props) => {
   const [hoverRef, isHovered] = useHover(); 
   const [isActive, setActive] = useState(null);
+  const [status, setStatus] = useState(false);
 
   let handleClick = () => {
+    const newStatus = !status;
+    setStatus(newStatus);
+    props.control(newStatus, props.grid);
+
     isActive === null ? setActive('ACTIVE') 
       : setActive(null)    
   }
