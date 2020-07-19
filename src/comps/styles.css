@@ -1,4 +1,4 @@
-/* .NOT{
+.NOT{
   background: #AAAAAA;
 }
 
@@ -9,8 +9,14 @@
 }
 
 .ACTIVE{
-  background: rgb(48, 188, 237);
-} */
+  height: 150px;
+  width: 150px;
+  border-radius: 6px;
+  border: 1px solid #969696;
+  margin: 2px;
+  cursor: pointer;
+  background: #30bced;
+}
 
 .DEFAULTS{
   height: 150px;
