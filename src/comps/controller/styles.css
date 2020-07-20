@@ -1,11 +1,11 @@
-.NOT{
+/* .NOT{
   background: #AAAAAA;
 }
 
 .HOVER{
   -webkit-box-shadow: inset 0px 0px 29px 0px rgba(48,188,237,1);
   -moz-box-shadow: inset 0px 0px 29px 0px rgba(48,188,237,1);
-  box-shadow: inset 0px 0px 29px 0px rgb(48, 188, 237);
+  box-shadow: inset 0px 0px 29px 0px rgb(48, 188, 237);  
 }
 
 .ACTIVE{
@@ -34,6 +34,6 @@
 }
 
 .DEFAULTS:active{
-  background: rgb(48, 188, 237);
+  background: #30bced;
 
-}
+} */

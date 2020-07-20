@@ -1,10 +1,28 @@
 import React from 'react';
-
-import Header from './comps/header';
-
-import Demo from './pages/demo/demo';
-import NotFound from './pages/not_found';
+import Demo from './comps/page_';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+
+const defaults = {
+  height: '115px',
+};
+
+const Header = () => {
+  return (
+    <header style={defaults} className="container-fluid">
+      <h1>Flexbox Visualization</h1>
+    </header>
+  );
+};
+
+const NotFound = () => {
+  return (
+    <>
+      <h1>{'404'}</h1>
+      <p>{"Whoops, we cound't find that!"}</p>
+      <a href="/">Go Home</a>
+    </>
+  );
+};
 
 function App() {
   return (
