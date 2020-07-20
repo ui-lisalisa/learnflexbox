@@ -1,7 +1,7 @@
-import React from 'react'
-import { useRef, useState, useEffect } from 'react';
+import React from 'react';
+import {useRef, useState, useEffect} from 'react';
 
-export default function useHover(){
+export default function useHover() {
   const [value, setValue] = useState(false);
 
   const ref = useRef(null);
@@ -22,7 +22,7 @@ export default function useHover(){
         };
       }
     },
-    [ref.current] // Recall only if ref changes
+    [], // Recall only if ref changes
   );
 
   return [ref, value];

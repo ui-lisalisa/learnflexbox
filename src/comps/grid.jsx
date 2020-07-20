@@ -1,25 +1,22 @@
-import React from "react";
-import Box from "./box";
+import React from 'react';
+import Box from './box';
 
-const row = { display: "flex" };
+const row = {display: 'flex'};
 
-let CONTROLLER = []
+let CONTROLLER = [];
 
 const Grid = () => {
-
   const handleRemove = (id) => {
-    let index = CONTROLLER.indexOf(id);    
+    let index = CONTROLLER.indexOf(id);
     return CONTROLLER.splice(index, 1);
-  }
+  };
 
   const handleControl = (status, id) => {
-    status === true ?  CONTROLLER.push(id) : handleRemove(id)  
-    console.log(CONTROLLER)  
-  }
-    
+    status === true ? CONTROLLER.push(id) : handleRemove(id);
+    console.log(CONTROLLER);
+  };
 
   return (
-    
     <div>
       <div style={row}>
         <Box grid={1} control={handleControl} />

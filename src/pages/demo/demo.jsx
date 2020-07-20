@@ -1,17 +1,17 @@
-import React from "react";
-import Grid from "../../comps/grid";
-import Copy from "../../comps/copy";
-import './demo.css'
+import React from 'react';
+import Grid from '../../comps/grid';
+import Copy from '../../comps/copy';
+import './demo.css';
 
 const center = {
-  width: "50%",
-  display: "flex",
-  justifyContent: "center",
+  width: '50%',
+  display: 'flex',
+  justifyContent: 'center',
 };
 
 const row = {
-  display: "flex",
-  width: "100%",
+  display: 'flex',
+  width: '100%',
 };
 
 const Demo = () => {

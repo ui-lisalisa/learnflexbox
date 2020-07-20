@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react';
 
 const defaults = {
-  height: "115px",
+  height: '115px',
 };
 
 const Header = () => {
