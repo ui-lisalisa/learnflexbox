@@ -1,7 +1,7 @@
 import React from 'react';
-import Grid from '../../comps/grid';
-import Copy from '../../comps/copy';
-import './demo.css';
+import ControlPanel from './controller/controller_';
+import Copy from './pre';
+import './page-queries.css';
 
 const center = {
   width: '50%',
@@ -21,7 +21,7 @@ const Demo = () => {
         <Copy />
       </div>
       <div className="center" style={center}>
-        <Grid />
+        <ControlPanel />
       </div>
     </div>
   );
