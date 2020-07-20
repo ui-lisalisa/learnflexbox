@@ -18,7 +18,7 @@ const NotFound = () => {
   return (
     <>
       <h1>{'404'}</h1>
-      <p>{"Whoops, we cound't find that!"}</p>
+      <p>{'Whoops, that wasnt there!'}</p>
       <a href="/">Go Home</a>
     </>
   );
