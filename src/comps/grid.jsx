@@ -7,17 +7,19 @@ let CONTROLLER = []
 
 const Grid = () => {
 
-  const handleRemove = (array, id) => {
-    let index = array.indexOf(id);
-    return array.splice(index, 1);
+  const handleRemove = (id) => {
+    let index = CONTROLLER.indexOf(id);    
+    return CONTROLLER.splice(index, 1);
   }
 
   const handleControl = (status, id) => {
-    status === true ? CONTROLLER.push(id) : handleRemove(CONTROLLER, id)
-    console.log(status, id)
+    status === true ?  CONTROLLER.push(id) : handleRemove(id)  
+    console.log(CONTROLLER)  
   }
+    
 
   return (
+    
     <div>
       <div style={row}>
         <Box grid={1} control={handleControl} />
