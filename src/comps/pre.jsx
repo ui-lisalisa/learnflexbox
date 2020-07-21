@@ -2,24 +2,56 @@ import React, {useState} from 'react';
 import {STORE} from './STORE';
 
 const screen = {
-  height: '100%',
+  height: '200px',
   width: '100%',
   borderRadius: '6px',
-  margin: '6px 6px 6px 60px',
   background: '#1F1F1F',
+  overflowY: 'scroll',
 };
 
-const color = {
+const code = {
   color: '#EEEEEE',
   fontFamily: 'Roboto',
+  letterSpacing: '1px',
+  margin: '6px 60px 6px 60px',
+};
+
+const defaults = {
+  width: '100%',
+  height: '100%',
+  display: 'flex',
+  paddingLeft: '60px',
+  flexDirection: 'column',
+  justifyContent: 'space-between',
+};
+
+const cardDefaults = {
+  display: 'flex',
 };
 
 const Copy = () => {
   return (
-    <div style={screen}>
-      <pre>
-        <code style={color}>{STORE.a}</code>
-      </pre>
+    <div style={defaults}>
+      <div style={cardDefaults}>
+        <h2 style={{writingMode: 'vertical-rl', textOrientation: 'upright'}}>
+          CSS
+        </h2>
+        <div style={screen}>
+          <pre>
+            <code style={code}>{STORE['123456789'].css}</code>
+          </pre>
+        </div>
+      </div>
+      <div style={cardDefaults}>
+        <h2 style={{writingMode: 'vertical-rl', textOrientation: 'upright'}}>
+          HTML
+        </h2>
+        <div style={screen}>
+          <pre>
+            <code style={code}>{STORE['123456789'].html}</code>
+          </pre>
+        </div>
+      </div>
     </div>
   );
 };
