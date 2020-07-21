@@ -1,5 +1,5 @@
 import React from 'react';
-import Demo from './comps/page_';
+import Demo from './comps/demo_page';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
 const defaults = {

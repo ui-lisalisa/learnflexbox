@@ -1,17 +1,7 @@
 import React, {useState} from 'react';
 import PropTypes from 'prop-types';
-import './styles.css';
-import {CONTROLLER, sort} from './controller-helpers.jsx';
-const row = {display: 'flex'};
-
-const defaults = {
-  height: '150px',
-  width: '150px',
-  borderRadius: '6px',
-  background: 'rgba(48, 188, 237, .5)',
-  margin: '2px',
-  cursor: 'pointer',
-};
+import {CONTROLLER, sort} from './controller_helpers.jsx';
+import {box} from './controller_styles';
 
 const Box = (props) => {
   // const [hoverRef, isHovered] = useHover();
@@ -36,7 +26,7 @@ const Box = (props) => {
   return (
     <div
       className={isActive}
-      style={defaults}
+      style={box}
       onClick={handleClick}
       grid={props.grid}
       id={props.grid}></div>
@@ -60,23 +50,29 @@ const ControlPanel = () => {
   };
 
   return (
-    <div>
-      <div style={row}>
-        <Box grid={1} control={handleControl} />
-        <Box grid={2} control={handleControl} />
-        <Box grid={3} control={handleControl} />
+    <main>
+      <div className="container">
+        <section>{/* css */}</section>
+        <section>
+          <div style={{display: 'flex'}}>
+            <Box grid={1} control={handleControl} />
+            <Box grid={2} control={handleControl} />
+            <Box grid={3} control={handleControl} />
+          </div>
+          <div style={{display: 'flex'}}>
+            <Box grid={4} control={handleControl} />
+            <Box grid={5} control={handleControl} />
+            <Box grid={6} control={handleControl} />
+          </div>
+          <div style={{display: 'flex'}}>
+            <Box grid={7} control={handleControl} />
+            <Box grid={8} control={handleControl} />
+            <Box grid={9} control={handleControl} />
+          </div>
+        </section>
       </div>
-      <div style={row}>
-        <Box grid={4} control={handleControl} />
-        <Box grid={5} control={handleControl} />
-        <Box grid={6} control={handleControl} />
-      </div>
-      <div style={row}>
-        <Box grid={7} control={handleControl} />
-        <Box grid={8} control={handleControl} />
-        <Box grid={9} control={handleControl} />
-      </div>
-    </div>
+      <section>{/* full */}</section>
+    </main>
   );
 };
 
