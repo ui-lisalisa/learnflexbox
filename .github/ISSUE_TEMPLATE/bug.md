@@ -4,13 +4,12 @@ about: Create a report to help us improve
 title: triage
 labels: bug, needs-triage
 assignees: hi-matbub
-
 ---
 
 ---
-name: 🐛 Bug Report
-about: Submit a bug report to help us improve
-labels: 'bug, needs triage'
+
+name: 🐛 Bug Report about: Submit a bug report to help us improve labels: 'bug, needs triage'
+
 ---
 
 ## 🐛 Bug Report
