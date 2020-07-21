@@ -11,6 +11,7 @@ const screen = {
 
 const color = {
   color: '#EEEEEE',
+  fontFamily: 'Roboto',
 };
 
 const Copy = () => {

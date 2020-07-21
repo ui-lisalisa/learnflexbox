@@ -4,6 +4,7 @@ import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
 const defaults = {
   height: '115px',
+  fontFamily: 'Roboto',
 };
 
 const Header = () => {
