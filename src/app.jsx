@@ -3,7 +3,7 @@ import Demo from './comps/page_';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
 const defaults = {
-  height: '115px',
+  height: '50px',
   fontFamily: 'Roboto',
 };
 
