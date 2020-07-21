@@ -8,8 +8,7 @@ const defaults = {
   height: '150px',
   width: '150px',
   borderRadius: '6px',
-  border: '1px solid #969696',
-  backgroundImage: 'url(./ui_/null_bloc.png)',
+  background: 'rgba(48, 188, 237, .5)',
   margin: '2px',
   cursor: 'pointer',
 };
@@ -56,8 +55,8 @@ const ControlPanel = () => {
 
   const handleControl = (status, id) => {
     status === true ? CONTROLLER.push(id) : handleRemove(id);
-
-    console.log(sort(CONTROLLER));
+    sort(CONTROLLER);
+    console.log(CONTROLLER);
   };
 
   return (

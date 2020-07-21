@@ -4,13 +4,12 @@ about: Suggest an idea for this project
 title: feature
 labels: enhancement, needs-triage
 assignees: hi-matbub
-
 ---
 
 ---
-name: 🚀 Feature
-about: Submit a proposal/request for a new feature
-labels: 'feature, needs triage'
+
+name: 🚀 Feature about: Submit a proposal/request for a new feature labels: 'feature, needs triage'
+
 ---
 
 ## 🚀 Feature

@@ -4,11 +4,12 @@ import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
 const defaults = {
   height: '115px',
+  fontFamily: 'Roboto',
 };
 
 const Header = () => {
   return (
-    <header style={defaults} className="container-fluid">
+    <header style={defaults}>
       <h1>Flexbox Visualization</h1>
     </header>
   );
