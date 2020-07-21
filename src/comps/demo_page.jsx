@@ -17,7 +17,7 @@ const row = {
 
 const Demo = () => {
   return (
-    <div className="row" style={row}>
+    <div className="row" style={{display: 'flex', width: '100%'}}>
       <div className="center" style={center}>
         <Copy />
       </div>

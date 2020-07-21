@@ -25,30 +25,26 @@ const defaults = {
   justifyContent: 'space-between',
 };
 
-const cardDefaults = {
-  display: 'flex',
-};
-
 const Copy = () => {
   return (
     <div style={defaults}>
-      <div style={cardDefaults}>
+      <div style={{display: 'flex'}}>
         <h2 style={{writingMode: 'vertical-rl', textOrientation: 'upright'}}>
           CSS
         </h2>
         <div style={screen}>
           <pre>
-            <code style={code}>{STORE['123456789'].css}</code>
+            <code style={code}>{STORE['1'].css}</code>
           </pre>
         </div>
       </div>
-      <div style={cardDefaults}>
+      <div style={{display: 'flex'}}>
         <h2 style={{writingMode: 'vertical-rl', textOrientation: 'upright'}}>
           HTML
         </h2>
         <div style={screen}>
           <pre>
-            <code style={code}>{STORE['123456789'].html}</code>
+            <code style={code}>{STORE['1'].html}</code>
           </pre>
         </div>
       </div>
