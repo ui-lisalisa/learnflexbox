@@ -8,7 +8,7 @@ const defaults = {
 
 const Header = () => {
   return (
-    <header style={defaults} className="container-fluid">
+    <header style={defaults}>
       <h1>Flexbox Visualization</h1>
     </header>
   );

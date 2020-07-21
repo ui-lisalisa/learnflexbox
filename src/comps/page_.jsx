@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import ControlPanel from './controller/controller_';
 import Copy from './pre';
 import './page-queries.css';
@@ -6,6 +6,7 @@ import './page-queries.css';
 const center = {
   width: '50%',
   display: 'flex',
+  alignItems: 'center',
   justifyContent: 'center',
 };
 
