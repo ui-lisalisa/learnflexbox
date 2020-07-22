@@ -20,7 +20,7 @@ const NotFound = () => {
     <>
       <h1>{'404'}</h1>
       <p>{'Whoops, that wasnt there!'}</p>
-      <a href="/">Go Home</a>
+      <a href="/flexbox-visualization">Go Home</a>
     </>
   );
 };
