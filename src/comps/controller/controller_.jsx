@@ -48,20 +48,15 @@ const ControlPanel = () => {
   };
 
   const handleClick = (cont, i) => {
-    controls[i].act_status = !cont; //toggler
     if (isActive.includes(i)) {
       handleRemove(isActive, i); // remove from isActive
-    } else if (isActive.length < 3 && controls[i].act_status === true) {
+    } else if (isActive.length < 3 && controls[i].act_status === false) {
       //if item is turning active, and less than 3
-
-      sort(isActive.push(i));
-      console.log(isActive);
-      return isActive;
-    } else if (controls[i].act_status === false) {
-      //if item is turning off
-
-      console.log(controls[i].act_status);
+      isActive.push(i);
+      sort(isActive);
     }
+    controls[i].act_status = !cont; //toggler
+    console.log(isActive);
   };
 
   return (
