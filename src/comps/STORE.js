@@ -840,4 +840,280 @@ export const STORE = {
     </div>
     `,
   },
+  47: {
+    css: `
+    .parent {  
+      display: flex;  
+      flex-direction: column;
+      justify-content: flex-end;
+      width: 100%;
+      height: 100vh;
+    }    
+
+    .child {
+      height: 33vh;
+      width: 33%;
+      border: 1px solid #1F1F1F;
+    }
+    `,
+    html: `
+    <div class="parent">
+      <div class="child"></div>
+      <div class="child"></div>
+    </div>
+    `,
+  },
+  48: {
+    css: `
+    .parent {  
+      display: flex;  
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      width: 100%;
+      height: 100vh;
+    }    
+
+    .child:nth-child(1){
+      align-self: flex-start;
+    }
+
+    .child {
+      height: 33vh;
+      width: 33%;
+      border: 1px solid #1F1F1F;
+    }
+    `,
+    html: `
+    <div class="parent">
+      <div class="child"></div>
+      <div class="child"></div>
+    </div>
+    `,
+  },
+  49: {
+    css: `
+    .parent {  
+      display: flex;  
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      width: 100%;
+      height: 100vh;
+    }    
+
+    .child:nth-child(1){
+      align-self: flex-start;
+    }
+
+    .child:nth-child(2){
+      align-self: flex-end;
+    }
+
+    .child {
+      height: 33vh;
+      width: 33%;
+      border: 1px solid #1F1F1F;
+    }
+    `,
+    html: `
+    <div class="parent">
+      <div class="child"></div>
+      <div class="child"></div>
+    </div>
+    `,
+  },
+  56: {
+    css: `
+    .parent {  
+      display: flex;  
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-end;
+      width: 100%;
+      height: 100vh;
+    }        
+
+    .child {
+      height: 33vh;
+      width: 33%;
+      border: 1px solid #1F1F1F;
+    }
+    `,
+    html: `
+    <div class="parent">
+      <div class="child"></div>
+      <div class="child"></div>
+    </div>
+    `,
+  },
+  57: {
+    css: `
+    .parent {  
+      display: flex;  
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      width: 100%;
+      height: 100vh;
+    }        
+
+    .child:nth-child(2){
+      align-self: flex-start;
+    }
+
+    .child {
+      height: 33vh;
+      width: 33%;
+      border: 1px solid #1F1F1F;
+    }
+    `,
+    html: `
+    <div class="parent">
+      <div class="child"></div>
+      <div class="child"></div>
+    </div>
+    `,
+  },
+  58: {
+    css: `
+    .parent {  
+      display: flex;  
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      width: 100%;
+      height: 100vh;
+    }        
+
+    .child {
+      height: 33vh;
+      width: 33%;
+      border: 1px solid #1F1F1F;
+    }
+    `,
+    html: `
+    <div class="parent">
+      <div class="child"></div>
+      <div class="child"></div>
+    </div>
+    `,
+  },
+  59: {
+    css: `
+    .parent {  
+      display: flex;  
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      width: 100%;
+      height: 100vh;
+    }        
+
+    .child:nth-child(2){
+      align-self: flex-end;
+    }
+
+    .child {
+      height: 33vh;
+      width: 33%;
+      border: 1px solid #1F1F1F;
+    }
+    `,
+    html: `
+    <div class="parent">
+      <div class="child"></div>
+      <div class="child"></div>
+    </div>
+    `,
+  },
+  67: {
+    css: `
+    .parent {  
+      display: flex;  
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      width: 100%;
+      height: 100vh;
+    }        
+
+    .child:nth-child(1){
+      align-self: flex-end;
+    }
+    
+    .child:nth-child(2){
+      align-self: flex-start;
+    }
+
+    .child {
+      height: 33vh;
+      width: 33%;
+      border: 1px solid #1F1F1F;
+    }
+    `,
+    html: `
+    <div class="parent">
+      <div class="child"></div>
+      <div class="child"></div>
+    </div>
+    `,
+  },
+  68: {
+    css: `
+    .parent {  
+      display: flex;  
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      width: 100%;
+      height: 100vh;
+    }        
+
+    .child:nth-child(1){
+      align-self: flex-end;
+    }
+    
+    .child {
+      height: 33vh;
+      width: 33%;
+      border: 1px solid #1F1F1F;
+    }
+    `,
+    html: `
+    <div class="parent">
+      <div class="child"></div>
+      <div class="child"></div>
+    </div>
+    `,
+  },
+  69: {
+    css: `
+    .parent {  
+      display: flex;  
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      width: 100%;
+      height: 100vh;
+    }        
+
+    .child:nth-child(1),
+    .child:nth-child(2) {
+      align-self: flex-end;
+    }
+    
+    .child {
+      height: 33vh;
+      width: 33%;
+      border: 1px solid #1F1F1F;
+    }
+    `,
+    html: `
+    <div class="parent">
+      <div class="child"></div>
+      <div class="child"></div>
+    </div>
+    `,
+  },
 };
