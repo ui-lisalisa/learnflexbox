@@ -34,20 +34,11 @@ const makeControls = () => {
 const ControlPanel = () => {
   makeControls();
 
-  function splice(arr, val) {
+  const handleRemove = (arr, val) => {
     for (var i = arr.length; i--; ) {
       if (arr[i] === val) {
         arr.splice(i, 1);
       }
-    }
-  }
-
-  const handleToggle = (i) => {
-    if (i === isActive[0]) {
-      return splice(isActive, i);
-    } else {
-      isActive.push(i + 1);
-      sort(isActive);
     }
   };
 
@@ -58,16 +49,20 @@ const ControlPanel = () => {
 
   const handleClick = (cont, i) => {
     controls[i].act_status = !cont; //toggler
-    isActive.length < 3 && controls[i].act_status === true
-      ? sort(isActive.push(i))
-      : handleWarning(i);
+    if (isActive.includes(i)) {
+      handleRemove(isActive, i); // remove from isActive
+    } else if (isActive.length < 3 && controls[i].act_status === true) {
+      //if item is turning active, and less than 3
 
-    // sort(isActive.push(i));
-    console.log(isActive);
-    // isActive.length < 3 ? handleToggle(i) : handleWarning(i);
+      sort(isActive.push(i));
+      console.log(isActive);
+      return isActive;
+    } else if (controls[i].act_status === false) {
+      //if item is turning off
+
+      console.log(controls[i].act_status);
+    }
   };
-
-  controls.map((i, j) => console.log(i, j));
 
   return (
     <div style={{display: 'flex', flexWrap: 'wrap', width: '100%'}}>
