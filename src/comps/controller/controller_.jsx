@@ -19,7 +19,6 @@ const Box = (props) => {
     const newStatus = !status;
     setStatus(newStatus);
     props.control(newStatus, props.grid);
-
     isActive === null ? setActive('ACTIVE') : setActive(null);
   };
 
@@ -37,7 +36,7 @@ Box.propTypes = {
   grid: PropTypes.number,
 };
 
-const ControlPanel = () => {
+const ControlPanel = (props) => {
   const handleRemove = (id) => {
     let index = CONTROLLER.indexOf(id);
     return CONTROLLER.splice(index, 1);
@@ -46,7 +45,8 @@ const ControlPanel = () => {
   const handleControl = (status, id) => {
     status === true ? CONTROLLER.push(id) : handleRemove(id);
     sort(CONTROLLER);
-    console.log(CONTROLLER);
+    props.handleData(sort(CONTROLLER));
+    // console.log(CONTROLLER);
   };
 
   return (

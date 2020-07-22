@@ -25,7 +25,8 @@ const defaults = {
   justifyContent: 'space-between',
 };
 
-const Copy = () => {
+const Copy = (props) => {
+  console.log(props.data);
   return (
     <div style={defaults}>
       <div style={{display: 'flex'}}>

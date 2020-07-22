@@ -1116,4 +1116,119 @@ export const STORE = {
     </div>
     `,
   },
+  78: {
+    css: `
+    .parent {  
+      display: flex;  
+      flex-direction: row;
+      align-items: flex-end;
+      width: 100%;
+      height: 100vh;
+    }        
+   
+    .child {
+      height: 33vh;
+      width: 33%;
+      border: 1px solid #1F1F1F;
+    }
+    `,
+    html: `
+    <div class="parent">
+      <div class="child"></div>
+      <div class="child"></div>
+    </div>
+    `,
+  },
+  79: {
+    css: `
+    .parent {  
+      display: flex;  
+      flex-direction: row;
+      align-items: flex-end;
+      justify-content: space-between;
+      width: 100%;
+      height: 100vh;
+    }        
+
+    .child {
+      height: 33vh;
+      width: 33%;
+      border: 1px solid #1F1F1F;
+    }
+    `,
+    html: `
+    <div class="parent">
+      <div class="child"></div>
+      <div class="child"></div>
+    </div>
+    `,
+  },
+  89: {
+    css: `
+    .parent {  
+      display: flex;  
+      flex-direction: row;
+      align-items: flex-end;
+      justify-content: flex-end;
+      width: 100%;
+      height: 100vh;
+    }        
+   
+    .child {
+      height: 33vh;
+      width: 33%;
+      border: 1px solid #1F1F1F;
+    }
+    `,
+    html: `
+    <div class="parent">
+      <div class="child"></div>
+      <div class="child"></div>
+    </div>
+    `,
+  },
+  123: {
+    css: `
+    .parent {  
+      display: flex;       
+      width: 100%;
+      height: 100vh;
+    }        
+   
+    .child {
+      height: 33vh;
+      width: 33%;
+      border: 1px solid #1F1F1F;
+    }
+    `,
+    html: `
+    <div class="parent">
+      <div class="child"></div>
+      <div class="child"></div>
+      <div class="child"></div>
+    </div>
+    `,
+  },
+  124: {
+    css: `
+    .parent {  
+      display: flex;       
+      width: 100%;
+      height: 100vh;
+    }        
+   
+    .child {
+      height: 33vh;
+      width: 33%;
+      border: 1px solid #1F1F1F;
+    }
+    `,
+    html: `
+    <div class="parent">
+      <div class="child"></div>
+      <div class="child"></div>
+      <div class="child"></div>
+    </div>
+    `,
+  },
 };

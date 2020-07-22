@@ -16,13 +16,19 @@ const row = {
 };
 
 const Demo = () => {
+  const [data, setData] = useState([]);
+
+  const handleData = (data) => {
+    setData(data);
+  };
+
   return (
     <div className="row" style={{display: 'flex', width: '100%'}}>
       <div className="center" style={center}>
-        <Copy />
+        <Copy data={data} />
       </div>
       <div className="center" style={center}>
-        <ControlPanel />
+        <ControlPanel handleData={handleData} />
       </div>
     </div>
   );
