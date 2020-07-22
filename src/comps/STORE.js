@@ -1,2125 +1,843 @@
 export const STORE = {
   1: {
     css: `
-    * {
-      box-sizing: border-box;
+    .parent {
+      display: flex;
+      width: 100%;
+      height: 100vh;
     }
 
     .child {
-      height: 50px;
-      width: 50px;
+      height: 33vh;
+      width: 33%;
       border: 1px solid #1F1F1F;
     }
+    `,
+    js: `
+    var parent = {
+      display: 'flex',
+      width: '100%',
+      height: '100vh',
+    };
 
+    var child = {
+      height: '33vh',
+      width: '33%',
+      border: '1px solid #EEE',
+    };
+    `,
+    html: `
+    <div class="parent">
+      <div class="child"></div>
+    </div>
+    `,
+  },
+  2: {
+    css: `
     .parent {
-      display: flex;
-      width: 150px;
+      display: flex;         
+      justify-content: center;
+      width: 100%;
+      height: 100vh;
+    }
+
+    .child {
+      height: 33vh;
+      width: 33%;
+      border: 1px solid #1F1F1F;
     }
     `,
     html: `
-    <style>
-      * {
-        box-sizing: border-box;
-      }
-
-      .child {
-        height: 50px;
-        width: 50px;
-        border: 1px solid #1F1F1F;
-      }
-
-      .parent {
-        display: flex;          
-        width: 150px;
-      }
-    </style>
-    
     <div class="parent">
-      <div class="child"></div>     
+      <div class="child"></div>
     </div>
-  `,
+    `,
+  },
+  3: {
+    css: `
+    .parent {
+      display: flex;         
+      justify-content: flex-end;
+      width: 100%;
+      height: 100vh;
+    }
+
+    .child {
+      height: 33vh;
+      width: 33%;
+      border: 1px solid #1F1F1F;
+    }
+    `,
+    html: `
+    <div class="parent">
+      <div class="child"></div>
+    </div>
+    `,
+  },
+  4: {
+    css: `
+    .parent {
+      display: flex;         
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      height: 100vh;
+    }
+
+    .child {
+      height: 33vh;
+      width: 33%;
+      border: 1px solid #1F1F1F;
+    }
+    `,
+    html: `
+    <div class="parent">
+      <div class="child"></div>
+    </div>
+    `,
+  },
+  5: {
+    css: `
+    .parent {
+      display: flex;         
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100vh;
+    }
+
+    .child {
+      height: 33vh;
+      width: 33%;
+      border: 1px solid #1F1F1F;
+    }
+    `,
+    html: `
+    <div class="parent">
+      <div class="child"></div>
+    </div>
+    `,
+  },
+  6: {
+    css: `
+    .parent {
+      display: flex;         
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: center;
+      width: 100%;
+      height: 100vh;
+    }
+
+    .child {
+      height: 33vh;
+      width: 33%;
+      border: 1px solid #1F1F1F;
+    }
+    `,
+    html: `
+    <div class="parent">
+      <div class="child"></div>
+    </div>
+    `,
+  },
+  7: {
+    css: `
+    .parent {
+      display: flex;         
+      flex-direction: column;      
+      justify-content: flex-end;
+      width: 100%;
+      height: 100vh;
+    }
+
+    .child {
+      height: 33vh;
+      width: 33%;
+      border: 1px solid #1F1F1F;
+    }
+    `,
+    html: `
+    <div class="parent">
+      <div class="child"></div>
+    </div>
+    `,
+  },
+  8: {
+    css: `
+    .parent {
+      display: flex;         
+      flex-direction: column;
+      align-items: center;      
+      justify-content: flex-end;
+      width: 100%;
+      height: 100vh;
+    }
+
+    .child {
+      height: 33vh;
+      width: 33%;
+      border: 1px solid #1F1F1F;
+    }
+    `,
+    html: `
+    <div class="parent">
+      <div class="child"></div>
+    </div>
+    `,
+  },
+  9: {
+    css: `
+    .parent {
+      display: flex;         
+      flex-direction: column;
+      align-items: flex-end;      
+      justify-content: flex-end;
+      width: 100%;
+      height: 100vh;
+    }
+
+    .child {
+      height: 33vh;
+      width: 33%;
+      border: 1px solid #1F1F1F;
+    }
+    `,
+    html: `
+    <div class="parent">
+      <div class="child"></div>
+    </div>
+    `,
   },
   12: {
     css: `
-    * {
-      box-sizing: border-box;
-    }
-
-    .child {
-      height: 50px;
-      width: 50px;
-      border: 1px solid #1F1F1F;
-    }
-
-    .parent {
-      display: flex;      
-      width: 150px;
-    }
-  `,
-    html: `
-    <style>
-      * {
-        box-sizing: border-box;
-      }
-
-      .child {
-        height: 50px;
-        width: 50px;
-        border: 1px solid #1F1F1F;
-      }
-
-      .parent {
-        display: flex;          
-        width: 150px;
-      }
-    </style>
-    
-    <div class="parent">
-      <div class="child"></div> 
-      <div class="child"></div>     
-    </div>
-  `,
-  },
-  123: {
-    css: `
-      * {
-        box-sizing: border-box;
-      }
-
-      .child {
-        height: 50px;
-        width: 50px;
-        border: 1px solid #1F1F1F;
-      }
-
-      .parent {
-        display: flex;
-        width: 150px;
-      }
-  `,
-    html: `
-    <style>
-      * {
-        box-sizing: border-box;
-      }
-
-      .child {
-        height: 50px;
-        width: 50px;
-        border: 1px solid #1F1F1F;
-      }
-
-      .parent {
-        display: flex;
-        width: 150px;
-      }
-    </style>
-    
-    <div class="parent">
-      <div class="child"></div> 
-      <div class="child"></div>
-      <div class="child"></div>     
-    </div>
-  `,
-  },
-  1234: {
-    css: `
-    * {
-      box-sizing: border-box;
-    }
-
-    .child {
-      height: 50px;
-      width: 50px;
-      border: 1px solid #1F1F1F;
-    }
-
     .parent {
       display: flex;
-      flex-wrap: wrap;
-      width: 150px;
+      width: 100%;
+      height: 100vh;
+    }
+
+    .child {
+      height: 33vh;
+      width: 33%;
+      border: 1px solid #1F1F1F;
     }
     `,
     html: `
-    <style>
-      * {
-        box-sizing: border-box;
-      }
-
-      .child {
-        height: 50px;
-        width: 50px;
-        border: 1px solid #1F1F1F;
-      }
-
-      .parent {
-        display: flex;
-        flex-wrap: wrap;
-        width: 150px;
-      }
-    </style>
-    
     <div class="parent">
-      <div class="child"></div> 
       <div class="child"></div>
-      <div class="child"></div>     
-      <div class="child"></div>        
+      <div class="child"></div>
     </div>
-  `,
-  },
-  12345: {
-    css: `
-    * {
-      box-sizing: border-box;
-    }
-
-    .child {
-      height: 50px;
-      width: 50px;
-      border: 1px solid #1F1F1F;
-    }
-
-    .parent {
-      display: flex;
-      flex-wrap: wrap;
-      width: 150px;
-    }
     `,
-    html: `
-    <style>
-      * {
-        box-sizing: border-box;
-      }
-
-      .child {
-        height: 50px;
-        width: 50px;
-        border: 1px solid #1F1F1F;
-      }
-
-      .parent {
-        display: flex;
-        flex-wrap: wrap;
-        width: 150px;
-      }
-    </style>
-    
-    <div class="parent">
-      <div class="child"></div> 
-      <div class="child"></div>
-      <div class="child"></div>
-      <div class="child"></div>     
-      <div class="child"></div>        
-    </div>
-  `,
-  },
-  123456: {
-    css: `
-    * {
-      box-sizing: border-box;
-    }
-
-    .child {
-      height: 50px;
-      width: 50px;
-      border: 1px solid #1F1F1F;
-    }
-
-    .parent {
-      display: flex;
-      flex-wrap: wrap;
-      width: 150px;
-    }
-    `,
-    html: `
-    <style>
-      * {
-        box-sizing: border-box;
-      }
-
-      .child {
-        height: 50px;
-        width: 50px;
-        border: 1px solid #1F1F1F;
-      }
-
-      .parent {
-        display: flex;
-        flex-wrap: wrap;
-        width: 150px;
-      }
-    </style>
-    
-    <div class="parent">
-      <div class="child"></div> 
-      <div class="child"></div>
-      <div class="child"></div>
-      <div class="child"></div>     
-      <div class="child"></div>
-      <div class="child"></div>        
-    </div>
-  `,
-  },
-  1234567: {
-    css: `
-    * {
-      box-sizing: border-box;
-    }
-
-    .child {
-      height: 50px;
-      width: 50px;
-      border: 1px solid #1F1F1F;
-    }
-
-    .parent {
-      display: flex;
-      flex-wrap: wrap;
-      width: 150px;
-    }
-    `,
-    html: `
-    <style>
-      * {
-        box-sizing: border-box;
-      }
-
-      .child {
-        height: 50px;
-        width: 50px;
-        border: 1px solid #1F1F1F;
-      }
-
-      .parent {
-        display: flex;
-        flex-wrap: wrap;
-        width: 150px;
-      }
-    </style>
-    
-    <div class="parent">
-      <div class="child"></div> 
-      <div class="child"></div>
-      <div class="child"></div>  
-      <div class="child"></div> 
-      <div class="child"></div>    
-      <div class="child"></div>
-      <div class="child"></div>        
-    </div>
-  `,
-  },
-  12345678: {
-    css: `
-    * {
-      box-sizing: border-box;
-    }
-
-    .child {
-      height: 50px;
-      width: 50px;
-      border: 1px solid #1F1F1F;
-    }
-
-    .parent {
-      display: flex;
-      flex-wrap: wrap;
-      width: 150px;
-    }
-    `,
-    html: `
-    <style>
-      * {
-        box-sizing: border-box;
-      }
-
-      .child {
-        height: 50px;
-        width: 50px;
-        border: 1px solid #1F1F1F;
-      }
-
-      .parent {
-        display: flex;
-        flex-wrap: wrap;
-        width: 150px;
-      }
-    </style>
-    
-    <div class="parent">
-      <div class="child"></div> 
-      <div class="child"></div>
-      <div class="child"></div>  
-      <div class="child"></div> 
-      <div class="child"></div>
-      <div class="child"></div>    
-      <div class="child"></div>
-      <div class="child"></div>        
-    </div>
-  `,
-  },
-  123456789: {
-    css: `
-    * {
-      box-sizing: border-box;
-    }
-
-    .child {
-      height: 50px;
-      width: 50px;
-      border: 1px solid #1F1F1F;
-    }
-
-    .parent {
-      display: flex;
-      flex-wrap: wrap;
-      width: 150px;
-    }
-    `,
-    html: `
-    <style>
-      * {
-        box-sizing: border-box;
-      }
-
-      .child {
-        height: 50px;
-        width: 50px;
-        border: 1px solid #1F1F1F;
-      }
-
-      .parent {
-        display: flex;
-        flex-wrap: wrap;
-        width: 150px;
-      }
-    </style>
-    
-    <div class="parent">
-      <div class="child"></div> 
-      <div class="child"></div>
-      <div class="child"></div>  
-      <div class="child"></div> 
-      <div class="child"></div>
-      <div class="child"></div>
-      <div class="child"></div>    
-      <div class="child"></div>
-      <div class="child"></div>        
-    </div>
-  `,
   },
   13: {
     css: `
-    * {
-      box-sizing: border-box;
+    .parent {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      height: 100vh;
     }
 
     .child {
-      height: 50px;
-      width: 50px;
-      border: 1px solid #1F1F1F;
-    }
-
-    .parent {
-      display: flex;
-      justify-content: space-between;
-      width: 150px;
-    }
-    `,
-    html: `
-    <style>
-      * {
-        box-sizing: border-box;
-      }
-
-      .child {
-        height: 50px;
-        width: 50px;
-        border: 1px solid #1F1F1F;
-      }
-
-      .parent {
-        display: flex;
-        justify-content: space-between;
-        width: 150px;
-      }
-    </style>
-    
-    <div class="parent">
-      <div class="child"></div> 
-      <div class="child"></div>     
-    </div>
-  `,
-  },
-  134: {
-    css: `
-    * {
-      box-sizing: border-box;
-    }
-
-    .child:nth-child(2),
-    .grandchild {
-      height: 50px;
-      width: 50px;
-      border: 1px solid #1F1F1F;
-    }
-
-    .parent {
-      display: flex;
-      justify-content: space-between;
-      width: 150px;
-    }
-    `,
-    html: `
-    <style>
-      * {
-        box-sizing: border-box;
-      }
-
-      .child:nth-child(2),
-      .grandchild {
-        height: 50px;
-        width: 50px;
-        border: 1px solid #1F1F1F;
-      }
-
-      .parent {
-        display: flex;
-        justify-content: space-between;
-        width: 150px;
-      }
-    </style>
-    
-    <div class="parent">
-      <div class="child">
-        <div class="grandchild"></div>
-        <div class="grandchild"></div>
-      </div> 
-      <div class="child"></div>     
-    </div>
-    `,
-  },
-  1345: {
-    css: `
-    * {
-      box-sizing: border-box;
-    }
-
-    .parent {
-      display: flex;
-      flex-direction: column;
-      width: 150px;
-    }
-
-    .child{
-      display: flex;
-    } 
-
-    .child:nth-child(1){
-      justify-content: space-between;
-    }
-
-    .grandchild {
-      height: 50px;
-      width: 50px;
+      height: 33vh;
+      width: 33%;
       border: 1px solid #1F1F1F;
     }
     `,
     html: `
-    <style>
-      * {
-        box-sizing: border-box;
-      }
-
-      .parent {
-        display: flex;
-        flex-direction: column;
-        width: 150px;
-      }
-
-      .child{
-        display: flex;
-      } 
-
-      .child:nth-child(1){
-        justify-content: space-between;
-      }
-
-      .grandchild {
-        height: 50px;
-        width: 50px;
-        border: 1px solid #1F1F1F;
-      }      
-    </style>
-    
     <div class="parent">
-      <div class="child">
-        <div class="grandchild"></div>
-        <div class="grandchild"></div>
-      </div> 
-      <div class="child">
-        <div class="grandchild"></div>
-        <div class="grandchild"></div>
-      </div>     
-    </div>
-    `,
-  },
-  13456: {
-    css: `
-    * {
-      box-sizing: border-box;
-    }
-
-    .parent {
-      display: flex;
-      flex-direction: column;
-      width: 150px;
-    }
-
-    .child{
-      display: flex;
-    } 
-
-    .child:nth-child(1){
-      justify-content: space-between;
-    }
-
-    .grandchild {
-      height: 50px;
-      width: 50px;
-      border: 1px solid #1F1F1F;
-    }
-    `,
-    html: `
-    <style>
-      * {
-        box-sizing: border-box;
-      }
-
-      .parent {
-        display: flex;
-        flex-direction: column;
-        width: 150px;
-      }
-
-      .child{
-        display: flex;
-      } 
-
-      .child:nth-child(1){
-        justify-content: space-between;
-      }
-
-      .grandchild {
-        height: 50px;
-        width: 50px;
-        border: 1px solid #1F1F1F;
-      }      
-    </style>
-    
-    <div class="parent">
-      <div class="child">
-        <div class="grandchild"></div>
-        <div class="grandchild"></div>
-      </div> 
-      <div class="child">
-        <div class="grandchild"></div>
-        <div class="grandchild"></div>
-        <div class="grandchild"></div>
-      </div>     
-    </div>
-    `,
-  },
-  134567: {
-    css: `
-    * {
-      box-sizing: border-box;
-    }
-
-    .parent {
-      display: flex;
-      flex-direction: column;
-      width: 150px;
-    }
-
-    .child{
-      display: flex;
-    } 
-
-    .child:nth-child(1){
-      justify-content: space-between;
-    }
-
-    .grandchild {
-      height: 50px;
-      width: 50px;
-      border: 1px solid #1F1F1F;
-    }    
-    `,
-    html: `
-    <style>
-      * {
-        box-sizing: border-box;
-      }
-
-      .parent {
-        display: flex;
-        flex-direction: column;
-        width: 150px;
-      }
-
-      .child{
-        display: flex;
-      } 
-
-      .child:nth-child(1){
-        justify-content: space-between;
-      }
-
-      .grandchild {
-        height: 50px;
-        width: 50px;
-        border: 1px solid #1F1F1F;
-      }    
-    </style>
-    
-    <div class="parent">
-      <div class="child">
-        <div class="grandchild"></div>
-        <div class="grandchild"></div>
-      </div> 
-      <div class="child">
-        <div class="grandchild"></div>
-        <div class="grandchild"></div>
-        <div class="grandchild"></div>
-      </div>
-      <div class="child">
-        <div class="grandchild"></div>      
-      </div>     
-    </div>
-    `,
-  },
-  1345678: {
-    css: `
-    * {
-      box-sizing: border-box;
-    }
-
-    .parent {
-      display: flex;
-      flex-direction: column;
-      width: 150px;
-    }
-
-    .child{
-      display: flex;
-    } 
-
-    .child:nth-child(1){
-      justify-content: space-between;
-    }
-
-    .grandchild {
-      height: 50px;
-      width: 50px;
-      border: 1px solid #1F1F1F;
-    }    
-    `,
-    html: `
-    <style>
-      * {
-        box-sizing: border-box;
-      }
-
-      .parent {
-        display: flex;
-        flex-direction: column;
-        width: 150px;
-      }
-
-      .child{
-        display: flex;
-      } 
-
-      .child:nth-child(1){
-        justify-content: space-between;
-      }
-
-      .grandchild {
-        height: 50px;
-        width: 50px;
-        border: 1px solid #1F1F1F;
-      }    
-    </style>
-    
-    <div class="parent">
-      <div class="child">
-        <div class="grandchild"></div>
-        <div class="grandchild"></div>
-      </div> 
-      <div class="child">
-        <div class="grandchild"></div>
-        <div class="grandchild"></div>
-        <div class="grandchild"></div>
-      </div>
-      <div class="child">
-        <div class="grandchild"></div>
-        <div class="grandchild"></div>            
-      </div>     
-    </div>
-    `,
-  },
-  13456789: {
-    css: `
-    * {
-      box-sizing: border-box;
-    }
-
-    .parent {
-      display: flex;
-      flex-direction: column;
-      width: 150px;
-    }
-
-    .child{
-      display: flex;
-    } 
-
-    .child:nth-child(1){
-      justify-content: space-between;
-    }
-
-    .grandchild {
-      height: 50px;
-      width: 50px;
-      border: 1px solid #1F1F1F;
-    }    
-    `,
-    html: `
-    <style>
-      * {
-        box-sizing: border-box;
-      }
-
-      .parent {
-        display: flex;
-        flex-direction: column;
-        width: 150px;
-      }
-
-      .child{
-        display: flex;
-      } 
-
-      .child:nth-child(1){
-        justify-content: space-between;
-      }
-
-      .grandchild {
-        height: 50px;
-        width: 50px;
-        border: 1px solid #1F1F1F;
-      }    
-    </style>
-    
-    <div class="parent">
-      <div class="child">
-        <div class="grandchild"></div>
-        <div class="grandchild"></div>
-      </div> 
-      <div class="child">
-        <div class="grandchild"></div>
-        <div class="grandchild"></div>
-        <div class="grandchild"></div>
-      </div>
-      <div class="child">
-        <div class="grandchild"></div>
-        <div class="grandchild"></div>
-        <div class="grandchild"></div>            
-      </div>     
+      <div class="child"></div>
+      <div class="child"></div>
     </div>
     `,
   },
   14: {
     css: `
-    * {
-      box-sizing: border-box;
-    }
-
     .parent {
       display: flex;
-      flex-direction: column;
-      width: 150px;
+      flex-direction: row;
+      width: 100%;
+      height: 100vh;
     }
 
     .child {
-      height: 50px;
-      width: 50px;
+      height: 33vh;
+      width: 33%;
       border: 1px solid #1F1F1F;
-    }    
+    }
     `,
     html: `
-    <style>
-      * {
-        box-sizing: border-box;
-      }
-
-      .parent {
-        display: flex;
-        flex-direction: column;
-        width: 150px;
-      }
-
-      .child {
-        height: 50px;
-        width: 50px;
-        border: 1px solid #1F1F1F;
-      }    
-    </style>
-    
     <div class="parent">
-      <div class="child"></div> 
-      <div class="child"></div> 
+      <div class="child"></div>
+      <div class="child"></div>
     </div>
-  `,
-  },
-  145: {
-    css: `
-    * {
-      box-sizing: border-box;
-    }
-
-    .parent {
-      display: flex;
-      flex-direction: column;
-      width: 150px;
-    }
-
-    .child:nth-child(2){
-      display: flex;      
-    }
-
-    .child:nth-child(1),
-    .grandchild {
-      height: 50px;
-      width: 50px;
-      border: 1px solid #1F1F1F;
-    }     
     `,
-    html: `
-    <style>
-      * {
-        box-sizing: border-box;
-      }
-
-      .parent {
-        display: flex;
-        flex-direction: column;
-        width: 150px;
-      }
-
-      .child:nth-child(2){
-        display: flex;      
-      }
-
-      .child:nth-child(1),
-      .grandchild {
-        height: 50px;
-        width: 50px;
-        border: 1px solid #1F1F1F;
-      }    
-    </style>
-    
-    <div class="parent">
-      <div class="child"></div> 
-      <div class="child">
-        <div class="grandchild"></div>
-        <div class="grandchild"></div>
-      </div> 
-    </div>
-  `,
-  },
-  1456: {
-    css: `
-    * {
-      box-sizing: border-box;
-    }
-
-    .parent {
-      display: flex;
-      flex-direction: column;
-      width: 150px;
-    }
-
-    .child:nth-child(2){
-      display: flex;      
-    }
-
-    .child:nth-child(1),
-    .grandchild {
-      height: 50px;
-      width: 50px;
-      border: 1px solid #1F1F1F;
-    }     
-    `,
-    html: `
-    <style>
-      * {
-        box-sizing: border-box;
-      }
-
-      .parent {
-        display: flex;
-        flex-direction: column;
-        width: 150px;
-      }
-
-      .child:nth-child(2){
-        display: flex;      
-      }
-
-      .child:nth-child(1),
-      .grandchild {
-        height: 50px;
-        width: 50px;
-        border: 1px solid #1F1F1F;
-      }    
-    </style>
-    
-    <div class="parent">
-      <div class="child"></div> 
-      <div class="child">
-        <div class="grandchild"></div>
-        <div class="grandchild"></div>
-        <div class="grandchild"></div>
-      </div> 
-    </div>
-  `,
-  },
-  14567: {
-    css: `
-    * {
-      box-sizing: border-box;
-    }
-
-    .parent {
-      display: flex;
-      flex-direction: column;
-      width: 150px;
-    }
-
-    .child:nth-child(2){
-      display: flex;      
-    }
-
-    .child:nth-child(1),
-    .grandchild {
-      height: 50px;
-      width: 50px;
-      border: 1px solid #1F1F1F;
-    }  
-    `,
-    html: `
-    <style>
-      * {
-        box-sizing: border-box;
-      }
-
-      .parent {
-        display: flex;
-        flex-direction: column;
-        width: 150px;
-      }
-
-      .child:nth-child(2){
-        display: flex;      
-      }
-
-      .child:nth-child(1),
-      .grandchild {
-        height: 50px;
-        width: 50px;
-        border: 1px solid #1F1F1F;
-      }    
-    </style>
-    
-    <div class="parent">
-      <div class="child"></div> 
-      <div class="child">
-        <div class="grandchild"></div>
-        <div class="grandchild"></div>
-        <div class="grandchild"></div>
-      </div> 
-      <div class="child">
-        <div class="grandchild"></div>      
-      </div> 
-    </div>
-  `,
-  },
-  145678: {
-    css: `
-    * {
-      box-sizing: border-box;
-    }
-
-    .parent {
-      display: flex;
-      flex-direction: column;
-      width: 150px;
-    }
-
-    .child:nth-child(2){
-      display: flex;      
-    }
-
-    .child:nth-child(1),
-    .grandchild {
-      height: 50px;
-      width: 50px;
-      border: 1px solid #1F1F1F;
-    }  
-    `,
-    html: `
-    <style>
-      * {
-        box-sizing: border-box;
-      }
-
-      .parent {
-        display: flex;
-        flex-direction: column;
-        width: 150px;
-      }
-
-      .child:nth-child(2),
-      .child:nth-child(3) {
-        display: flex;      
-      }
-
-      .child:nth-child(1),
-      .grandchild {
-        height: 50px;
-        width: 50px;
-        border: 1px solid #1F1F1F;
-      }    
-    </style>
-    
-    <div class="parent">
-      <div class="child"></div> 
-      <div class="child">
-        <div class="grandchild"></div>
-        <div class="grandchild"></div>
-        <div class="grandchild"></div>
-      </div> 
-      <div class="child">
-        <div class="grandchild"></div>
-        <div class="grandchild"></div>      
-      </div> 
-    </div>
-  `,
-  },
-  1456789: {
-    css: `
-    * {
-      box-sizing: border-box;
-    }
-
-    .parent {
-      display: flex;
-      flex-direction: column;
-      width: 150px;
-    }
-
-    .child:nth-child(2){
-      display: flex;      
-    }
-
-    .child:nth-child(1),
-    .grandchild {
-      height: 50px;
-      width: 50px;
-      border: 1px solid #1F1F1F;
-    }  
-    `,
-    html: `
-    <style>
-      * {
-        box-sizing: border-box;
-      }
-
-      .parent {
-        display: flex;
-        flex-direction: column;
-        width: 150px;
-      }
-
-      .child:nth-child(2),
-      .child:nth-child(3) {
-        display: flex;      
-      }
-
-      .child:nth-child(1),
-      .grandchild {
-        height: 50px;
-        width: 50px;
-        border: 1px solid #1F1F1F;
-      }    
-    </style>
-    
-    <div class="parent">
-      <div class="child"></div> 
-      <div class="child">
-        <div class="grandchild"></div>
-        <div class="grandchild"></div>
-        <div class="grandchild"></div>
-      </div> 
-      <div class="child">
-        <div class="grandchild"></div>
-        <div class="grandchild"></div>
-        <div class="grandchild"></div>      
-      </div> 
-    </div>
-  `,
   },
   15: {
     css: `
-    * {
-      box-sizing: border-box;
-    }
-
-    .parent {
+    .parent {  
       display: flex;
-      flex-direction: column;
-      width: 150px;
+      flex-direction: column;      
+      width: 100%;
+      height: 100vh;
     }
 
-    .child:nth-child(2) {
-      display: flex;   
+    .child:nth-child(2){
+      display: flex;
       justify-content: center;
-      width: 100%;   
+      width: 100%;
     }
 
     .child:nth-child(1),
     .grandchild {
-      height: 50px;
-      width: 50px;
+      height: 33vh;      
+      width: 33%;
       border: 1px solid #1F1F1F;
-    }    
+    }
     `,
     html: `
-    <style>
-      * {
-        box-sizing: border-box;
-      }
-
-      .parent {
-        display: flex;
-        flex-direction: column;
-        width: 150px;
-      }
-
-      .child:nth-child(2) {
-        display: flex;   
-        justify-content: center;
-        width: 100%;   
-      }
-
-      .child:nth-child(1),
-      .grandchild {
-        height: 50px;
-        width: 50px;
-        border: 1px solid #1F1F1F;
-      }    
-    </style>
-    
     <div class="parent">
-      <div class="child"></div> 
+      <div class="child"></div>
       <div class="child">
         <div class="grandchild"></div>
-      </div>     
+      </div>
     </div>
-  `,
-  },
-  156: {
-    css: `
-    * {
-      box-sizing: border-box;
-    }
-
-    .parent {
-      display: flex;
-      flex-direction: column;
-      width: 150px;
-    }
-
-    .child:nth-child(2) {
-      display: flex;   
-      justify-content: flex-end;
-      width: 100%;   
-    }
-
-    .child:nth-child(1),
-    .grandchild {
-      height: 50px;
-      width: 50px;
-      border: 1px solid #1F1F1F;
-    }    
     `,
-    html: `
-    <style>
-      * {
-        box-sizing: border-box;
-      }
-
-      .parent {
-        display: flex;
-        flex-direction: column;
-        width: 150px;
-      }
-
-      .child:nth-child(2) {
-        display: flex;   
-        justify-content: flex-end;
-        width: 100%;   
-      }
-
-      .child:nth-child(1),
-      .grandchild {
-        height: 50px;
-        width: 50px;
-        border: 1px solid #1F1F1F;
-      }    
-    </style>
-    
-    <div class="parent">
-      <div class="child"></div> 
-      <div class="child">
-        <div class="grandchild"></div>
-        <div class="grandchild"></div>
-      </div>     
-    </div>
-  `,
-  },
-  1567: {
-    css: `
-    * {
-      box-sizing: border-box;
-    }
-
-    .parent {
-      display: flex;
-      flex-direction: column;
-      width: 150px;
-    }
-
-    .child:nth-child(2) {
-      display: flex;   
-      justify-content: flex-end;
-      width: 100%;   
-    }
-
-    .child:nth-child(1),
-    .grandchild {
-      height: 50px;
-      width: 50px;
-      border: 1px solid #1F1F1F;
-    }    
-    `,
-    html: `
-    <style>
-      * {
-        box-sizing: border-box;
-      }
-
-      .parent {
-        display: flex;
-        flex-direction: column;
-        width: 150px;
-      }
-
-      .child:nth-child(2) {
-        display: flex;   
-        justify-content: flex-end;
-        width: 100%;   
-      }
-
-      .child:nth-child(1),
-      .grandchild {
-        height: 50px;
-        width: 50px;
-        border: 1px solid #1F1F1F;
-      }    
-    </style>
-    
-    <div class="parent">
-      <div class="child"></div> 
-      <div class="child">
-        <div class="grandchild"></div>
-        <div class="grandchild"></div>
-      </div>     
-      <div class="child"></div> 
-    </div>
-
-  `,
-  },
-  15678: {
-    css: `
-    * {
-      box-sizing: border-box;
-    }
-
-    .parent {
-      display: flex;
-      flex-direction: column;
-      width: 150px;
-    }
-
-    .child:nth-child(2) {
-      display: flex;   
-      justify-content: flex-end;
-      width: 100%;   
-    }
-
-    .child:nth-child(3) {
-      display: flex;
-    }
-
-    .child:nth-child(1),
-    .grandchild {
-      height: 50px;
-      width: 50px;
-      border: 1px solid #1F1F1F;
-    }  
-    `,
-    html: `
-    <style>
-      * {
-        box-sizing: border-box;
-      }
-
-      .parent {
-        display: flex;
-        flex-direction: column;
-        width: 150px;
-      }
-
-      .child:nth-child(2) {
-        display: flex;   
-        justify-content: flex-end;
-        width: 100%;   
-      }
-
-      .child:nth-child(3) {
-        display: flex;
-      }
-
-      .child:nth-child(1),
-      .grandchild {
-        height: 50px;
-        width: 50px;
-        border: 1px solid #1F1F1F;
-      }    
-    </style>
-    
-    <div class="parent">
-      <div class="child"></div> 
-      <div class="child">
-        <div class="grandchild"></div>
-        <div class="grandchild"></div>
-      </div>     
-      <div class="child">
-        <div class="grandchild"></div>
-        <div class="grandchild"></div>
-      </div> 
-    </div>
-  `,
-  },
-  156789: {
-    css: `
-    * {
-      box-sizing: border-box;
-    }
-
-    .parent {
-      display: flex;
-      flex-direction: column;
-      width: 150px;
-    }
-
-    .child:nth-child(2) {
-      display: flex;   
-      justify-content: flex-end;
-      width: 100%;   
-    }
-
-    .child:nth-child(3) {
-      display: flex;
-    }
-
-    .child:nth-child(1),
-    .grandchild {
-      height: 50px;
-      width: 50px;
-      border: 1px solid #1F1F1F;
-    }  
-    `,
-    html: `
-    <style>
-      * {
-        box-sizing: border-box;
-      }
-
-      .parent {
-        display: flex;
-        flex-direction: column;
-        width: 150px;
-      }
-
-      .child:nth-child(2) {
-        display: flex;   
-        justify-content: flex-end;
-        width: 100%;   
-      }
-
-      .child:nth-child(3) {
-        display: flex;
-      }
-
-      .child:nth-child(1),
-      .grandchild {
-        height: 50px;
-        width: 50px;
-        border: 1px solid #1F1F1F;
-      }    
-    </style>
-    
-    <div class="parent">
-      <div class="child"></div> 
-      <div class="child">
-        <div class="grandchild"></div>
-        <div class="grandchild"></div>
-      </div>     
-      <div class="child">
-        <div class="grandchild"></div>
-        <div class="grandchild"></div>
-        <div class="grandchild"></div>
-      </div> 
-    </div>
-  `,
   },
   16: {
     css: `
-    * {
-      box-sizing: border-box;
-    }
-
-    .parent {
+    .parent {  
       display: flex;
-      flex-direction: column;
-      width: 150px;
+      flex-direction: column;      
+      width: 100%;
+      height: 100vh;
     }
 
-    .child:nth-child(2) {
-      display: flex;   
-      justify-content: flex-end;
-      width: 100%;   
-    }
-    
-    .child:nth-child(1),
-    .grandchild {
-      height: 50px;
-      width: 50px;
-      border: 1px solid #1F1F1F;
-    }     
-    `,
-    html: `
-    <style>
-      * {
-        box-sizing: border-box;
-      }
-
-      .parent {
-        display: flex;
-        flex-direction: column;
-        width: 150px;
-      }
-
-      .child:nth-child(2) {
-        display: flex;   
-        justify-content: flex-end;
-        width: 100%;   
-      }
-      
-      .child:nth-child(1),
-      .grandchild {
-        height: 50px;
-        width: 50px;
-        border: 1px solid #1F1F1F;
-      }    
-    </style>
-    
-    <div class="parent">
-      <div class="child"></div> 
-      <div class="child">
-        <div class="grandchild"></div>      
-      </div>         
-    </div>
-  `,
-  },
-  167: {
-    css: `
-    * {
-      box-sizing: border-box;
-    }
-
-    .parent {
+    .child:nth-child(2){
       display: flex;
-      flex-direction: column;
-      width: 150px;
-    }
-
-    .child:nth-child(2) {
-      display: flex;   
       justify-content: flex-end;
-      width: 100%;   
+      width: 100%;
     }
 
     .child:nth-child(1),
     .grandchild {
-      height: 50px;
-      width: 50px;
+      height: 33vh;      
+      width: 33%;
       border: 1px solid #1F1F1F;
-    }     
+    }
     `,
     html: `
-    <style>
-      * {
-        box-sizing: border-box;
-      }
-
-      .parent {
-        display: flex;
-        flex-direction: column;
-        width: 150px;
-      }
-
-      .child:nth-child(2) {
-        display: flex;   
-        justify-content: flex-end;
-        width: 100%;   
-      }
-
-      .child:nth-child(1),
-      .grandchild {
-        height: 50px;
-        width: 50px;
-        border: 1px solid #1F1F1F;
-      }    
-    </style>
-    
     <div class="parent">
-      <div class="child"></div> 
+      <div class="child"></div>
       <div class="child">
-        <div class="grandchild"></div>      
-      </div>
-      <div class="child">
-        <div class="grandchild"></div>      
-      </div>         
-    </div>
-  `,
-  },
-  1678: {
-    css: `
-    * {
-      box-sizing: border-box;
-    }
-
-    .parent {
-      display: flex;
-      flex-direction: column;
-      width: 150px;
-    }
-
-    .child:nth-child(2) {
-      display: flex;   
-      justify-content: flex-end;
-      width: 100%;   
-    }
-    .child:nth-child(3) {
-      display: flex;
-    }
-
-    .child:nth-child(1),
-    .grandchild {
-      height: 50px;
-      width: 50px;
-      border: 1px solid #1F1F1F;
-    }     
-    `,
-    html: `
-    <style>
-      * {
-        box-sizing: border-box;
-      }
-
-      .parent {
-        display: flex;
-        flex-direction: column;
-        width: 150px;
-      }
-
-      .child:nth-child(2) {
-        display: flex;   
-        justify-content: flex-end;
-        width: 100%;   
-      }
-      .child:nth-child(3) {
-        display: flex;
-      }
-
-      .child:nth-child(1),
-      .grandchild {
-        height: 50px;
-        width: 50px;
-        border: 1px solid #1F1F1F;
-      }    
-    </style>
-    
-    <div class="parent">
-      <div class="child"></div> 
-      <div class="child">
-        <div class="grandchild"></div>      
-      </div>
-      <div class="child">
-        <div class="grandchild"></div> 
-        <div class="grandchild"></div>      
-      </div>         
-    </div>
-  `,
-  },
-  16789: {
-    css: `
-    * {
-      box-sizing: border-box;
-    }
-
-    .parent {
-      display: flex;
-      flex-direction: column;
-      width: 150px;
-    }
-
-    .child:nth-child(2) {
-      display: flex;   
-      justify-content: flex-end;
-      width: 100%;   
-    }
-    .child:nth-child(3) {
-      display: flex;
-    }
-
-    .child:nth-child(1),
-    .grandchild {
-      height: 50px;
-      width: 50px;
-      border: 1px solid #1F1F1F;
-    }     
-    `,
-    html: `
-    <style>
-      * {
-        box-sizing: border-box;
-      }
-
-      .parent {
-        display: flex;
-        flex-direction: column;
-        width: 150px;
-      }
-
-      .child:nth-child(2) {
-        display: flex;   
-        justify-content: flex-end;
-        width: 100%;   
-      }
-      .child:nth-child(3) {
-        display: flex;
-      }
-
-      .child:nth-child(1),
-      .grandchild {
-        height: 50px;
-        width: 50px;
-        border: 1px solid #1F1F1F;
-      }    
-    </style>
-    
-    <div class="parent">
-      <div class="child"></div> 
-      <div class="child">
-        <div class="grandchild"></div>      
-      </div>
-      <div class="child">
-        <div class="grandchild"></div> 
         <div class="grandchild"></div>
-        <div class="grandchild"></div>      
-      </div>         
+      </div>
     </div>
-  `,
+    `,
   },
   17: {
     css: `
-    * {
-      box-sizing: border-box;
+    .parent {  
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;      
+      width: 100%;
+      height: 100vh;
     }
 
-    .parent {
+    .child:nth-child(2){
       display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      width: 150px;
-      height: 150px;
+      width: 100%;
     }
 
     .child:nth-child(1),
     .grandchild {
-      height: 50px;
-      width: 50px;
+      height: 33vh;      
+      width: 33%;
       border: 1px solid #1F1F1F;
-    }         
+    }
     `,
     html: `
-    <style>
-      * {
-        box-sizing: border-box;
-      }
-
-      .parent {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 150px;
-        height: 150px;
-      }
-
-      .child:nth-child(1),
-      .grandchild {
-        height: 50px;
-        width: 50px;
-        border: 1px solid #1F1F1F;
-      }    
-    </style>
-    
     <div class="parent">
-      <div class="child"></div> 
+      <div class="child"></div>
       <div class="child">
-        <div class="grandchild"></div>      
-      </div>       
-    </div>
-  `,
-  },
-  178: {
-    css: `
-    * {
-      box-sizing: border-box;
-    }
-
-    .parent {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      width: 150px;
-      height: 150px;
-    }
-
-    .child:nth-child(2) {
-      display: flex;      
-    }
-
-    .child:nth-child(1),
-    .grandchild {
-      height: 50px;
-      width: 50px;
-      border: 1px solid #1F1F1F;
-    }          
-    `,
-    html: `
-    <style>
-      * {
-        box-sizing: border-box;
-      }
-
-      .parent {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 150px;
-        height: 150px;
-      }
-
-      .child:nth-child(2) {
-        display: flex;      
-      }
-
-      .child:nth-child(1),
-      .grandchild {
-        height: 50px;
-        width: 50px;
-        border: 1px solid #1F1F1F;
-      }    
-    </style>
-    
-    <div class="parent">
-      <div class="child"></div> 
-      <div class="child">
-        <div class="grandchild"></div>  
-        <div class="grandchild"></div>      
-      </div>       
-    </div>
-  `,
-  },
-  1789: {
-    css: `
-    * {
-      box-sizing: border-box;
-    }
-
-    .parent {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      width: 150px;
-      height: 150px;
-    }
-
-    .child:nth-child(2) {
-      display: flex;      
-    }
-
-    .child:nth-child(1),
-    .grandchild {
-      height: 50px;
-      width: 50px;
-      border: 1px solid #1F1F1F;
-    }          
-    `,
-    html: `
-    <style>
-      * {
-        box-sizing: border-box;
-      }
-
-      .parent {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 150px;
-        height: 150px;
-      }
-
-      .child:nth-child(2) {
-        display: flex;      
-      }
-
-      .child:nth-child(1),
-      .grandchild {
-        height: 50px;
-        width: 50px;
-        border: 1px solid #1F1F1F;
-      }    
-    </style>
-    
-    <div class="parent">
-      <div class="child"></div> 
-      <div class="child">
-        <div class="grandchild"></div>  
         <div class="grandchild"></div>
-        <div class="grandchild"></div>      
-      </div>       
+      </div>
     </div>
-  `,
+    `,
   },
   18: {
     css: `
-    * {
-      box-sizing: border-box;
+    .parent {  
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;      
+      width: 100%;
+      height: 100vh;
     }
 
-    .parent {
+    .child:nth-child(2){
       display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      width: 150px;
-      height: 150px;
-    }
-    
-    .child:nth-child(2) {
-      display: flex; 
-      justify-content: center;     
+      justify-content: center;
+      width: 100%;
     }
 
     .child:nth-child(1),
     .grandchild {
-      height: 50px;
-      width: 50px;
+      height: 33vh;      
+      width: 33%;
       border: 1px solid #1F1F1F;
-    }         
+    }
     `,
     html: `
-    <style>
-      * {
-        box-sizing: border-box;
-      }
-
-      .parent {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 150px;
-        height: 150px;
-      }
-
-      .child:nth-child(2) {
-        display: flex; 
-        justify-content: center;     
-      }
-
-      .child:nth-child(1),
-      .grandchild {
-        height: 50px;
-        width: 50px;
-        border: 1px solid #1F1F1F;
-      }    
-    </style>
-    
     <div class="parent">
-      <div class="child"></div> 
-      <div class="child">
-        <div class="grandchild"></div>      
-      </div>       
-    </div>
-  `,
-  },
-  189: {
-    css: `
-    * {
-      box-sizing: border-box;
-    }
-
-    .parent {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      width: 150px;
-      height: 150px;
-    }
-
-    .child:nth-child(2) {
-      display: flex; 
-      justify-content: flex-end;     
-    }
-
-    .child:nth-child(1),
-    .grandchild {
-      height: 50px;
-      width: 50px;
-      border: 1px solid #1F1F1F;
-    }    
-    `,
-    html: `
-    <style>
-      * {
-        box-sizing: border-box;
-      }
-
-      .parent {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 150px;
-        height: 150px;
-      }
-
-      .child:nth-child(2) {
-        display: flex; 
-        justify-content: flex-end;     
-      }
-
-      .child:nth-child(1),
-      .grandchild {
-        height: 50px;
-        width: 50px;
-        border: 1px solid #1F1F1F;
-      }    
-    </style>
-    
-    <div class="parent">
-      <div class="child"></div> 
+      <div class="child"></div>
       <div class="child">
         <div class="grandchild"></div>
-        <div class="grandchild"></div>            
-      </div>       
+      </div>
     </div>
-  `,
+    `,
   },
   19: {
     css: `
-    * {
-      box-sizing: border-box;
+    .parent {  
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;      
+      width: 100%;
+      height: 100vh;
     }
 
-    .parent {
+    .child:nth-child(2){
       display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      width: 150px;
-      height: 150px;
-    }
-    
-    .child:nth-child(2) {
-      display: flex; 
-      justify-content: center;     
+      justify-content: flex-end;
+      width: 100%;
     }
 
     .child:nth-child(1),
     .grandchild {
-      height: 50px;
-      width: 50px;
+      height: 33vh;      
+      width: 33%;
       border: 1px solid #1F1F1F;
-    }         
+    }
     `,
     html: `
-    <style>
-      * {
-        box-sizing: border-box;
-      }
-
-      .parent {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 150px;
-        height: 150px;
-      }
-
-      .child:nth-child(2) {
-        display: flex; 
-        justify-content: flex-end;     
-      }
-
-      .child:nth-child(1),
-      .grandchild {
-        height: 50px;
-        width: 50px;
-        border: 1px solid #1F1F1F;
-      }    
-    </style>
-    
     <div class="parent">
-      <div class="child"></div> 
+      <div class="child"></div>
       <div class="child">
-        <div class="grandchild"></div>      
-      </div>       
+        <div class="grandchild"></div>
+      </div>
     </div>
-  `,
+    `,
+  },
+  23: {
+    css: `
+    .parent {  
+      display: flex;
+      justify-content: flex-end;     
+      width: 100%;
+      height: 100vh;
+    }
+    
+    .child {
+      height: 33vh;      
+      width: 33%;
+      border: 1px solid #1F1F1F;
+    }
+    `,
+    html: `
+    <div class="parent">
+      <div class="child"></div>
+      <div class="child"></div>
+    </div>
+    `,
+  },
+  24: {
+    css: `
+    .parent {  
+      display: flex;
+      flex-direction: column;    
+      width: 100%;
+      height: 100vh;
+    }
+    
+    .child:nth-child(1){
+      width: 100%;
+      display: flex;      
+      justify-content: center;
+    }
+
+    .grandchild,
+    .child:nth-child(2) {
+      height: 33vh;      
+      width: 33%;
+      border: 1px solid #1F1F1F;
+    }
+    `,
+    html: `
+    <div class="parent">
+      <div class="child">
+        <div class="grandchild"></div>
+      </div>
+      <div class="child"></div>       
+    </div>
+    `,
+  },
+  25: {
+    css: `
+    .parent {  
+      display: flex;
+      flex-direction: column;    
+      align-items: center;
+      width: 100%;
+      height: 100vh;
+    }    
+
+    .child {
+      height: 33vh;      
+      width: 33%;
+      border: 1px solid #1F1F1F;
+    }
+    `,
+    html: `
+    <div class="parent">
+      <div class="child"></div>
+      <div class="child"></div>
+    </div>
+    `,
+  },
+  26: {
+    css: `
+    .parent {  
+      display: flex;
+      flex-direction: column;    
+      align-items: center;
+      width: 100%;
+      height: 100vh;
+    }    
+    
+    .child:nth-child(2){
+      align-self: flex-end;
+    }
+
+    .child {
+      height: 33vh;      
+      width: 33%;
+      border: 1px solid #1F1F1F;
+    }
+    `,
+    html: `
+    <div class="parent">
+      <div class="child"></div>
+      <div class="child"></div>
+    </div>
+    `,
+  },
+  27: {
+    css: `
+    .parent {  
+      display: flex;
+      flex-direction: column;    
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      height: 100vh;
+    }    
+    
+    .child:nth-child(2){
+      align-self: flex-start;
+    }
+
+    .child {
+      height: 33vh;      
+      width: 33%;
+      border: 1px solid #1F1F1F;
+    }
+    `,
+    html: `
+    <div class="parent">
+      <div class="child"></div>
+      <div class="child"></div>
+    </div>
+    `,
+  },
+  28: {
+    css: `
+    .parent {  
+      display: flex;
+      flex-direction: column;    
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      height: 100vh;
+    }
+
+    .child {
+      height: 33vh;      
+      width: 33%;
+      border: 1px solid #1F1F1F;
+    }
+    `,
+    html: `
+    <div class="parent">
+      <div class="child"></div>
+      <div class="child"></div>
+    </div>
+    `,
+  },
+  29: {
+    css: `
+    .parent {  
+      display: flex;
+      flex-direction: column;    
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      height: 100vh;
+    }
+  
+    .child:nth-child(2){
+      align-self: flex-end;
+    }
+
+    .child {
+      height: 33vh;      
+      width: 33%;
+      border: 1px solid #1F1F1F;
+    }
+    `,
+    html: `
+    <div class="parent">
+      <div class="child"></div>
+      <div class="child"></div>
+    </div>
+    `,
+  },
+  34: {
+    css: `
+    .parent {  
+      display: flex;
+      flex-direction: column;                
+      width: 100%;
+      height: 100vh;
+    }    
+    
+
+    .child:nth-child(1) {
+      align-self: flex-end;
+    }
+
+    .child:nth-child(2) {
+      align-self: center;
+    }
+
+    .child {
+      height: 33vh;      
+      width: 33%;
+      border: 1px solid #1F1F1F;
+    }
+    `,
+    html: `
+    <div class="parent">
+      <div class="child"></div>
+      <div class="child"></div>
+    </div>
+    `,
+  },
+  35: {
+    css: `
+    .parent {  
+      display: flex;
+      flex-direction: column;                
+      width: 100%;
+      height: 100vh;
+    }        
+
+    .child:nth-child(1) {
+      align-self: flex-end;
+    }
+
+    .child:nth-child(2) {
+      align-self: center;
+    }
+
+    .child {
+      height: 33vh;      
+      width: 33%;
+      border: 1px solid #1F1F1F;
+    }
+    `,
+    html: `
+    <div class="parent">
+      <div class="child"></div>
+      <div class="child"></div>
+    </div>
+    `,
+  },
+  36: {
+    css: `
+    .parent {  
+      display: flex;
+      flex-direction: column;                
+      width: 100%;
+      height: 100vh;
+    }        
+
+    .child:nth-child(1) {
+      align-self: flex-end;
+    }
+
+    .child:nth-child(2) {
+      align-self: flex-end;
+    }
+
+    .child {
+      height: 33vh;      
+      width: 33%;
+      border: 1px solid #1F1F1F;
+    }
+    `,
+    html: `
+    <div class="parent">
+      <div class="child"></div>
+      <div class="child"></div>
+    </div>
+    `,
+  },
+  37: {
+    css: `
+    .parent {  
+      display: flex;
+      flex-direction: column; 
+      justify-content: space-between;               
+      width: 100%;
+      height: 100vh;
+    }    
+    
+    .child:nth-child(1) {
+      align-self: flex-end;
+    }
+
+    .child {
+      height: 33vh;      
+      width: 33%;
+      border: 1px solid #1F1F1F;
+    }
+    `,
+    html: `
+    <div class="parent">
+      <div class="child"></div>
+      <div class="child"></div>
+    </div>
+    `,
+  },
+  38: {
+    css: `
+    .parent {  
+      display: flex;
+      flex-direction: column; 
+      justify-content: space-between;               
+      width: 100%;
+      height: 100vh;
+    }    
+    
+    .child:nth-child(1) {
+      align-self: flex-end;
+    }
+    
+    .child:nth-child(2) {
+      align-self: center;
+    }
+
+    .child {
+      height: 33vh;      
+      width: 33%;
+      border: 1px solid #1F1F1F;
+    }
+    `,
+    html: `
+    <div class="parent">
+      <div class="child"></div>
+      <div class="child"></div>
+    </div>
+    `,
+  },
+  39: {
+    css: `
+    .parent {  
+      display: flex;
+      flex-direction: column; 
+      align-items: flex-end;
+      justify-content: space-between;               
+      width: 100%;
+      height: 100vh;
+    }    
+
+    .child {
+      height: 33vh;      
+      width: 33%;
+      border: 1px solid #1F1F1F;
+    }
+    `,
+    html: `
+    <div class="parent">
+      <div class="child"></div>
+      <div class="child"></div>
+    </div>
+    `,
+  },
+  45: {
+    css: `
+    .parent {  
+      display: flex;      
+      align-items: center;               
+      width: 100%;
+      height: 100vh;
+    }    
+
+    .child {
+      height: 33vh;      
+      width: 33%;
+      border: 1px solid #1F1F1F;
+    }
+    `,
+    html: `
+    <div class="parent">
+      <div class="child"></div>
+      <div class="child"></div>
+    </div>
+    `,
+  },
+  46: {
+    css: `
+    .parent {  
+      display: flex;  
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      height: 100vh;
+    }    
+
+    .child {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .grandchild {
+      height: 33vh;
+      width: 33%;
+      border: 1px solid #1F1F1F;
+    }
+    `,
+    html: `
+    <div class="parent">
+      <div class="child">
+        <div class="grandchild"></div>
+        <div class="grandchild"></div>
+      </div>
+    </div>
+    `,
   },
 };
