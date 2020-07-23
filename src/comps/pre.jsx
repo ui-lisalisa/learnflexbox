@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {STORE} from './STORE';
 
 const screen = {
@@ -25,7 +25,8 @@ const defaults = {
   justifyContent: 'space-between',
 };
 
-const Copy = () => {
+const Copy = (props) => {
+  console.log(props.data);
   return (
     <div style={defaults}>
       <div style={{display: 'flex'}}>

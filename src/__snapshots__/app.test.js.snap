@@ -23,7 +23,7 @@ exports[`renders snapshot as expected 1`] = `
     Whoops, that wasnt there!
   </p>
   <a
-    href="/"
+    href="/flexbox-visualization"
   >
     Go Home
   </a>

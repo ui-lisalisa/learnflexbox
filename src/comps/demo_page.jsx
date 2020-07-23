@@ -3,27 +3,17 @@ import ControlPanel from './controller/controller_';
 import Copy from './pre';
 import './page-queries.css';
 
-const center = {
-  width: '50%',
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'center',
-};
-
-const row = {
-  display: 'flex',
-  width: '100%',
-};
-
 const Demo = () => {
+  const [data, setData] = useState([]);
+
+  const handleData = (data) => {
+    setData(data);
+  };
+
   return (
-    <div className="row" style={{display: 'flex', width: '100%'}}>
-      <div className="center" style={center}>
-        <Copy />
-      </div>
-      <div className="center" style={center}>
-        <ControlPanel />
-      </div>
+    <div style={{display: 'flex', flexWrap: 'flex', width: '100%'}}>
+      <Copy data={data} />
+      <ControlPanel handleData={handleData} />
     </div>
   );
 };

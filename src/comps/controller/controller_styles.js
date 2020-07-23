@@ -1,4 +1,4 @@
-export const box = {
+export let box = {
   height: '150px',
   width: '150px',
   borderRadius: '6px',

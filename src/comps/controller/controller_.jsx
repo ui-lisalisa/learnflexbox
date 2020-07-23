@@ -1,78 +1,70 @@
-import React, {useState} from 'react';
-import PropTypes from 'prop-types';
-import {CONTROLLER, sort} from './controller_helpers.jsx';
-import {box} from './controller_styles';
+import React, {useRef} from 'react';
+import {sort} from './controller_helpers.jsx';
+import '../../index.css';
 
-const Box = (props) => {
-  // const [hoverRef, isHovered] = useHover();
-  /**
-   * hover pending ui
-   * <div
-   *    ref={hoverRef}
-   *    ...
-   * />
-   */
-  const [isActive, setActive] = useState(null);
-  const [status, setStatus] = useState(false);
+let background = 'rgba(48, 188, 237, .4)';
 
-  let handleClick = () => {
-    const newStatus = !status;
-    setStatus(newStatus);
-    props.control(newStatus, props.grid);
+let controls = [],
+  isActive = [];
 
-    isActive === null ? setActive('ACTIVE') : setActive(null);
-  };
-
-  return (
-    <div
-      className={isActive}
-      style={box}
-      onClick={handleClick}
-      grid={props.grid}
-      id={props.grid}></div>
-  );
-};
-
-Box.propTypes = {
-  grid: PropTypes.number,
+const makeControls = () => {
+  for (let i = 1; i <= 9; i++) {
+    controls.push({act_status: false});
+  }
+  return controls;
 };
 
 const ControlPanel = () => {
-  const handleRemove = (id) => {
-    let index = CONTROLLER.indexOf(id);
-    return CONTROLLER.splice(index, 1);
+  const status = useRef([]);
+  makeControls();
+
+  const handleRemove = (arr, val) => {
+    for (var i = arr.length; i--; ) {
+      if (arr[i] === val) {
+        arr.splice(i, 1);
+      }
+    }
   };
 
-  const handleControl = (status, id) => {
-    status === true ? CONTROLLER.push(id) : handleRemove(id);
-    sort(CONTROLLER);
-    console.log(CONTROLLER);
+  const handleClick = (cont, i) => {
+    if (isActive.includes(i)) {
+      /**
+       *
+       * if item clicked is already active;
+       *
+       *   remove item from active array
+       *
+       */
+      handleRemove(isActive, i);
+    } else if (isActive.length < 3 && controls[i].act_status === false) {
+      /**
+       *
+       * if item clicked is turning active and active array is less than 3;
+       *
+       *   push item to active array, then bubble sort active array
+       *
+       */
+      isActive.push(i);
+      sort(isActive);
+      // const backgroundActive = 'rgb(48, 188, 237) !important';
+      status.current[i].style.background = 'rgb(48, 188, 237)';
+    }
+    controls[i].act_status = !cont; //toggle boolean
+    console.log('CURRENTLY ACTIVE', isActive);
   };
 
   return (
-    <main>
-      <div className="container">
-        <section>{/* css */}</section>
-        <section>
-          <div style={{display: 'flex'}}>
-            <Box grid={1} control={handleControl} />
-            <Box grid={2} control={handleControl} />
-            <Box grid={3} control={handleControl} />
-          </div>
-          <div style={{display: 'flex'}}>
-            <Box grid={4} control={handleControl} />
-            <Box grid={5} control={handleControl} />
-            <Box grid={6} control={handleControl} />
-          </div>
-          <div style={{display: 'flex'}}>
-            <Box grid={7} control={handleControl} />
-            <Box grid={8} control={handleControl} />
-            <Box grid={9} control={handleControl} />
-          </div>
-        </section>
-      </div>
-      <section>{/* full */}</section>
-    </main>
+    <div style={{display: 'flex', flexWrap: 'wrap', width: '100%'}}>
+      {controls.map((control, i) => (
+        <div
+          ref={(ref) => (status.current[i] = ref)}
+          style={{background: background}}
+          className={'box'}
+          key={i}
+          act_status={control.act_status}
+          onClick={() => handleClick(control, i)}></div>
+      ))}
+    </div>
   );
 };
 

@@ -1,0 +1,194 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders snapshot as expected 1`] = `
+<div
+  style={
+    Object {
+      "display": "flex",
+      "flexWrap": "wrap",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    act_status={false}
+    className="box"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "rgba(48, 188, 237, .4)",
+      }
+    }
+  />
+  <div
+    act_status={false}
+    className="box"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "rgba(48, 188, 237, .4)",
+      }
+    }
+  />
+  <div
+    act_status={false}
+    className="box"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "rgba(48, 188, 237, .4)",
+      }
+    }
+  />
+  <div
+    act_status={false}
+    className="box"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "rgba(48, 188, 237, .4)",
+      }
+    }
+  />
+  <div
+    act_status={false}
+    className="box"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "rgba(48, 188, 237, .4)",
+      }
+    }
+  />
+  <div
+    act_status={false}
+    className="box"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "rgba(48, 188, 237, .4)",
+      }
+    }
+  />
+  <div
+    act_status={false}
+    className="box"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "rgba(48, 188, 237, .4)",
+      }
+    }
+  />
+  <div
+    act_status={false}
+    className="box"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "rgba(48, 188, 237, .4)",
+      }
+    }
+  />
+  <div
+    act_status={false}
+    className="box"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "rgba(48, 188, 237, .4)",
+      }
+    }
+  />
+  <div
+    act_status={false}
+    className="box"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "rgba(48, 188, 237, .4)",
+      }
+    }
+  />
+  <div
+    act_status={false}
+    className="box"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "rgba(48, 188, 237, .4)",
+      }
+    }
+  />
+  <div
+    act_status={false}
+    className="box"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "rgba(48, 188, 237, .4)",
+      }
+    }
+  />
+  <div
+    act_status={false}
+    className="box"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "rgba(48, 188, 237, .4)",
+      }
+    }
+  />
+  <div
+    act_status={false}
+    className="box"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "rgba(48, 188, 237, .4)",
+      }
+    }
+  />
+  <div
+    act_status={false}
+    className="box"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "rgba(48, 188, 237, .4)",
+      }
+    }
+  />
+  <div
+    act_status={false}
+    className="box"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "rgba(48, 188, 237, .4)",
+      }
+    }
+  />
+  <div
+    act_status={false}
+    className="box"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "rgba(48, 188, 237, .4)",
+      }
+    }
+  />
+  <div
+    act_status={false}
+    className="box"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "rgba(48, 188, 237, .4)",
+      }
+    }
+  />
+</div>
+`;
