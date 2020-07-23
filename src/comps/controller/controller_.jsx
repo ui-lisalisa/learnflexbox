@@ -1,25 +1,8 @@
-import React, {useState} from 'react';
-// import PropTypes from 'prop-types';
+import React, {useRef} from 'react';
 import {sort} from './controller_helpers.jsx';
-import {box} from './controller_styles';
+import '../../index.css';
 
-/**
- * handleClick(){
- *  //check if active
- *    //if active; return false and remove key from style obj;
- *
- *  //check if length is 3 or less
- *    //if true; push to array;
- *
- *  //check if in array;
- *    //set active to true;
- *
- *  //if active is true;
- *    //push color to style obj.
- *
- * }
- *
- */
+let background = 'rgba(48, 188, 237, .4)';
 
 let controls = [],
   isActive = [];
@@ -32,6 +15,7 @@ const makeControls = () => {
 };
 
 const ControlPanel = () => {
+  const status = useRef([]);
   makeControls();
 
   const handleRemove = (arr, val) => {
@@ -42,108 +26,46 @@ const ControlPanel = () => {
     }
   };
 
-  const handleWarning = (i) => {
-    console.log('whoa', i);
-    return;
-  };
-
   const handleClick = (cont, i) => {
     if (isActive.includes(i)) {
-      handleRemove(isActive, i); // remove from isActive
+      /**
+       *
+       * if item clicked is already active;
+       *
+       *   remove item from active array
+       *
+       */
+      handleRemove(isActive, i);
     } else if (isActive.length < 3 && controls[i].act_status === false) {
-      //if item is turning active, and less than 3
+      /**
+       *
+       * if item clicked is turning active and active array is less than 3;
+       *
+       *   push item to active array, then bubble sort active array
+       *
+       */
       isActive.push(i);
       sort(isActive);
+      // const backgroundActive = 'rgb(48, 188, 237) !important';
+      status.current[i].style.background = 'rgb(48, 188, 237)';
     }
-    controls[i].act_status = !cont; //toggler
-    console.log(isActive);
+    controls[i].act_status = !cont; //toggle boolean
+    console.log('CURRENTLY ACTIVE', isActive);
   };
 
   return (
     <div style={{display: 'flex', flexWrap: 'wrap', width: '100%'}}>
       {controls.map((control, i) => (
         <div
-          style={box}
+          ref={(ref) => (status.current[i] = ref)}
+          style={{background: background}}
+          className={'box'}
           key={i}
           act_status={control.act_status}
-          onClick={() => handleClick(control.act_status, i)}></div>
+          onClick={() => handleClick(control, i)}></div>
       ))}
     </div>
   );
 };
 
 export default ControlPanel;
-
-// const Box = (props) => {
-//   // const [hoverRef, isHovered] = useHover();
-//   /**
-//    * hover pending ui
-//    * <div
-//    *    ref={hoverRef}
-//    *    ...
-//    * />
-//    */
-//   const [isActive, setActive] = useState(null);
-//   const [status, setStatus] = useState(false);
-
-//   let handleClick = () => {
-//     // const newStatus = !status;
-//     // setStatus(newStatus);
-//     // props.control(newStatus, props.grid);
-//     // isActive === null ? setActive('ACTIVE') : setActive(null);
-//   };
-
-//   return (
-//     <div
-//       className={isActive}
-//       style={box}
-//       onClick={handleClick}
-//       grid={props.grid}
-//       id={props.grid}></div>
-//   );
-// };
-
-// Box.propTypes = {
-//   grid: PropTypes.number,
-// };
-
-// const ControlPanel = (props) => {
-//   const handleRemove = (id) => {
-//     let index = CONTROLLER.indexOf(id);
-//     return CONTROLLER.splice(index, 1);
-//   };
-
-//   const handleControl = (status, id) => {
-//     status === true ? CONTROLLER.push(id) : handleRemove(id);
-//     sort(CONTROLLER);
-//     props.handleData(sort(CONTROLLER));
-//     // console.log(CONTROLLER);
-//   };
-
-//   const dL = new Array(9);
-
-//   return (
-//     <main>
-//       <section>
-//         {dL.map(function(i){
-//           return <Box grid={i + 1} control={handleControl}/>;
-//         })}
-//       </section>
-//     </main>
-//   );
-// };
-
-// const Control = React.createClass({
-//   render: () => {
-//     const dL = new Array(9);
-//     return (
-//       <section>
-//         {dL.map(function(i){
-//           return <Box grid={i + 1}/>;
-//         })}
-//       </section>
-//     );
-//   }
-// });
-
-// export default Control;
