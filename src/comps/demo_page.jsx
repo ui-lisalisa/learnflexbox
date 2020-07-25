@@ -20,7 +20,7 @@ const code = {
 
 const defaults = {
   width: '100%',
-  height: '100%',
+  height: '450px',
   display: 'flex',
   paddingLeft: '60px',
   flexDirection: 'column',
@@ -30,6 +30,7 @@ const defaults = {
 const CodeBlock = (props) => {
   return (
     <div style={screen}>
+      <h2 style={{marginLeft: '20px', color: '#EEE'}}>{props.dataType}</h2>
       <pre>
         <code style={code}>{props.content}</code>
       </pre>
@@ -40,25 +41,25 @@ const CodeBlock = (props) => {
 const Copy = (props) => {
   const keys = Object.keys(STORE);
   if (keys.includes(props.data)) {
-    console.log(STORE[props.data]);
     return (
       <div style={defaults}>
         <div style={{display: 'flex'}}>
-          <CodeBlock content={STORE[props.data].css} />
+          <CodeBlock dataType={'CSS'} content={STORE[props.data].css} />
         </div>
         <div style={{display: 'flex'}}>
-          <CodeBlock content={STORE[props.data].html} />
+          <h2>HTML</h2>
+          <CodeBlock dataType={'HTML'} content={STORE[props.data].html} />
         </div>
       </div>
     );
   } else {
     return (
       <div style={defaults}>
-        <div style={{display: 'flex'}}>
-          <CodeBlock />
+        <div style={{display: 'flex', flexDirection: 'column'}}>
+          <CodeBlock dataType={'CSS'} />
         </div>
-        <div style={{display: 'flex'}}>
-          <CodeBlock />
+        <div style={{display: 'flex', flexDirection: 'column'}}>
+          <CodeBlock dataType={'HTML'} />
         </div>
       </div>
     );

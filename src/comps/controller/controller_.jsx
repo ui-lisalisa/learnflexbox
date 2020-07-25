@@ -34,7 +34,6 @@ const ControlPanel = (props) => {
        * IF ITEM CLICKED IS ALREADY ACTIVE
        *
        *   😄 Remove item from active array
-       *   😄 Send data to Copy
        *   😄 Set background color
        *
        */
@@ -46,7 +45,6 @@ const ControlPanel = (props) => {
        * IF ITEM CLICKED IS TURNING ACTIVE AND ACTIVE ARRAY IS LESS THAN 3
        *
        *   😄 Push item to active array, then bubble sort active array
-       *   😄 Send data to Copy
        *   😄 Set background color
        *
        */
