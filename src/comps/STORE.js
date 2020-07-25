@@ -1,5 +1,5 @@
 export const STORE = {
-  1: {
+  '0': {
     css: `
     .parent {
       display: flex;
@@ -32,7 +32,7 @@ export const STORE = {
     </div>
     `,
   },
-  2: {
+  '1': {
     css: `
     .parent {
       display: flex;         
@@ -53,7 +53,7 @@ export const STORE = {
     </div>
     `,
   },
-  3: {
+  '2': {
     css: `
     .parent {
       display: flex;         
@@ -74,7 +74,7 @@ export const STORE = {
     </div>
     `,
   },
-  4: {
+  '3': {
     css: `
     .parent {
       display: flex;         
@@ -96,7 +96,7 @@ export const STORE = {
     </div>
     `,
   },
-  5: {
+  '4': {
     css: `
     .parent {
       display: flex;         
@@ -119,7 +119,7 @@ export const STORE = {
     </div>
     `,
   },
-  6: {
+  '5': {
     css: `
     .parent {
       display: flex;         
@@ -142,7 +142,7 @@ export const STORE = {
     </div>
     `,
   },
-  7: {
+  '6': {
     css: `
     .parent {
       display: flex;         
@@ -164,7 +164,7 @@ export const STORE = {
     </div>
     `,
   },
-  8: {
+  '7': {
     css: `
     .parent {
       display: flex;         
@@ -187,7 +187,7 @@ export const STORE = {
     </div>
     `,
   },
-  9: {
+  '8': {
     css: `
     .parent {
       display: flex;         
@@ -210,7 +210,7 @@ export const STORE = {
     </div>
     `,
   },
-  12: {
+  '0,1': {
     css: `
     .parent {
       display: flex;
@@ -231,7 +231,7 @@ export const STORE = {
     </div>
     `,
   },
-  13: {
+  '0,2': {
     css: `
     .parent {
       display: flex;
@@ -253,7 +253,7 @@ export const STORE = {
     </div>
     `,
   },
-  14: {
+  '0,3': {
     css: `
     .parent {
       display: flex;
@@ -275,7 +275,7 @@ export const STORE = {
     </div>
     `,
   },
-  15: {
+  '0,4': {
     css: `
     .parent {  
       display: flex;
@@ -306,7 +306,7 @@ export const STORE = {
     </div>
     `,
   },
-  16: {
+  '0,5': {
     css: `
     .parent {  
       display: flex;
@@ -337,7 +337,7 @@ export const STORE = {
     </div>
     `,
   },
-  17: {
+  '0,6': {
     css: `
     .parent {  
       display: flex;
@@ -368,7 +368,7 @@ export const STORE = {
     </div>
     `,
   },
-  18: {
+  '0,7': {
     css: `
     .parent {  
       display: flex;
@@ -400,7 +400,7 @@ export const STORE = {
     </div>
     `,
   },
-  19: {
+  '0,8': {
     css: `
     .parent {  
       display: flex;
@@ -432,7 +432,7 @@ export const STORE = {
     </div>
     `,
   },
-  23: {
+  '1,2': {
     css: `
     .parent {  
       display: flex;
@@ -454,7 +454,7 @@ export const STORE = {
     </div>
     `,
   },
-  24: {
+  '1,3': {
     css: `
     .parent {  
       display: flex;
@@ -485,7 +485,7 @@ export const STORE = {
     </div>
     `,
   },
-  25: {
+  '1,4': {
     css: `
     .parent {  
       display: flex;
@@ -508,7 +508,7 @@ export const STORE = {
     </div>
     `,
   },
-  26: {
+  '1,5': {
     css: `
     .parent {  
       display: flex;
@@ -535,7 +535,7 @@ export const STORE = {
     </div>
     `,
   },
-  27: {
+  '1,6': {
     css: `
     .parent {  
       display: flex;
@@ -563,7 +563,7 @@ export const STORE = {
     </div>
     `,
   },
-  28: {
+  '1,7': {
     css: `
     .parent {  
       display: flex;
@@ -587,7 +587,7 @@ export const STORE = {
     </div>
     `,
   },
-  29: {
+  '1,8': {
     css: `
     .parent {  
       display: flex;
@@ -615,7 +615,7 @@ export const STORE = {
     </div>
     `,
   },
-  34: {
+  '2,3': {
     css: `
     .parent {  
       display: flex;
@@ -646,7 +646,7 @@ export const STORE = {
     </div>
     `,
   },
-  35: {
+  '2,4': {
     css: `
     .parent {  
       display: flex;
@@ -676,7 +676,7 @@ export const STORE = {
     </div>
     `,
   },
-  36: {
+  '2,5': {
     css: `
     .parent {  
       display: flex;
@@ -706,7 +706,7 @@ export const STORE = {
     </div>
     `,
   },
-  37: {
+  '2,6': {
     css: `
     .parent {  
       display: flex;
@@ -733,7 +733,7 @@ export const STORE = {
     </div>
     `,
   },
-  38: {
+  '2,7': {
     css: `
     .parent {  
       display: flex;
@@ -764,7 +764,7 @@ export const STORE = {
     </div>
     `,
   },
-  39: {
+  '2,8': {
     css: `
     .parent {  
       display: flex;
@@ -788,7 +788,7 @@ export const STORE = {
     </div>
     `,
   },
-  45: {
+  '3,4': {
     css: `
     .parent {  
       display: flex;      
@@ -810,7 +810,7 @@ export const STORE = {
     </div>
     `,
   },
-  46: {
+  '3,5': {
     css: `
     .parent {  
       display: flex;  
@@ -840,7 +840,7 @@ export const STORE = {
     </div>
     `,
   },
-  47: {
+  '3,6': {
     css: `
     .parent {  
       display: flex;  
@@ -863,7 +863,7 @@ export const STORE = {
     </div>
     `,
   },
-  48: {
+  '3,7': {
     css: `
     .parent {  
       display: flex;  
@@ -891,7 +891,7 @@ export const STORE = {
     </div>
     `,
   },
-  49: {
+  '3,8': {
     css: `
     .parent {  
       display: flex;  
@@ -923,7 +923,7 @@ export const STORE = {
     </div>
     `,
   },
-  56: {
+  '4,5': {
     css: `
     .parent {  
       display: flex;  
@@ -947,7 +947,7 @@ export const STORE = {
     </div>
     `,
   },
-  57: {
+  '4,6': {
     css: `
     .parent {  
       display: flex;  
@@ -975,7 +975,7 @@ export const STORE = {
     </div>
     `,
   },
-  58: {
+  '4,7': {
     css: `
     .parent {  
       display: flex;  
@@ -999,7 +999,7 @@ export const STORE = {
     </div>
     `,
   },
-  59: {
+  '4,8': {
     css: `
     .parent {  
       display: flex;  
@@ -1027,7 +1027,7 @@ export const STORE = {
     </div>
     `,
   },
-  67: {
+  '5,6': {
     css: `
     .parent {  
       display: flex;  
@@ -1059,7 +1059,7 @@ export const STORE = {
     </div>
     `,
   },
-  68: {
+  '5,7': {
     css: `
     .parent {  
       display: flex;  
@@ -1087,7 +1087,7 @@ export const STORE = {
     </div>
     `,
   },
-  69: {
+  '5,8': {
     css: `
     .parent {  
       display: flex;  
@@ -1116,7 +1116,7 @@ export const STORE = {
     </div>
     `,
   },
-  78: {
+  '6,7': {
     css: `
     .parent {  
       display: flex;  
@@ -1139,7 +1139,7 @@ export const STORE = {
     </div>
     `,
   },
-  79: {
+  '6,8': {
     css: `
     .parent {  
       display: flex;  
@@ -1163,7 +1163,7 @@ export const STORE = {
     </div>
     `,
   },
-  89: {
+  '7,8': {
     css: `
     .parent {  
       display: flex;  
@@ -1187,7 +1187,7 @@ export const STORE = {
     </div>
     `,
   },
-  123: {
+  '0,1,2': {
     css: `
     .parent {  
       display: flex;       
@@ -1209,7 +1209,7 @@ export const STORE = {
     </div>
     `,
   },
-  124: {
+  '0,1,3': {
     css: `
     .parent {  
       display: flex;       

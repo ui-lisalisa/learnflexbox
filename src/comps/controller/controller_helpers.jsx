@@ -1,8 +1,4 @@
-import {useRef, useState, useEffect} from 'react';
-
-export let CONTROLLER = [];
-
-export const sort = (nums) => {
+export const handleSort = (nums) => {
   if (!Array.isArray(nums)) {
     return -1;
   }
@@ -30,26 +26,10 @@ export const sort = (nums) => {
   return nums;
 };
 
-export function useHover() {
-  const [value, setValue] = useState(false);
-
-  const ref = useRef(null);
-
-  const handleMouseOver = () => setValue(true);
-  const handleMouseOut = () => setValue(false);
-
-  useEffect(() => {
-    const node = ref.current;
-    if (node) {
-      node.addEventListener('mouseover', handleMouseOver);
-      node.addEventListener('mouseout', handleMouseOut);
-
-      return () => {
-        node.removeEventListener('mouseover', handleMouseOver);
-        node.removeEventListener('mouseout', handleMouseOut);
-      };
+export const handleRemove = (arr, val) => {
+  for (var i = arr.length; i--; ) {
+    if (arr[i] === val) {
+      arr.splice(i, 1);
     }
-  }, []);
-
-  return [ref, value];
-}
+  }
+};

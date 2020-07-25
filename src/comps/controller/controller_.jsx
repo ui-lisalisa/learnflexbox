@@ -1,11 +1,19 @@
 import React, {useRef} from 'react';
-import {sort} from './controller_helpers.jsx';
-import '../../index.css';
-
-let background = 'rgba(48, 188, 237, .4)';
+import {handleSort, handleRemove} from './controller_helpers.jsx';
 
 let controls = [],
-  isActive = [];
+  isActive = [],
+  inQuery = [];
+
+let box = {
+  height: '150px',
+  width: '150px',
+  borderRadius: '6px',
+  border: 'none',
+  background: 'rgba(48, 188, 237, .4)',
+  margin: '2px',
+  cursor: 'pointer',
+};
 
 const makeControls = () => {
   for (let i = 1; i <= 9; i++) {
@@ -14,55 +22,55 @@ const makeControls = () => {
   return controls;
 };
 
-const ControlPanel = () => {
-  const status = useRef([]);
-  makeControls();
+makeControls(); //build array
 
-  const handleRemove = (arr, val) => {
-    for (var i = arr.length; i--; ) {
-      if (arr[i] === val) {
-        arr.splice(i, 1);
-      }
-    }
-  };
+const ControlPanel = (props) => {
+  const status = useRef([]);
 
   const handleClick = (cont, i) => {
     if (isActive.includes(i)) {
       /**
        *
-       * if item clicked is already active;
+       * IF ITEM CLICKED IS ALREADY ACTIVE
        *
-       *   remove item from active array
+       *   😄 Remove item from active array
+       *   😄 Set background color
        *
        */
       handleRemove(isActive, i);
+      status.current[i].style.background = 'rgba(48, 188, 237, 0.4)';
     } else if (isActive.length < 3 && controls[i].act_status === false) {
       /**
        *
-       * if item clicked is turning active and active array is less than 3;
+       * IF ITEM CLICKED IS TURNING ACTIVE AND ACTIVE ARRAY IS LESS THAN 3
        *
-       *   push item to active array, then bubble sort active array
+       *   😄 Push item to active array, then bubble sort active array
+       *   😄 Set background color
        *
        */
       isActive.push(i);
-      sort(isActive);
-      // const backgroundActive = 'rgb(48, 188, 237) !important';
+      handleSort(isActive);
       status.current[i].style.background = 'rgb(48, 188, 237)';
     }
-    controls[i].act_status = !cont; //toggle boolean
-    console.log('CURRENTLY ACTIVE', isActive);
+
+    controls[i].act_status = !cont; // toggle boolean
+
+    inQuery = []; // empty previous
+
+    isActive.map((i) => inQuery.push(`${i}`));
+    props.handleData(inQuery.toString());
   };
 
   return (
     <div style={{display: 'flex', flexWrap: 'wrap', width: '100%'}}>
       {controls.map((control, i) => (
-        <div
+        <button
           ref={(ref) => (status.current[i] = ref)}
-          style={{background: background}}
-          className={'box'}
+          type={'button'}
+          style={box}
           key={i}
           act_status={control.act_status}
-          onClick={() => handleClick(control, i)}></div>
+          onClick={() => handleClick(control, i)}></button>
       ))}
     </div>
   );
