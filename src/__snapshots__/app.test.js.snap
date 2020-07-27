@@ -4,18 +4,11 @@ exports[`renders snapshot as expected 1`] = `
 <div
   className="App"
 >
-  <header
-    style={
-      Object {
-        "fontFamily": "Roboto",
-        "height": "50px",
-      }
-    }
+  <div
+    className="Pagehead-r7ayx1-0 jGaMZw"
   >
-    <h1>
-      Flexbox Visualization
-    </h1>
-  </header>
+    Flexbox Generator
+  </div>
   <h1>
     404
   </h1>

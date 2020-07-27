@@ -4,6 +4,8 @@
   "version": "0.1.2",
   "private": true,
   "dependencies": {
+    "@primer/components": "^20.0.0",
+    "@primer/css": "^15.0.0",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
@@ -17,7 +19,9 @@
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
+    "react-syntax-highlighter": "^13.0.0",
     "react-test-renderer": "^16.13.1",
+    "styled-components": "^5.1.1",
     "stylelint": "^13.6.1",
     "stylelint-config-standard": "^20.0.0",
     "typescript": "^3.9.7"
