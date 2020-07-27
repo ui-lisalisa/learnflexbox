@@ -12,7 +12,8 @@ const Header = () => {
       <h1
         style={{
           color: '#979797',
-          fontFamily: "'Rubik', sans-serif",
+          // prettier-ignore
+          fontFamily: '\'Rubik\', sans-serif',
           padding: '0 40px',
           letterSpacing: '1px',
         }}>
@@ -41,9 +42,10 @@ const Footer = () => {
         </div>
         <div style={{display: 'flex', flexDirection: 'column'}}>
           <a
-            href=""
+            href="https://github.com/hi-matbub/flexbox/blob/master/LICENSE"
             style={{
-              fontFamily: "'Rubik', sans-serif",
+              // prettier-ignore
+              fontFamily: '\'Rubik\', sans-serif',
               lineHeight: '28px',
               letterSpacing: '1px',
             }}>
@@ -51,7 +53,7 @@ const Footer = () => {
             License
           </a>
           <a
-            href=""
+            href="https://github.com/hi-matbub/flexbox/blob/master/CONTRIBUTING.md"
             style={{
               fontFamily: "'Rubik', sans-serif",
               lineHeight: '28px',
@@ -60,7 +62,7 @@ const Footer = () => {
             Contributing
           </a>
           <a
-            href=""
+            href="https://github.com/hi-matbub/flexbox/issues"
             style={{
               fontFamily: "'Rubik', sans-serif",
               lineHeight: '28px',
