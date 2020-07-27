@@ -108,7 +108,10 @@ function App() {
       <div className="App">
         <Header />
         <Switch>
-          <Route exact path="/flexbox-visualization" render={() => <Demo />} />
+          <Route
+            path={['/', '/flexbox', '/flexbox-generator']}
+            render={() => <Demo />}
+          />
           <Route render={() => <NotFound />} />
         </Switch>
         <Footer />

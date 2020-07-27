@@ -1,7 +1,6 @@
 {
-  "homepage": "https://hi-matbub.github.io/flexbox/",
   "name": "flexbox",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "private": true,
   "dependencies": {
     "@primer/components": "^20.0.0",
