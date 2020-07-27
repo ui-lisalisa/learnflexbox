@@ -8,17 +8,18 @@ An interactive visualization of flexbox with grab-and-go code bits.
 
 ### :construction: Docs coming soon :construction:
 
-
 ## Setup
 
 1. Clone and install
-````
-$ git clone https://github.com/hi-matbub/flexbox-visualization.git 
+
+```
+$ git clone https://github.com/hi-matbub/flexbox-visualization.git
 $ cd flexbox-visualization
 $ yarn
-````
+```
 
 2. Run app
-````
+
+```
 $ yarn start
-````
+```
