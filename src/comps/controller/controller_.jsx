@@ -1,5 +1,6 @@
 import React, {useRef} from 'react';
 import {handleSort, handleRemove} from './controller_helpers.jsx';
+import '../github_styles.scss';
 
 let controls = [],
   isActive = [],
@@ -10,7 +11,7 @@ let box = {
   width: '150px',
   borderRadius: '6px',
   border: 'none',
-  background: 'rgba(48, 188, 237, .4)',
+  background: '#c8e1ff',
   margin: '2px',
   cursor: 'pointer',
 };
@@ -38,7 +39,7 @@ const ControlPanel = (props) => {
        *
        */
       handleRemove(isActive, i);
-      status.current[i].style.background = 'rgba(48, 188, 237, 0.4)';
+      status.current[i].style.background = '#c8e1ff';
     } else if (isActive.length < 3 && controls[i].act_status === false) {
       /**
        *
@@ -50,7 +51,7 @@ const ControlPanel = (props) => {
        */
       isActive.push(i);
       handleSort(isActive);
-      status.current[i].style.background = 'rgb(48, 188, 237)';
+      status.current[i].style.background = '#79b8ff';
     }
 
     controls[i].act_status = !cont; // toggle boolean
@@ -65,6 +66,7 @@ const ControlPanel = (props) => {
     <div style={{display: 'flex', flexWrap: 'wrap', width: '100%'}}>
       {controls.map((control, i) => (
         <button
+          className={'hover-grow'}
           ref={(ref) => (status.current[i] = ref)}
           type={'button'}
           style={box}

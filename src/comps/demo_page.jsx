@@ -2,8 +2,8 @@ import React, {useState} from 'react';
 import ControlPanel from './controller/controller_';
 import './page-queries.css';
 import {STORE} from './lib/STORE';
-// import {Prism as SyntaxHighlighter} from 'react-syntax-highlighter';
-// import {ghcolors} from 'react-syntax-highlighter/dist/esm/styles/prism';
+import {ArrowRightIcon} from '@primer/octicons-react';
+import './github_styles.scss';
 
 const defaults = {
   width: '100%',
@@ -46,7 +46,16 @@ const Copy = (props) => {
             alignItems: 'center',
             height: '100%',
           }}>
-          <h2 style={{fontFamily: "'Rubik', sans-serif"}}>Try me!</h2>
+          <div
+            className="hover-grow"
+            style={{
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+            }}>
+            <h2 style={{fontFamily: '"Rubik", sans-serif'}}>Try me!</h2>
+            <ArrowRightIcon size={60} />
+          </div>
         </div>
       </section>
     );

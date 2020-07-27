@@ -13,6 +13,22 @@ const Header = () => {
   );
 };
 
+const Footer = () => {
+  return (
+    <footer style={{marginTop: '40px'}}>
+      <div>
+        <a href="https://www.buymeacoffee.com/himatbub" target="_blank">
+          <img
+            src="https://cdn.buymeacoffee.com/buttons/default-blue.png"
+            alt="Buy Me A Coffee"
+            style={{height: '51px', width: '217px'}}
+          />
+        </a>
+      </div>
+    </footer>
+  );
+};
+
 const NotFound = () => {
   return (
     <>
@@ -32,6 +48,7 @@ function App() {
           <Route exact path="/flexbox-visualization" render={() => <Demo />} />
           <Route render={() => <NotFound />} />
         </Switch>
+        <Footer />
       </div>
     </Router>
   );
