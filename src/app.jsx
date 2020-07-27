@@ -3,8 +3,6 @@ import Demo from './comps/demo_page';
 import {Pagehead} from '@primer/components';
 import './comps/github_animations.scss';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
-import moment from 'moment';
-moment().format();
 
 const Header = () => {
   return (
@@ -99,7 +97,7 @@ const NotFound = () => {
     <>
       <h1>{'404'}</h1>
       <p>{'Whoops, that wasnt there!'}</p>
-      <a href="/flexbox-visualization">Go Home</a>
+      <a href="/flexbox">Go Home</a>
     </>
   );
 };
