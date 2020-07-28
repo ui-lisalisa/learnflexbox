@@ -7,7 +7,7 @@ const Body = () => {
   return (
     <div className="App">
       <Header />
-      <div style={{display: 'flex'}}>
+      <div style={{display: 'flex', margin: '120px 0'}}>
         <div style={{width: '10%'}}></div>
         <div style={{width: '80%'}}>
           <Path />
