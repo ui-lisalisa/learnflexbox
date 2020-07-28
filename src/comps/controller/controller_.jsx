@@ -1,6 +1,6 @@
 import React, {useRef} from 'react';
 import {handleSort, handleRemove} from './controller_helpers.jsx';
-import '../github_animations.scss';
+import '../../styles/github_animations.scss';
 
 let controls = [],
   isActive = [],

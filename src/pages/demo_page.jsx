@@ -1,11 +1,13 @@
 import React, {useState, useRef, useEffect} from 'react';
-import ControlPanel from './controller/controller_';
-import './page-queries.css';
-import {STORE} from './lib/STORE';
+import {STORE} from '../lib/STORE';
 import {ArrowRightIcon, ClippyIcon} from '@primer/octicons-react';
-import './github_animations.scss';
-import './animistas.css';
-import {clsx} from 'clsx';
+import moment from 'moment';
+// comps
+import ControlPanel from '../comps/controller/controller_';
+// styles
+import '../styles/github_animations.scss';
+import '../styles/page-queries.css';
+import '../styles/animistas.css';
 
 const defaults = {
   width: '100%',
@@ -77,19 +79,53 @@ const Clipboard = (props) => {
     </div>
   );
 };
-
+// prettier-ignore
 const Copy = (props) => {
+  // var dateString = 'Mon Jan 12 00:00:00 GMT 2015';
+  let d = new Date();
+  let date = new Date(d.getFullYear(), d.getMonth(), d.getDate());
+  // dateString = new Date(dateString).toUTCString();
+  // dateString = dateString.split(' ').slice(0, 4).join(' ');
+  let moments = moment().format('llll');
+
+  // const date = new Date();
   const keys = Object.keys(STORE);
   if (keys.includes(props.data)) {
     return (
       <section style={defaults}>
         <Clipboard />
-        <div style={{display: 'flex', height: '60%'}}>
+        {/**
+         *
+         *
+         *  🚨 Strange spacing is due to the pre and code blocks.
+         *
+         *
+         *  */}
+        <pre style={{padding: '20px'}}>
+          <code style={{font: 'monospace'}}>
+            {`<style>
+
+/** ------------------------------------------
+ * This template was generated on ${moments}
+ * by Flexbox-generator under the MIT license 
+ ** ------------------------------------------*/
+
+`}
+            {STORE[props.data].css + ` 
+            
+`}
+            {`</style>
+
+`}
+            {STORE[props.data].html}
+          </code>
+        </pre>
+        {/* <div style={{display: 'flex', height: '60%'}}>
           <CodeBlock language={'css'} content={STORE[props.data].css} />
         </div>
         <div style={{display: 'flex', height: '40%'}}>
           <CodeBlock language={'html'} content={STORE[props.data].html} />
-        </div>
+        </div> */}
       </section>
     );
   } else {
@@ -123,12 +159,6 @@ const Demo = () => {
 
   return (
     <main style={{width: '100%'}}>
-      <section style={{padding: '40px'}}>
-        <p>
-          Flexbox can be confusing. Let this guide help you master the ways of
-          flexbox in the most <i>pratical</i> approach possible.
-        </p>
-      </section>
       <div style={{display: 'flex'}}>
         <Copy data={data} />
         <ControlPanel handleData={(i) => setData(i)} />

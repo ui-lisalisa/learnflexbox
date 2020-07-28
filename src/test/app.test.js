@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import renderer from 'react-test-renderer';
-import App from './app.jsx';
+import App from '../app.jsx';
 
 it('renders smoke test without crashing', () => {
   const div = document.createElement('div');
@@ -10,8 +10,6 @@ it('renders smoke test without crashing', () => {
 });
 
 it('renders snapshot as expected', () => {
-  const tree = renderer
-  .create(<App/>)
-  .toJSON();
-  expect(tree).toMatchSnapshot(); 
-})
+  const tree = renderer.create(<App />).toJSON();
+  expect(tree).toMatchSnapshot();
+});
