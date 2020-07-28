@@ -1,7 +1,6 @@
 import React, {useRef} from 'react';
 import {handleSort, handleRemove} from './controller_helpers.jsx';
 import '../../styles/github_animations.scss';
-import {postCount} from '../../firebase/actions_.jsx';
 
 let controls = [],
   isActive = [],
@@ -61,7 +60,6 @@ const ControlPanel = (props) => {
 
     isActive.map((i) => inQuery.push(`${i}`));
     props.handleData(inQuery.toString());
-    postCount();
   };
 
   return (
