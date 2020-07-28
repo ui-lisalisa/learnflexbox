@@ -1,5 +1,5 @@
 import React from 'react';
-import Path from './app-paths';
+import AppPaths from './app-paths';
 import Header from './app-header';
 import Footer from './app-footer';
 
@@ -10,7 +10,7 @@ const Body = () => {
       <div style={{display: 'flex', margin: '120px 0'}}>
         <div style={{width: '10%'}}></div>
         <div style={{width: '80%'}}>
-          <Path />
+          <AppPaths />
         </div>
         <div style={{width: '10%'}}></div>
       </div>

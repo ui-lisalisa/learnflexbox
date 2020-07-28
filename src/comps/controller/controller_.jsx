@@ -63,7 +63,7 @@ const ControlPanel = (props) => {
   };
 
   return (
-    <div style={{margin: '0 40px', width: '100%', height: '450px'}}>
+    <div style={{margin: '0 40px', width: '50%', height: '450px'}}>
       <div
         style={{
           display: 'flex',

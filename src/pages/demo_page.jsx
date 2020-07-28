@@ -13,7 +13,7 @@ const defaults = {
   width: '100%',
   height: '450px',
   display: 'flex',
-  margin: '0 40px',
+  // margin: '0 40px',
   flexDirection: 'column',
   background: '#eee',
   overflowY: 'scroll',
@@ -88,18 +88,19 @@ const Copy = (props) => {
   const keys = Object.keys(STORE);
   if (keys.includes(props.data)) {
     return (
-      <section style={defaults}>
-        {/* <Clipboard /> */}
-        {/**
-         *
-         *
-         *  🚨 Strange spacing is due to the pre and code blocks.
-         *
-         *
-         *  */}
-        <pre style={{padding: '20px'}}>
-          <code style={{font: 'monospace'}}>
-            {`<style>
+      <div style={{width: '50%'}}>
+        <section style={defaults}>
+          {/* <Clipboard /> */}
+          {/**
+          *
+          *
+          *  🚨 Strange spacing is due to the pre and code blocks.
+          *
+          *
+          *  */}
+          <pre style={{padding: '20px'}}>
+            <code style={{font: 'monospace'}}>
+              {`<style>
 
 /** ------------------------------------------
  * Generated on ${moments}
@@ -107,39 +108,45 @@ const Copy = (props) => {
  ** ------------------------------------------*/
 
 `}
-            {STORE[props.data].css + ` 
+              {STORE[props.data].css + ` 
             
 `}
-            {`</style>
+              {`</style>
 
 `}
-            {STORE[props.data].html}
-          </code>
-        </pre>
-      </section>
+              {STORE[props.data].html}
+            </code>
+          </pre>
+        </section>
+        <div>
+          <p>Don't forget to set the set the <b>height</b> and <b>width</b> for the <code>.parent</code> class.</p>
+        </div>
+      </div>
     );
   } else {
     return (
-      <section style={defaults} className="blankslate">
-        <div
-          style={{
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-            height: '100%',
-          }}>
+      <div style={{width: '50%'}}>
+        <section style={defaults} className="blankslate">
           <div
-            className="hover-grow"
             style={{
               display: 'flex',
               justifyContent: 'center',
               alignItems: 'center',
+              height: '100%',
             }}>
-            <h2 style={{fontFamily: '"Rubik", sans-serif'}}>Try me!</h2>
-            <ArrowRightIcon size={60} />
+            <div
+              className="hover-grow"
+              style={{
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+              }}>
+              <h2 style={{fontFamily: '"Rubik", sans-serif'}}>Try me!</h2>
+              <ArrowRightIcon size={60} />
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
     );
   }
 };

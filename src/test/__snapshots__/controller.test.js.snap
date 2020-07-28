@@ -6,7 +6,7 @@ exports[`renders snapshot as expected 1`] = `
     Object {
       "height": "450px",
       "margin": "0 40px",
-      "width": "100%",
+      "width": "50%",
     }
   }
 >

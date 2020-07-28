@@ -4,8 +4,9 @@ import {Switch, Route} from 'react-router-dom';
 import Demo from '../../pages/demo_page';
 import ComingSoon from '../../comps/coming-soon_';
 import NotFound from '../../pages/not-found_page';
+import About from '../../pages/about_page';
 
-const Path = () => {
+const AppPaths = () => {
   return (
     <Switch>
       <Route
@@ -15,12 +16,20 @@ const Path = () => {
       />
       <Route
         exact
-        path={['/assessments', '/challenges']}
+        path={[
+          '/assessments',
+          '/challenges',
+          '/support',
+          '/login',
+          '/signup',
+          '/subscribe',
+        ]}
         render={() => <ComingSoon />}
       />
+      <Route exact path={'/about'} render={() => <About />} />
       <Route render={() => <NotFound />} />
     </Switch>
   );
 };
 
-export default Path;
+export default AppPaths;
