@@ -27,7 +27,13 @@ const CodeBlock = (props) => {
     </pre>
   );
 };
-
+/*
+*
+*
+* 🚨 ON HOLD
+*
+*
+*
 const Tooltip = (props) => {
   return (
     <small
@@ -45,12 +51,7 @@ const Tooltip = (props) => {
 
 const Clipboard = (props) => {
   const [clipped, setClipped] = useState(false);
-  const [unclipped, setUnclipped] = useState(false);
   const tooltipRef = useRef();
-
-  useEffect(() => {
-    console.log(tooltipRef.current);
-  });
 
   const handleTooltip = () => {
     setClipped(!clipped);
@@ -79,21 +80,16 @@ const Clipboard = (props) => {
     </div>
   );
 };
+*/
+
 // prettier-ignore
 const Copy = (props) => {
-  // var dateString = 'Mon Jan 12 00:00:00 GMT 2015';
-  let d = new Date();
-  let date = new Date(d.getFullYear(), d.getMonth(), d.getDate());
-  // dateString = new Date(dateString).toUTCString();
-  // dateString = dateString.split(' ').slice(0, 4).join(' ');
   let moments = moment().format('llll');
-
-  // const date = new Date();
   const keys = Object.keys(STORE);
   if (keys.includes(props.data)) {
     return (
       <section style={defaults}>
-        <Clipboard />
+        {/* <Clipboard /> */}
         {/**
          *
          *
@@ -106,7 +102,7 @@ const Copy = (props) => {
             {`<style>
 
 /** ------------------------------------------
- * This template was generated on ${moments}
+ * Generated on ${moments}
  * by Flexbox-generator under the MIT license 
  ** ------------------------------------------*/
 
@@ -120,12 +116,6 @@ const Copy = (props) => {
             {STORE[props.data].html}
           </code>
         </pre>
-        {/* <div style={{display: 'flex', height: '60%'}}>
-          <CodeBlock language={'css'} content={STORE[props.data].css} />
-        </div>
-        <div style={{display: 'flex', height: '40%'}}>
-          <CodeBlock language={'html'} content={STORE[props.data].html} />
-        </div> */}
       </section>
     );
   } else {

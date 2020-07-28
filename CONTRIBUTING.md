@@ -1,16 +1,16 @@
 # Contributing to Flexbox Generator
 
-[Flexbox Generator](https://github.com/hi-matbub/flexbox) is a fun way to quickly understand flexbox. 
+[Flexbox Generator](https://github.com/hi-matbub/flexbox) is a fun way to quickly understand flexbox.
 
 # Code of Conduct
 
 - Be a friend.
-- Inappropriate behavors will not be tolerated. </br> *Examples of offensive behaviors include*
+- Inappropriate behavors will not be tolerated. </br> _Examples of offensive behaviors include_
   - NSFW language and imagery
-  - Political views 
+  - Political views
   - Public or private harassment
   - Publicizing others personal information without explicit consent
-<h3 align='center'>:rotating_light: We reserve the right to temporarily or permanently remove users and contributers <ins>without prior notice</ins> if an action is deemed unprofessional or inappropriate in any way. :rotating_light:</h3>
+  <h3 align='center'>:rotating_light: We reserve the right to temporarily or permanently remove users and contributers <ins>without prior notice</ins> if an action is deemed unprofessional or inappropriate in any way. :rotating_light:</h3>
 
 # Reporting Inappropriate Behavior
 

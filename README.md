@@ -1,6 +1,6 @@
 # Flexbox Generator
 
-[Flexbox Generator](https://github.com/hi-matbub/flexbox) is commited to helping individuals become fluent in basics of the Flexible Box Layout. 
+[Flexbox Generator](https://github.com/hi-matbub/flexbox) is commited to helping individuals become fluent in basics of the Flexible Box Layout.
 
 [![Build Status](https://travis-ci.com/hi-matbub/flexbox-visualization.svg?branch=master)](https://travis-ci.com/hi-matbub/flexbox-visualization) ![tested](https://img.shields.io/badge/tested_with-jest-<COLOR>.svg) ![eslint-prettier-stylelint](https://img.shields.io/badge/code_style-eslint_prettier_stylelint-<COLOR>.svg) ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-30bced.svg)
 
@@ -24,6 +24,6 @@ $ yarn
 $ yarn start
 ```
 
-## Contributing 
+## Contributing
 
-Take a look at the [Contributing guide](https://github.com/hi-matbub/flexbox/blob/master/CONTRIBUTING.md). 
+Take a look at the [Contributing guide](https://github.com/hi-matbub/flexbox/blob/master/CONTRIBUTING.md).
