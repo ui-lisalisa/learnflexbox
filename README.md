@@ -9,8 +9,8 @@
 1. Clone and install
 
 ```
-$ git clone https://github.com/hi-matbub/flexbox-visualization.git
-$ cd flexbox-visualization
+$ git clone https://github.com/hi-matbub/flexbox.git
+$ cd flexbox
 $ yarn
 ```
 
@@ -23,3 +23,5 @@ $ yarn start
 ## Contributing 
 
 If you want to get involved take a look at the [Contributing guide](https://github.com/hi-matbub/flexbox/blob/master/CONTRIBUTING.md). 
+
+<i>This app was built using React Hooks and GitHubs Primer CSS</i>
