@@ -20,6 +20,18 @@ exports[`renders snapshot as expected 1`] = `
       }
     }
   >
+    <span
+      class="Progress Progress--large"
+    >
+      <span
+        class="Progress-item bg-green"
+        style={
+          Object {
+            "width": "100%",
+          }
+        }
+      />
+    </span>
     <button
       act_status={false}
       className="hover-grow"

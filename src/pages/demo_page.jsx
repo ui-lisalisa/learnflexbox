@@ -1,11 +1,13 @@
 import React, {useState, useRef, useEffect} from 'react';
-import ControlPanel from './controller/controller_';
-import './page-queries.css';
-import {STORE} from './lib/STORE';
+import {STORE} from '../lib/STORE';
 import {ArrowRightIcon, ClippyIcon} from '@primer/octicons-react';
-import './github_animations.scss';
-import './animistas.css';
-import {clsx} from 'clsx';
+import moment from 'moment';
+// comps
+import ControlPanel from '../comps/controller/controller_';
+// styles
+import '../styles/github_animations.scss';
+import '../styles/page-queries.css';
+import '../styles/animistas.css';
 
 const defaults = {
   width: '100%',
@@ -25,7 +27,13 @@ const CodeBlock = (props) => {
     </pre>
   );
 };
-
+/*
+*
+*
+* 🚨 ON HOLD
+*
+*
+*
 const Tooltip = (props) => {
   return (
     <small
@@ -43,12 +51,7 @@ const Tooltip = (props) => {
 
 const Clipboard = (props) => {
   const [clipped, setClipped] = useState(false);
-  const [unclipped, setUnclipped] = useState(false);
   const tooltipRef = useRef();
-
-  useEffect(() => {
-    console.log(tooltipRef.current);
-  });
 
   const handleTooltip = () => {
     setClipped(!clipped);
@@ -77,19 +80,42 @@ const Clipboard = (props) => {
     </div>
   );
 };
+*/
 
+// prettier-ignore
 const Copy = (props) => {
+  let moments = moment().format('llll');
   const keys = Object.keys(STORE);
   if (keys.includes(props.data)) {
     return (
       <section style={defaults}>
-        <Clipboard />
-        <div style={{display: 'flex', height: '60%'}}>
-          <CodeBlock language={'css'} content={STORE[props.data].css} />
-        </div>
-        <div style={{display: 'flex', height: '40%'}}>
-          <CodeBlock language={'html'} content={STORE[props.data].html} />
-        </div>
+        {/* <Clipboard /> */}
+        {/**
+         *
+         *
+         *  🚨 Strange spacing is due to the pre and code blocks.
+         *
+         *
+         *  */}
+        <pre style={{padding: '20px'}}>
+          <code style={{font: 'monospace'}}>
+            {`<style>
+
+/** ------------------------------------------
+ * Generated on ${moments}
+ * by Flexbox-generator under the MIT license 
+ ** ------------------------------------------*/
+
+`}
+            {STORE[props.data].css + ` 
+            
+`}
+            {`</style>
+
+`}
+            {STORE[props.data].html}
+          </code>
+        </pre>
       </section>
     );
   } else {
@@ -123,12 +149,6 @@ const Demo = () => {
 
   return (
     <main style={{width: '100%'}}>
-      <section style={{padding: '40px'}}>
-        <p>
-          Flexbox can be confusing. Let this guide help you master the ways of
-          flexbox in the most <i>pratical</i> approach possible.
-        </p>
-      </section>
       <div style={{display: 'flex'}}>
         <Copy data={data} />
         <ControlPanel handleData={(i) => setData(i)} />

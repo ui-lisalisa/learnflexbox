@@ -20,7 +20,7 @@ $ yarn
 $ yarn start
 ```
 
-## Contributing 
+## Contributing
 
 If you want to get involved take a look at the [Contributing guide](https://github.com/hi-matbub/flexbox/blob/master/CONTRIBUTING.md). 
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import renderer from 'react-test-renderer';
-import ControlPanel from './controller_.jsx';
+import ControlPanel from '../comps/controller/controller_.jsx';
 
 it('renders smoke test without crashing', () => {
   const div = document.createElement('div');

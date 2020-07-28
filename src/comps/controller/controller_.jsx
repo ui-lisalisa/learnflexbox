@@ -1,6 +1,6 @@
 import React, {useRef} from 'react';
 import {handleSort, handleRemove} from './controller_helpers.jsx';
-import '../github_animations.scss';
+import '../../styles/github_animations.scss';
 
 let controls = [],
   isActive = [],
@@ -71,6 +71,9 @@ const ControlPanel = (props) => {
           width: '100%',
           height: '100%',
         }}>
+        <span class="Progress Progress--large">
+          <span class="Progress-item bg-green" style={{width: '100%'}}></span>
+        </span>
         {controls.map((control, i) => (
           <button
             className={'hover-grow'}

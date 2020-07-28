@@ -5,125 +5,147 @@ export const STORE = {
 `.parent {
   display: flex;  
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child"></div>
 </div>`,
   },
   '1': {
-    css: `.parent {
+    css:
+`.parent {
   display: flex;         
   justify-content: center;      
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child"></div>
 </div>`,
   },
   '2': {
-    css: `.parent {
+    css:
+`.parent {
   display: flex;         
   justify-content: flex-end;
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child"></div>
 </div>`,
   },
   '3': {
-    css: `
-.parent {
+    css:
+`.parent {
   display: flex;         
   flex-direction: column;
   justify-content: center;
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child"></div>
 </div>`,
   },
   '4': {
-    css: `.parent {
+    css:
+`.parent {
   display: flex;         
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child"></div>
 </div>`,
   },
   '5': {
-    css: `.parent {
+    css:
+`.parent {
   display: flex;         
   flex-direction: column;
   align-items: flex-end;
   justify-content: center;
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child"></div>
 </div>`,
   },
   '6': {
-    css: `.parent {
+    css:
+`.parent {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child"></div>
 </div>`,
   },
   '7': {
-    css: `.parent {
+    css:
+`.parent {
   display: flex;         
   flex-direction: column;
   align-items: center;      
   justify-content: flex-end;
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child"></div>
 </div>`,
   },
   '8': {
-    css: `.parent {
+    css:
+`.parent {
   display: flex;         
   flex-direction: column;
   align-items: flex-end;      
   justify-content: flex-end;
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child"></div>
 </div>`,
   },
   '0,1': {
-    css: `.parent {
+    css:
+`.parent {
   display: flex;
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
 </div>`,
   },
   '0,2': {
-    css: `.parent {
+    css:
+`.parent {
   display: flex;
   justify-content: center;
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
 </div>`,
   },
   '0,3': {
-    css: `.parent {
+    css:
+`.parent {
   display: flex;
   flex-direction: row;
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
 </div>`,
   },
   '0,4': {
-    css: `
-.parent {  
+    css:
+`.parent {  
   display: flex;
   flex-direction: column;
 }
@@ -132,13 +154,15 @@ export const STORE = {
   align-self: center;
 }
 `,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
 </div>`,
   },
   '0,5': {
-    css: `.parent {  
+    css:
+`.parent {  
   display: flex;
   flex-direction: column;
 }
@@ -150,24 +174,28 @@ export const STORE = {
 .child:nth-child(2) {
   align-self: flex-end;
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
 </div>`,
   },
   '0,6': {
-    css: `.parent {
+    css:
+`.parent {
   display: flex;
   flex-direction: column;
   justify-content: space-between; 
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
 </div>`,
   },
   '0,7': {
-    css: `.parent {
+    css:
+`.parent {
   display: flex;
   flex-direction: column;
   justify-content: space-between; 
@@ -176,13 +204,15 @@ export const STORE = {
 .child:nth-child(2) {
   align-self: center;
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
 </div>`,
   },
   '0,8': {
-    css: `.parent {
+    css:
+`.parent {
   display: flex;
   flex-direction: column;
   justify-content: space-between; 
@@ -191,23 +221,27 @@ export const STORE = {
 .child:nth-child(2) {
   align-self: flex-end;
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
 </div>`,
   },
   '1,2': {
-    css: `.parent {  
+    css:
+`.parent {  
   display: flex;
   justify-content: flex-end;
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
 </div>`,
   },
   '1,3': {
-    css: `.parent {  
+    css:
+`.parent {  
   display: flex;
   flex-direction: column;      
 }
@@ -215,24 +249,28 @@ export const STORE = {
 .child:nth-child(1){
   align-self: center;
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
 </div>`,
   },
   '1,4': {
-    css: `.parent {  
+    css:
+`.parent {  
   display: flex;
   flex-direction: column;    
   align-items: center;  
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
 </div>`,
   },
   '1,5': {
-    css: `.parent {  
+    css:
+`.parent {  
   display: flex;
   flex-direction: column;
 }
@@ -244,13 +282,15 @@ export const STORE = {
 .child:nth-child(2){
   align-self: flex-end;
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
 </div>`,
   },
   '1,6': {
-    css: `.parent {  
+    css:
+`.parent {  
   display: flex;
   flex-direction: column;
   justify-content: space-between;    
@@ -259,13 +299,15 @@ export const STORE = {
 .child:nth-child(1){
   align-self: center;
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
 </div>`,
   },
   '1,7': {
-    css: `.parent {  
+    css:
+`.parent {  
   display: flex;
   flex-direction: column;
   justify-content: space-between;    
@@ -278,13 +320,15 @@ export const STORE = {
 .child:nth-child(2){
   align-self: center;
 } `,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
 </div>`,
   },
   '1,8': {
-    css: `.parent {  
+    css:
+`.parent {  
   display: flex;
   flex-direction: column;      
   justify-content: space-between;    
@@ -297,13 +341,15 @@ export const STORE = {
 .child:nth-child(2){
   align-self: flex-end;
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
 </div>`,
   },
   '2,3': {
-    css: `.parent {  
+    css:
+`.parent {  
   display: flex;
   flex-direction: column;
 }
@@ -315,13 +361,15 @@ export const STORE = {
 .child:nth-child(2){
   align-self: flex-start;
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
 </div>`,
   },
   '2,4': {
-    css: `.parent {  
+    css:
+`.parent {  
   display: flex;
   flex-direction: column;
 }
@@ -333,13 +381,15 @@ export const STORE = {
 .child:nth-child(2){
   align-self: center;
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
 </div>`,
   },
   '2,5': {
-    css: `.parent {  
+    css:
+`.parent {  
   display: flex;
   flex-direction: column;
 }
@@ -351,13 +401,15 @@ export const STORE = {
 .child:nth-child(2){
   align-self: flex-end;
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
 </div>`,
   },
   '2,6': {
-    css: `.parent {  
+    css:
+`.parent {  
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -366,13 +418,15 @@ export const STORE = {
 .child:nth-child(1){
   align-self: flex-end;
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
 </div>`,
   },
   '2,7': {
-    css: `.parent {  
+    css:
+`.parent {  
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -385,13 +439,15 @@ export const STORE = {
 .child:nth-child(2){
   align-self: center;
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
 </div>`,
   },
   '2,8': {
-    css: `.parent {  
+    css:
+`.parent {  
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -404,45 +460,53 @@ export const STORE = {
 .child:nth-child(2){
   align-self: flex-end;
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
 </div>`,
   },
   '3,4': {
-    css: `.parent {  
+    css:
+`.parent {  
   display: flex;
   align-items: center;
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
 </div>`,
   },
   '3,5': {
-    css: `.parent {  
+    css:
+`.parent {  
   display: flex;
   justify-content: space-between;
   align-items: center;
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
 </div>`,
   },
   '3,6': {
-    css: `.parent {  
+    css:
+`.parent {  
   display: flex;
   flex-direction: column;
   justify-content: flex-end; 
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
 </div>`,
   },
   '3,7': {
-    css: `.parent {  
+    css:
+`.parent {  
   display: flex;
   flex-direction: column;
   justify-content: flex-end; 
@@ -451,13 +515,15 @@ export const STORE = {
 .child:nth-child(2) {
   align-self: center;
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
 </div>`,
   },
   '3,8': {
-    css: `.parent {  
+    css:
+`.parent {  
   display: flex;
   flex-direction: column;
   justify-content: flex-end; 
@@ -466,13 +532,15 @@ export const STORE = {
 .child:nth-child(2) {
   align-self: flex-end;
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
 </div>`,
   },
   '4,5': {
-    css: `.parent {  
+    css:
+`.parent {  
   display: flex;
   flex-direction: column;
   justify-content: flex-end; 
@@ -481,13 +549,15 @@ export const STORE = {
 .child:nth-child(2) {
   align-self: flex-end;
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
 </div>`,
   },
   '4,6': {
-    css: `.parent {  
+    css:
+`.parent {  
   display: flex;  
   flex-direction: column;
   align-items: center;
@@ -497,25 +567,29 @@ export const STORE = {
 .child:nth-child(2){
   align-self: flex-start;
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
 </div>`,
   },
   '4,7': {
-    css: `.parent {  
+    css:
+`.parent {  
   display: flex;  
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;  
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
 </div>`,
   },
   '4,8': {
-    css: `.parent {  
+    css:
+`.parent {  
   display: flex;  
   flex-direction: column;
   align-items: center;
@@ -524,13 +598,15 @@ export const STORE = {
 .child:nth-child(2){
   align-self: flex-end;
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
 </div>`,
   },
   '5,6': {
-    css: `.parent {  
+    css:
+`.parent {  
   display: flex;  
   flex-direction: column;
   align-items: center;
@@ -544,13 +620,15 @@ export const STORE = {
 .child:nth-child(2){
   align-self: flex-start;
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
 </div>`,
   },
   '5,7': {
-    css: `.parent {  
+    css:
+`.parent {  
   display: flex;  
   flex-direction: column;
   align-items: center;
@@ -560,13 +638,15 @@ export const STORE = {
 .child:nth-child(1){
   align-self: flex-end;
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
 </div>`,
   },
   '5,8': {
-    css: `.parent {  
+    css:
+`.parent {  
   display: flex;  
   flex-direction: column;
   align-items: center;
@@ -577,58 +657,68 @@ export const STORE = {
 .child:nth-child(2) {
   align-self: flex-end;
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
 </div>`,
   },
   '6,7': {
-    css: `.parent {  
+    css:
+`.parent {  
   display: flex;  
   flex-direction: row;
   align-items: flex-end;      
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
 </div>`,
   },
   '6,8': {
-    css: `.parent {  
+    css:
+`.parent {  
   display: flex;  
   flex-direction: row;
   align-items: flex-end;
   justify-content: space-between;
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
 </div>`,
   },
   '7,8': {
-    css: `.parent {  
+    css:
+`.parent {  
   display: flex;  
   flex-direction: row;
   align-items: flex-end;
   justify-content: flex-end;
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
 </div>`,
   },
   '0,1,2': {
-    css: `.parent {  
+    css:
+`.parent {  
   display: flex;
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
   <div class="child"></div>
 </div>`,
   },
   '0,1,3': {
-    css: `.parent {
+    css:
+`.parent {
   display: flex;
   flex-direction: column;
 }
@@ -636,7 +726,8 @@ export const STORE = {
 .child:nth-child(1) {
   display: flex;
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child">
     <div class="grandchild"></div>
     <div class="grandchild"></div>
@@ -645,7 +736,8 @@ export const STORE = {
 </div>`,
   },
   '0,1,4': {
-    css: `.parent {
+    css:
+`.parent {
   display: flex;
   flex-direction: column;
 }
@@ -657,7 +749,8 @@ export const STORE = {
 .child:nth-child(2) {
   align-self: center;
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child">
     <div class="grandchild"></div>
     <div class="grandchild"></div>
@@ -666,7 +759,8 @@ export const STORE = {
 </div>`,
   },
   '0,1,5': {
-    css: `.parent {
+    css:
+`.parent {
   display: flex;
   flex-direction: column;
 }
@@ -678,7 +772,8 @@ export const STORE = {
 .child:nth-child(2) {
   align-self: flex-end;
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child">
     <div class="grandchild"></div>
     <div class="grandchild"></div>
@@ -687,7 +782,8 @@ export const STORE = {
 </div>`,
   },
   '0,1,6': {
-    css: `.parent {
+    css:
+`.parent {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -696,7 +792,8 @@ export const STORE = {
 .child:nth-child(1) {
   display: flex;
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child">
     <div class="grandchild"></div>
     <div class="grandchild"></div>
@@ -705,7 +802,8 @@ export const STORE = {
 </div>`,
   },
   '0,1,7': {
-    css: `.parent {
+    css:
+`.parent {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -718,7 +816,8 @@ export const STORE = {
 .child:nth-child(2) {
   align-self: center;
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child">
     <div class="grandchild"></div>
     <div class="grandchild"></div>
@@ -727,7 +826,8 @@ export const STORE = {
 </div>`,
   },
   '0,1,8': {
-    css: `.parent {
+    css:
+`.parent {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -740,7 +840,8 @@ export const STORE = {
 .child:nth-child(2) {
   align-self: flex-end;
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child">
     <div class="grandchild"></div>
     <div class="grandchild"></div>
@@ -749,7 +850,8 @@ export const STORE = {
 </div>`,
   },
   '0,2,3': {
-    css: `.parent {
+    css:
+`.parent {
   display: flex;
   flex-direction: column;
 }
@@ -758,7 +860,8 @@ export const STORE = {
   display: flex;
   justify-content: space-between;
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child">
     <div class="grandchild"></div>
     <div class="grandchild"></div>
@@ -767,7 +870,8 @@ export const STORE = {
 </div>`,
   },
   '0,2,4': {
-    css: `.parent {
+    css:
+`.parent {
   display: flex;
   flex-direction: column;
 }
@@ -780,7 +884,8 @@ export const STORE = {
 .child:nth-child(2) {
   align-self: center;
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child">
     <div class="grandchild"></div>
     <div class="grandchild"></div>
@@ -789,7 +894,8 @@ export const STORE = {
 </div>`,
   },
   '0,2,5': {
-    css: `.parent {
+    css:
+`.parent {
   display: flex;
   flex-direction: column;
 }
@@ -802,7 +908,8 @@ export const STORE = {
 .child:nth-child(2) {
   align-self: flex-end;
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child">
     <div class="grandchild"></div>
     <div class="grandchild"></div>
@@ -811,7 +918,8 @@ export const STORE = {
 </div>`,
   },
   '0,2,6': {
-    css: `.parent {
+    css:
+`.parent {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -821,7 +929,8 @@ export const STORE = {
   display: flex;
   justify-content: space-between;
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child">
     <div class="grandchild"></div>
     <div class="grandchild"></div>
@@ -830,7 +939,8 @@ export const STORE = {
 </div>`,
   },
   '0,2,7': {
-    css: `.parent {
+    css:
+`.parent {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -844,7 +954,8 @@ export const STORE = {
 .child:nth-child(2) {
   align-self: center;
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child">
     <div class="grandchild"></div>
     <div class="grandchild"></div>
@@ -853,7 +964,8 @@ export const STORE = {
 </div>`,
   },
   '0,2,8': {
-    css: `.parent {
+    css:
+`.parent {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -867,7 +979,8 @@ export const STORE = {
 .child:nth-child(2) {
   align-self: flex-end;
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child">
     <div class="grandchild"></div>
     <div class="grandchild"></div>
@@ -876,7 +989,8 @@ export const STORE = {
 </div>`,
   },
   '0,3,4': {
-    css: `.parent {
+    css:
+`.parent {
   display: flex;
   flex-direction: column;
 }
@@ -884,7 +998,8 @@ export const STORE = {
 .child:nth-child(2) {
   display: flex;
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child"></div>
   <div class="child">
     <div class="grandchild"></div>
@@ -893,7 +1008,8 @@ export const STORE = {
 </div>`,
   },
   '0,3,5': {
-    css: `.parent {
+    css:
+`.parent {
   display: flex;
   flex-direction: column;
 }
@@ -902,7 +1018,8 @@ export const STORE = {
   display: flex;
   justify-content: space-between;
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child"></div>
   <div class="child">
     <div class="grandchild"></div>
@@ -911,18 +1028,21 @@ export const STORE = {
 </div>`,
   },
   '0,3,6': {
-    css: `.parent {
+    css:
+`.parent {
   display: flex;
   flex-direction: column;
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
   <div class="child"></div>
 </div>`,
   },
   '0,3,7': {
-    css: `.parent {
+    css:
+`.parent {
   display: flex;
   flex-direction: column;  
 }
@@ -936,7 +1056,8 @@ export const STORE = {
 .grandchild:nth-child(1){
   align-self: flex-start;
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child"></div>
   <div class="child">
     <div class="grandchild"></div>
@@ -945,7 +1066,8 @@ export const STORE = {
 </div>`,
   },
   '0,3,8': {
-    css: `.parent {
+    css:
+`.parent {
   display: flex;
   flex-direction: column;  
 }
@@ -963,7 +1085,8 @@ export const STORE = {
 .grandchild:nth-child(2){
   align-self: flex-end;
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child"></div>
   <div class="child">
     <div class="grandchild"></div>
@@ -972,7 +1095,8 @@ export const STORE = {
 </div>`,
   },
   '0,4,5': {
-    css: `.parent {
+    css:
+`.parent {
   display: flex;
   flex-direction: column;  
 }
@@ -981,7 +1105,8 @@ export const STORE = {
   display: flex;  
   justify-content: flex-end;
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child"></div>
   <div class="child">
     <div class="grandchild"></div>
@@ -990,7 +1115,8 @@ export const STORE = {
 </div>`,
   },
   '0,4,6': {
-    css: `.parent {
+    css:
+`.parent {
   display: flex;
   flex-direction: column;  
 }
@@ -1004,7 +1130,8 @@ export const STORE = {
 .grandchild:nth-child(2){
   align-self: flex-start;
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child"></div>
   <div class="child">
     <div class="grandchild"></div>
@@ -1013,7 +1140,8 @@ export const STORE = {
 </div>`,
   },
   '0,4,7': {
-    css: `.parent {
+    css:
+`.parent {
   display: flex;
   flex-direction: column;  
 }
@@ -1023,7 +1151,8 @@ export const STORE = {
   flex-direction: column;
   align-items: center;
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child"></div>
   <div class="child">
     <div class="grandchild"></div>
@@ -1032,7 +1161,8 @@ export const STORE = {
 </div>`,
   },
   '0,4,8': {
-    css: `.parent {
+    css:
+`.parent {
   display: flex;
   flex-direction: column;  
 }
@@ -1046,7 +1176,8 @@ export const STORE = {
 .grandchild:nth-child(2) {
   align-self: flex-end;
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child"></div>
   <div class="child">
     <div class="grandchild"></div>
@@ -1055,7 +1186,8 @@ export const STORE = {
 </div>`,
   },
   '0,5,6': {
-    css: `.parent {
+    css:
+`.parent {
   display: flex;
   flex-direction: column;  
 }
@@ -1073,7 +1205,8 @@ export const STORE = {
 .grandchild:nth-child(2) {
   align-self: flex-start;
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child"></div>
   <div class="child">
     <div class="grandchild"></div>
@@ -1082,7 +1215,8 @@ export const STORE = {
 </div>`,
   },
   '0,5,7': {
-    css: `.parent {
+    css:
+`.parent {
   display: flex;
   flex-direction: column;  
 }
@@ -1096,7 +1230,8 @@ export const STORE = {
 .grandchild:nth-child(1) {
   align-self: flex-end;
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child"></div>
   <div class="child">
     <div class="grandchild"></div>
@@ -1105,7 +1240,8 @@ export const STORE = {
 </div>`,
   },
   '0,5,8': {
-    css: `.parent {
+    css:
+`.parent {
   display: flex;
   flex-direction: column;  
 }
@@ -1115,7 +1251,8 @@ export const STORE = {
   flex-direction: column;
   align-items: flex-end;
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child"></div>
   <div class="child">
     <div class="grandchild"></div>
@@ -1124,7 +1261,8 @@ export const STORE = {
 </div>`,
   },
   '0,6,7': {
-    css: `.parent {
+    css:
+`.parent {
   display: flex;
   flex-direction: column;  
   justify-content: space-between;
@@ -1133,7 +1271,8 @@ export const STORE = {
 .child:nth-child(2) {
   display: flex;
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child"></div>
   <div class="child">
     <div class="grandchild"></div>
@@ -1142,7 +1281,8 @@ export const STORE = {
 </div>`,
   },
   '0,6,8': {
-    css: `.parent {
+    css:
+`.parent {
   display: flex;
   flex-direction: column;  
   justify-content: space-between;
@@ -1152,7 +1292,8 @@ export const STORE = {
   display: flex;
   justify-content: space-between;
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child"></div>
   <div class="child">
     <div class="grandchild"></div>
@@ -1161,7 +1302,8 @@ export const STORE = {
 </div>`,
   },
   '0,7,8': {
-    css: `.parent {
+    css:
+`.parent {
   display: flex;
   flex-direction: column;  
   justify-content: space-between;
@@ -1171,7 +1313,8 @@ export const STORE = {
   display: flex;
   justify-content: flex-end;
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child"></div>
   <div class="child">
     <div class="grandchild"></div>
@@ -1180,7 +1323,8 @@ export const STORE = {
 </div>`,
   },
   '1,2,3': {
-    css: `.parent {
+    css:
+`.parent {
   display: flex;
   flex-direction: column;  
 }
@@ -1189,7 +1333,8 @@ export const STORE = {
   display: flex;
   align-self: flex-end;
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child">
     <div class="grandchild"></div>
     <div class="grandchild"></div>
@@ -1198,7 +1343,8 @@ export const STORE = {
 </div>`,
   },
   '1,2,4': {
-    css: `.parent {
+    css:
+`.parent {
   display: flex;
   flex-direction: column; 
   align-items: center; 
@@ -1208,7 +1354,8 @@ export const STORE = {
   display: flex;
   align-self: flex-end;
 }`,
-    html: `<div class="parent">  
+    html:
+`<div class="parent">  
   <div class="child">
     <div class="grandchild"></div>
     <div class="grandchild"></div>
@@ -1217,7 +1364,8 @@ export const STORE = {
 </div>`,
   },
   '1,2,5': {
-    css: `.parent {
+    css:
+`.parent {
   display: flex;
   flex-direction: column; 
   align-items: flex-end; 
@@ -1226,7 +1374,8 @@ export const STORE = {
 .child:nth-child(1) {
   display: flex;
 }`,
-    html: `<div class="parent">  
+    html:
+`<div class="parent">  
   <div class="child">
     <div class="grandchild"></div>
     <div class="grandchild"></div>
@@ -1235,7 +1384,8 @@ export const STORE = {
 </div>`,
   },
   '1,2,6': {
-    css: `.parent {
+    css:
+`.parent {
   display: flex;
   flex-direction: column; 
   align-items: flex-end; 
@@ -1249,7 +1399,8 @@ export const STORE = {
 .child:nth-child(2) {
   align-self: flex-start;
 }`,
-    html: `<div class="parent">  
+    html:
+`<div class="parent">  
   <div class="child">
     <div class="grandchild"></div>
     <div class="grandchild"></div>
@@ -1258,7 +1409,8 @@ export const STORE = {
 </div>`,
   },
   '1,2,7': {
-    css: `.parent {
+    css:
+`.parent {
   display: flex;
   flex-direction: column; 
   align-items: flex-end; 
@@ -1272,7 +1424,8 @@ export const STORE = {
 .child:nth-child(2) {
   align-self: center;
 }`,
-    html: `<div class="parent">  
+    html:
+`<div class="parent">  
   <div class="child">
     <div class="grandchild"></div>
     <div class="grandchild"></div>
@@ -1281,7 +1434,8 @@ export const STORE = {
 </div>`,
   },
   '1,2,8': {
-    css: `.parent {
+    css:
+`.parent {
   display: flex;
   flex-direction: column; 
   align-items: flex-end; 
@@ -1291,7 +1445,8 @@ export const STORE = {
 .child:nth-child(1) {
   display: flex;
 }`,
-    html: `<div class="parent">  
+    html:
+`<div class="parent">  
   <div class="child">
     <div class="grandchild"></div>
     <div class="grandchild"></div>
@@ -1300,7 +1455,8 @@ export const STORE = {
 </div>`,
   },
   '1,3,4': {
-    css: `.parent {
+    css:
+`.parent {
   display: flex;
   flex-direction: column;
 }
@@ -1308,7 +1464,8 @@ export const STORE = {
 .child:nth-child(2) {
   display: flex;
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child"></div>
   <div class="child">
     <div class="grandchild"></div>
@@ -1317,7 +1474,8 @@ export const STORE = {
 </div>`,
   },
   '1,3,5': {
-    css: `.parent {
+    css:
+`.parent {
   display: flex;
   flex-direction: column; 
 }
@@ -1326,7 +1484,8 @@ export const STORE = {
   display: flex;
   justify-content: space-between; 
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child"></div>
   <div class="child">
     <div class="grandchild"></div>
@@ -1335,7 +1494,8 @@ export const STORE = {
 </div>`,
   },
   '1,3,6': {
-    css: `.parent {
+    css:
+`.parent {
   display: flex;
   flex-direction: column; 
   align-items: center 
@@ -1345,14 +1505,16 @@ export const STORE = {
 .child:nth-child(3) {
   align-self: flex-start;
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
   <div class="child"></div>
 </div>`,
   },
   '1,3,7': {
-    css: `.parent {
+    css:
+`.parent {
   display: flex;
   flex-direction: column; 
   align-items: center   
@@ -1365,14 +1527,16 @@ export const STORE = {
 .child:nth-child(3) {
   align-self: center;
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
   <div class="child"></div>
 </div>`,
   },
   '1,3,8': {
-    css: `.parent {
+    css:
+`.parent {
   display: flex;
   flex-direction: column; 
   align-items: center   
@@ -1385,14 +1549,16 @@ export const STORE = {
 .child:nth-child(3) {
   align-self: flex-end;
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
   <div class="child"></div>
 </div>`,
   },
   '1,4,5': {
-    css: `.parent {
+    css:
+`.parent {
   display: flex;
   flex-direction: column;   
 }
@@ -1405,7 +1571,8 @@ export const STORE = {
   display: flex;
   align-self: flex-end;
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child"></div>
   <div class="child">
     <div class="grandchild"></div>
@@ -1414,7 +1581,8 @@ export const STORE = {
 </div>`,
   },
   '1,4,6': {
-    css: `.parent {
+    css:
+`.parent {
   display: flex;
   flex-direction: column;   
   align-items: center;
@@ -1423,26 +1591,30 @@ export const STORE = {
 .child:nth-child(3) { 
   align-self: flex-start;
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
   <div class="child"></div>
 </div>`,
   },
   '1,4,7': {
-    css: `.parent {
+    css:
+`.parent {
   display: flex;
   flex-direction: column;   
   align-items: center;
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
   <div class="child"></div>
 </div>`,
   },
   '1,4,8': {
-    css: `.parent {
+    css:
+`.parent {
   display: flex;
   flex-direction: column;   
   align-items: center;
@@ -1451,14 +1623,16 @@ export const STORE = {
 .child:nth-child(3) { 
   align-self: flex-end;
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
   <div class="child"></div>
 </div>`,
   },
   '1,5,6': {
-    css: `.parent {
+    css:
+`.parent {
   display: flex;
   flex-direction: column;
 }
@@ -1470,14 +1644,16 @@ export const STORE = {
 .child:nth-child(2) { 
   align-self: flex-end;
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
   <div class="child"></div>
 </div>`,
   },
   '1,5,7': {
-    css: `.parent {
+    css:
+`.parent {
   display: flex;
   flex-direction: column;   
   align-items: center;
@@ -1486,14 +1662,16 @@ export const STORE = {
 .child:nth-child(2) { 
   align-self: flex-end;
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
   <div class="child"></div>
 </div>`,
   },
   '1,5,8': {
-    css: `.parent {
+    css:
+`.parent {
   display: flex;
   flex-direction: column;   
   align-items: flex-end;
@@ -1502,14 +1680,16 @@ export const STORE = {
 .child:nth-child(1) { 
   align-self: center;
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
   <div class="child"></div>
 </div>`,
   },
   '1,6,7': {
-    css: `.parent {
+    css:
+`.parent {
   display: flex;
   flex-direction: column;   
   justify-content: space-between;
@@ -1518,7 +1698,8 @@ export const STORE = {
 .child:nth-child(2){
   display: flex;
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child"></div>
   <div class="child">
     <div class="grandchild"></div>
@@ -1527,7 +1708,8 @@ export const STORE = {
 </div>`,
   },
   '1,6,8': {
-    css: `.parent {
+    css:
+`.parent {
   display: flex;
   flex-direction: column;   
   justify-content: space-between;
@@ -1537,7 +1719,8 @@ export const STORE = {
   display: flex;
   justify-content: space-between;
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child"></div>
   <div class="child">
     <div class="grandchild"></div>
@@ -1546,7 +1729,8 @@ export const STORE = {
 </div>`,
   },
   '1,7,8': {
-    css: `.parent {
+    css:
+`.parent {
   display: flex;
   flex-direction: column;   
   justify-content: space-between;
@@ -1556,7 +1740,8 @@ export const STORE = {
   display: flex;
   align-self: flex-end;
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child"></div>
   <div class="child">
     <div class="grandchild"></div>
@@ -1565,7 +1750,8 @@ export const STORE = {
 </div>`,
   },
   '2,3,4': {
-    css: `.parent {
+    css:
+`.parent {
   display: flex;
   flex-direction: column;   
 }
@@ -1577,7 +1763,8 @@ export const STORE = {
 .child:nth-child(2){
   display: flex;
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child"></div>
   <div class="child">
     <div class="grandchild"></div>
@@ -1586,7 +1773,8 @@ export const STORE = {
 </div>`,
   },
   '2,3,5': {
-    css: `.parent {
+    css:
+`.parent {
   display: flex;
   flex-direction: column;   
 }
@@ -1599,7 +1787,8 @@ export const STORE = {
   display: flex;
   justify-content: space-between;
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child"></div>
   <div class="child">
     <div class="grandchild"></div>
@@ -1608,7 +1797,8 @@ export const STORE = {
 </div>`,
   },
   '2,3,6': {
-    css: `.parent {
+    css:
+`.parent {
   display: flex;
   flex-direction: column;   
 }
@@ -1616,14 +1806,16 @@ export const STORE = {
 .child:nth-child(1){
   align-self: flex-end;
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
   <div class="child"></div>
 </div>`,
   },
   '2,3,7': {
-    css: `.parent {
+    css:
+`.parent {
   display: flex;
   flex-direction: column;   
 }
@@ -1635,14 +1827,16 @@ export const STORE = {
 .child:nth-child(3){
   align-self: center;
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
   <div class="child"></div>
 </div>`,
   },
   '2,3,8': {
-    css: `.parent {
+    css:
+`.parent {
   display: flex;
   flex-direction: column;   
 }
@@ -1654,14 +1848,16 @@ export const STORE = {
 .child:nth-child(3){
   align-self: flex-end;
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
   <div class="child"></div>
 </div>`,
   },
   '2,4,5': {
-    css: `.parent {
+    css:
+`.parent {
   display: flex;
   flex-direction: column;   
 }
@@ -1674,7 +1870,8 @@ export const STORE = {
   display: flex;
   align-self: flex-end;
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child"></div>
   <div class="child">
       <div class="grandchild"></div>
@@ -1683,7 +1880,8 @@ export const STORE = {
 </div>`,
   },
   '2,4,6': {
-    css: `.parent {
+    css:
+`.parent {
   display: flex;
   flex-direction: column;    
 }
@@ -1699,14 +1897,16 @@ export const STORE = {
 .child:nth-child(3){  
   align-self: flex-start;
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
   <div class="child"></div>
 </div>`,
   },
   '2,4,7': {
-    css: `.parent {
+    css:
+`.parent {
   display: flex;
   flex-direction: column;
   align-items: center;    
@@ -1715,14 +1915,16 @@ export const STORE = {
 .child:nth-child(1){
   align-self: flex-end;
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
   <div class="child"></div>
 </div>`,
   },
   '2,4,8': {
-    css: `.parent {
+    css:
+`.parent {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -1731,14 +1933,16 @@ export const STORE = {
 .child:nth-child(2){
   align-self: center;
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
   <div class="child"></div>
 </div>`,
   },
   '2,5,6': {
-    css: `.parent {
+    css:
+`.parent {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -1747,14 +1951,16 @@ export const STORE = {
 .child:nth-child(3){  
   align-self: flex-start;
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
   <div class="child"></div>
 </div>`,
   },
   '2,5,7': {
-    css: `.parent {
+    css:
+`.parent {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -1763,38 +1969,44 @@ export const STORE = {
 .child:nth-child(3){  
   align-self: center;
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
   <div class="child"></div>
 </div>`,
   },
   '2,5,8': {
-    css: `.parent {
+    css:
+`.parent {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
   <div class="child"></div>
 </div>`,
   },
   '3,4,5': {
-    css: `.parent {
+    css:
+`.parent {
   display: flex;
   flex-direction: row;
   align-items: center;
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
   <div class="child"></div>
 </div>`,
   },
   '3,4,6': {
-    css: `.parent {
+    css:
+`.parent {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -1803,7 +2015,8 @@ export const STORE = {
 .child:nth-child(1){  
   display: flex;
 }`,
-    html: `<div class="parent">    
+    html:
+`<div class="parent">    
   <div class="child">
     <div class="grandchild"></div>
     <div class="grandchild"></div>
@@ -1812,7 +2025,8 @@ export const STORE = {
 </div>`,
   },
   '3,4,7': {
-    css: `.parent {
+    css:
+`.parent {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -1825,7 +2039,8 @@ export const STORE = {
 .child:nth-child(2){  
   align-self: center;
 }`,
-    html: `<div class="parent">    
+    html:
+`<div class="parent">    
   <div class="child">
     <div class="grandchild"></div>
     <div class="grandchild"></div>
@@ -1834,7 +2049,8 @@ export const STORE = {
 </div>`,
   },
   '3,4,8': {
-    css: `.parent {
+    css:
+`.parent {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -1847,7 +2063,8 @@ export const STORE = {
 .child:nth-child(2){  
   align-self: flex-end;
 }`,
-    html: `<div class="parent">    
+    html:
+`<div class="parent">    
   <div class="child">
     <div class="grandchild"></div>
     <div class="grandchild"></div>
@@ -1856,7 +2073,8 @@ export const STORE = {
 </div>`,
   },
   '3,5,6': {
-    css: `.parent {
+    css:
+`.parent {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -1870,7 +2088,8 @@ export const STORE = {
 .child:nth-child(2){  
   align-self: flex-start;
 }`,
-    html: `<div class="parent">    
+    html:
+`<div class="parent">    
   <div class="child">
     <div class="grandchild"></div>
     <div class="grandchild"></div>
@@ -1879,7 +2098,8 @@ export const STORE = {
 </div>`,
   },
   '3,5,7': {
-    css: `.parent {
+    css:
+`.parent {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -1893,7 +2113,8 @@ export const STORE = {
 .child:nth-child(2){  
   align-self: center;
 }`,
-    html: `<div class="parent">    
+    html:
+`<div class="parent">    
   <div class="child">
     <div class="grandchild"></div>
     <div class="grandchild"></div>
@@ -1902,7 +2123,8 @@ export const STORE = {
 </div>`,
   },
   '3,5,8': {
-    css: `.parent {
+    css:
+`.parent {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -1916,7 +2138,8 @@ export const STORE = {
 .child:nth-child(2){  
   align-self: flex-end;
 }`,
-    html: `<div class="parent">    
+    html:
+`<div class="parent">    
   <div class="child">
     <div class="grandchild"></div>
     <div class="grandchild"></div>
@@ -1925,7 +2148,8 @@ export const STORE = {
 </div>`,
   },
   '3,6,7': {
-    css: `.parent {
+    css:
+`.parent {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -1934,7 +2158,8 @@ export const STORE = {
 .child:nth-child(2){  
   display: flex;
 }`,
-    html: `<div class="parent">    
+    html:
+`<div class="parent">    
   <div class="child"></div>  
   <div class="child">
     <div class="grandchild"></div>
@@ -1943,7 +2168,8 @@ export const STORE = {
 </div>`,
   },
   '3,6,8': {
-    css: `.parent {
+    css:
+`.parent {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -1953,7 +2179,8 @@ export const STORE = {
   display: flex;
   justify-content: space-between;
 }`,
-    html: `<div class="parent">    
+    html:
+`<div class="parent">    
   <div class="child"></div>  
   <div class="child">
     <div class="grandchild"></div>
@@ -1962,7 +2189,8 @@ export const STORE = {
 </div>`,
   },
   '3,7,8': {
-    css: `.parent {
+    css:
+`.parent {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -1972,7 +2200,8 @@ export const STORE = {
   display: flex;
   justify-content: flex-end;
 }`,
-    html: `<div class="parent">    
+    html:
+`<div class="parent">    
   <div class="child"></div>  
   <div class="child">
     <div class="grandchild"></div>
@@ -1981,7 +2210,8 @@ export const STORE = {
 </div>`,
   },
   '4,5,6': {
-    css: `.parent {
+    css:
+`.parent {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -1990,7 +2220,8 @@ export const STORE = {
 .child:nth-child(1){  
   display: flex; 
 }`,
-    html: `<div class="parent">      
+    html:
+`<div class="parent">      
   <div class="child">
     <div class="grandchild"></div>
     <div class="grandchild"></div>
@@ -1999,7 +2230,8 @@ export const STORE = {
 </div>`,
   },
   '4,5,7': {
-    css: `.parent {
+    css:
+`.parent {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -2012,7 +2244,8 @@ export const STORE = {
 .child:nth-child(2){  
    align-self: center;
 }`,
-    html: `<div class="parent">       
+    html:
+`<div class="parent">       
   <div class="child">
     <div class="grandchild"></div>
     <div class="grandchild"></div>
@@ -2021,7 +2254,8 @@ export const STORE = {
 </div>`,
   },
   '4,5,8': {
-    css: `.parent {
+    css:
+`.parent {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -2034,7 +2268,8 @@ export const STORE = {
 .child:nth-child(2){  
    align-self: flex-end;
 }`,
-    html: `<div class="parent">       
+    html:
+`<div class="parent">       
   <div class="child">
     <div class="grandchild"></div>
     <div class="grandchild"></div>
@@ -2043,7 +2278,8 @@ export const STORE = {
 </div>`,
   },
   '5,6,7': {
-    css: `.parent {
+    css:
+`.parent {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -2056,7 +2292,8 @@ export const STORE = {
 .child:nth-child(2){
    display: flex;
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child"></div>
   <div class="child">
     <div class="grandchild"></div>
@@ -2065,7 +2302,8 @@ export const STORE = {
 </div>`,
   },
   '5,6,8': {
-    css: `.parent {
+    css:
+`.parent {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -2079,7 +2317,8 @@ export const STORE = {
    display: flex;
    justify-content: space-between;
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child"></div>
   <div class="child">
     <div class="grandchild"></div>
@@ -2088,11 +2327,13 @@ export const STORE = {
 </div>`,
   },
   '6,7,8': {
-    css: `.parent {
+    css:
+`.parent {
   display: flex;
   align-items: flex-end;
 }`,
-    html: `<div class="parent">
+    html:
+`<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
   <div class="child"></div>
