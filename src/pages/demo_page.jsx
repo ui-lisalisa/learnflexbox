@@ -1,6 +1,6 @@
-import React, {useState, useRef, useEffect} from 'react';
+import React, {useState} from 'react';
 import {STORE} from '../lib/STORE';
-import {ArrowRightIcon, ClippyIcon} from '@primer/octicons-react';
+import {ArrowRightIcon} from '@primer/octicons-react';
 import moment from 'moment';
 // comps
 import ControlPanel from '../comps/controller/controller_';
@@ -20,13 +20,6 @@ const defaults = {
   position: 'relative',
 };
 
-const CodeBlock = (props) => {
-  return (
-    <pre style={{padding: '20px'}}>
-      <code style={{font: 'monospace'}}>{props.content}</code>
-    </pre>
-  );
-};
 /*
 *
 *
