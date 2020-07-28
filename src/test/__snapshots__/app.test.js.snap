@@ -27,6 +27,7 @@ exports[`renders snapshot as expected 1`] = `
       }
     >
       <a
+        className="hover-grow"
         href="/"
         onClick={[Function]}
         style={
@@ -41,11 +42,13 @@ exports[`renders snapshot as expected 1`] = `
     <div
       style={
         Object {
+          "alignItems": "flex-end",
           "display": "flex",
         }
       }
     >
       <a
+        className="hover-grow"
         href="/about"
         onClick={[Function]}
         style={
@@ -61,6 +64,7 @@ exports[`renders snapshot as expected 1`] = `
         About
       </a>
       <a
+        className="hover-grow"
         href="/"
         onClick={[Function]}
         style={
@@ -74,6 +78,54 @@ exports[`renders snapshot as expected 1`] = `
         }
       >
         Generator
+      </a>
+      <a
+        className="hover-grow"
+        href="/"
+        onClick={[Function]}
+        style={
+          Object {
+            "color": "#f1f8ff",
+            "fontFamily": "'Rubik', sans-serif",
+            "fontSize": "16px",
+            "letterSpacing": "1px",
+            "padding": "0 20px",
+          }
+        }
+      >
+        Home
+      </a>
+      <a
+        className="hover-grow"
+        href="/"
+        onClick={[Function]}
+        style={
+          Object {
+            "color": "#f1f8ff",
+            "fontFamily": "'Rubik', sans-serif",
+            "fontSize": "16px",
+            "letterSpacing": "1px",
+            "padding": "0 20px",
+          }
+        }
+      >
+        Assessments
+      </a>
+      <a
+        className="hover-grow"
+        href="/"
+        onClick={[Function]}
+        style={
+          Object {
+            "color": "#f1f8ff",
+            "fontFamily": "'Rubik', sans-serif",
+            "fontSize": "16px",
+            "letterSpacing": "1px",
+            "padding": "0 20px",
+          }
+        }
+      >
+        UI Challenges
       </a>
     </div>
   </div>
@@ -113,80 +165,87 @@ exports[`renders snapshot as expected 1`] = `
             }
           }
         >
-          <section
-            className="blankslate"
+          <div
             style={
               Object {
-                "background": "#eee",
-                "display": "flex",
-                "flexDirection": "column",
-                "height": "450px",
-                "margin": "0 40px",
-                "overflowY": "scroll",
-                "position": "relative",
-                "width": "100%",
+                "width": "50%",
               }
             }
           >
-            <div
+            <section
+              className="blankslate"
               style={
                 Object {
-                  "alignItems": "center",
+                  "background": "#eee",
                   "display": "flex",
-                  "height": "100%",
-                  "justifyContent": "center",
+                  "flexDirection": "column",
+                  "height": "450px",
+                  "overflowY": "scroll",
+                  "position": "relative",
+                  "width": "100%",
                 }
               }
             >
               <div
-                className="hover-grow"
                 style={
                   Object {
                     "alignItems": "center",
                     "display": "flex",
+                    "height": "100%",
                     "justifyContent": "center",
                   }
                 }
               >
-                <h2
+                <div
+                  className="hover-grow"
                   style={
                     Object {
-                      "fontFamily": "\\"Rubik\\", sans-serif",
+                      "alignItems": "center",
+                      "display": "flex",
+                      "justifyContent": "center",
                     }
                   }
                 >
-                  Try me!
-                </h2>
-                <svg
-                  aria-hidden="true"
-                  className="octicon"
-                  dangerouslySetInnerHTML={
-                    Object {
-                      "__html": "<path fill-rule=\\"evenodd\\" d=\\"M13.22 19.03a.75.75 0 001.06 0l6.25-6.25a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 10-1.06 1.06l4.97 4.97H3.75a.75.75 0 000 1.5h14.44l-4.97 4.97a.75.75 0 000 1.06z\\"></path>",
+                  <h2
+                    style={
+                      Object {
+                        "fontFamily": "\\"Rubik\\", sans-serif",
+                      }
                     }
-                  }
-                  fill="currentColor"
-                  height={60}
-                  role="img"
-                  style={
-                    Object {
-                      "display": "inline-block",
-                      "userSelect": "none",
-                      "verticalAlign": "text-bottom",
+                  >
+                    Try me!
+                  </h2>
+                  <svg
+                    aria-hidden="true"
+                    className="octicon"
+                    dangerouslySetInnerHTML={
+                      Object {
+                        "__html": "<path fill-rule=\\"evenodd\\" d=\\"M13.22 19.03a.75.75 0 001.06 0l6.25-6.25a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 10-1.06 1.06l4.97 4.97H3.75a.75.75 0 000 1.5h14.44l-4.97 4.97a.75.75 0 000 1.06z\\"></path>",
+                      }
                     }
-                  }
-                  viewBox="0 0 24 24"
-                  width={60}
-                />
+                    fill="currentColor"
+                    height={60}
+                    role="img"
+                    style={
+                      Object {
+                        "display": "inline-block",
+                        "userSelect": "none",
+                        "verticalAlign": "text-bottom",
+                      }
+                    }
+                    viewBox="0 0 24 24"
+                    width={60}
+                  />
+                </div>
               </div>
-            </div>
-          </section>
+            </section>
+          </div>
           <div
             style={
               Object {
                 "height": "450px",
                 "margin": "0 40px",
-                "width": "100%",
+                "width": "50%",
               }
             }
           >
@@ -201,10 +260,10 @@ exports[`renders snapshot as expected 1`] = `
               }
             >
               <span
-                class="Progress Progress--large"
+                className="Progress Progress--large"
               >
                 <span
-                  class="Progress-item bg-green"
+                  className="Progress-item bg-green"
                   style={
                     Object {
                       "width": "100%",
@@ -389,10 +448,10 @@ exports[`renders snapshot as expected 1`] = `
     <section
       style={
         Object {
+          "alignItems": "flex-start",
           "borderTop": "1px solid #000",
           "display": "flex",
-          "flexDirection": "row-reverse",
-          "justifyContent": "flex-start",
+          "justifyContent": "flex-end",
           "marginBottom": "60px",
           "paddingTop": "20px",
         }
@@ -403,62 +462,19 @@ exports[`renders snapshot as expected 1`] = `
           Object {
             "display": "flex",
             "flexDirection": "column",
-            "width": "15%",
+            "width": "20%",
           }
         }
       >
-        <a
-          href="/https://github.com/hi-matbub/flexbox/blob/master/CONTRIBUTING.md"
-          onClick={[Function]}
+        <h2
           style={
             Object {
-              "fontFamily": "'Rubik', sans-serif",
-              "letterSpacing": "1px",
-              "lineHeight": "28px",
+              "marginBottom": "20px",
             }
           }
         >
-           
-          Contributing
-        </a>
-        <a
-          href="/https://github.com/hi-matbub/flexbox/blob/master/LICENSE"
-          onClick={[Function]}
-          style={
-            Object {
-              "fontFamily": "'Rubik', sans-serif",
-              "letterSpacing": "1px",
-              "lineHeight": "28px",
-            }
-          }
-        >
-           
-          License
-        </a>
-        <a
-          href="/https://github.com/hi-matbub/flexbox/issues"
-          onClick={[Function]}
-          style={
-            Object {
-              "fontFamily": "'Rubik', sans-serif",
-              "letterSpacing": "1px",
-              "lineHeight": "28px",
-            }
-          }
-        >
-           
-          Report a bug
-        </a>
-      </div>
-      <div
-        style={
-          Object {
-            "display": "flex",
-            "flexDirection": "column",
-            "width": "15%",
-          }
-        }
-      >
+          Flexbox
+        </h2>
         <a
           href="/about"
           onClick={[Function]}
@@ -516,30 +532,172 @@ exports[`renders snapshot as expected 1`] = `
           UI Challenges
         </a>
       </div>
+      <div
+        style={
+          Object {
+            "alignItems": "flex-end",
+            "display": "flex",
+            "width": "40%",
+          }
+        }
+      >
+        <div
+          style={
+            Object {
+              "display": "flex",
+              "flexDirection": "column",
+              "width": "50%",
+            }
+          }
+        >
+          <h2
+            style={
+              Object {
+                "marginBottom": "20px",
+              }
+            }
+          >
+            Get In Touch
+          </h2>
+          <a
+            href="/subscribe"
+            onClick={[Function]}
+            style={
+              Object {
+                "fontFamily": "'Rubik', sans-serif",
+                "letterSpacing": "1px",
+                "lineHeight": "28px",
+              }
+            }
+          >
+             
+            Subscribe
+          </a>
+          <a
+            href="/login"
+            onClick={[Function]}
+            style={
+              Object {
+                "fontFamily": "'Rubik', sans-serif",
+                "letterSpacing": "1px",
+                "lineHeight": "28px",
+              }
+            }
+          >
+             
+            Log in / Sign up
+          </a>
+          <a
+            href="/support"
+            onClick={[Function]}
+            style={
+              Object {
+                "fontFamily": "'Rubik', sans-serif",
+                "letterSpacing": "1px",
+                "lineHeight": "28px",
+              }
+            }
+          >
+             
+            Support
+          </a>
+        </div>
+        <div
+          style={
+            Object {
+              "display": "flex",
+              "flexDirection": "column",
+              "width": "20%",
+            }
+          }
+        >
+          <a
+            href="/https://github.com/hi-matbub/flexbox/blob/master/CONTRIBUTING.md"
+            onClick={[Function]}
+            style={
+              Object {
+                "fontFamily": "'Rubik', sans-serif",
+                "letterSpacing": "1px",
+                "lineHeight": "28px",
+              }
+            }
+          >
+             
+            Contributing
+          </a>
+          <a
+            href="/https://github.com/hi-matbub/flexbox/blob/master/LICENSE"
+            onClick={[Function]}
+            style={
+              Object {
+                "fontFamily": "'Rubik', sans-serif",
+                "letterSpacing": "1px",
+                "lineHeight": "28px",
+              }
+            }
+          >
+             
+            License
+          </a>
+          <a
+            href="/https://github.com/hi-matbub/flexbox/issues"
+            onClick={[Function]}
+            style={
+              Object {
+                "fontFamily": "'Rubik', sans-serif",
+                "letterSpacing": "1px",
+                "lineHeight": "28px",
+              }
+            }
+          >
+             
+            Report a bug
+          </a>
+        </div>
+      </div>
     </section>
-    <small
+    <div
       style={
         Object {
+          "alignItems": "center",
           "display": "flex",
-          "fontFamily": "'Rubik', sans-serif",
+          "flexDirection": "column",
           "justifyContent": "center",
         }
       }
     >
-      <i>
-        © 
-        2020
-          |   say
-        <a
-          href="mailto:hi@matbub.co"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-           
-          hi-matbub
-        </a>
-      </i>
-    </small>
+      <small
+        style={
+          Object {
+            "fontFamily": "'Rubik', sans-serif",
+          }
+        }
+      >
+        <i>
+          © 
+          2020
+            |   
+          say
+          <a
+            href="mailto:hi@matbub.co"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+             
+            hi-matbub
+          </a>
+        </i>
+      </small>
+      <img
+        alt="build status"
+        src="https://travis-ci.com/hi-matbub/flexbox.svg?branch=master"
+        style={
+          Object {
+            "marginTop": "20px",
+          }
+        }
+      />
+    </div>
   </footer>
 </div>
 `;

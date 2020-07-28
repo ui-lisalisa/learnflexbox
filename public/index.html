@@ -21,6 +21,9 @@
 
     <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-analytics.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/7.17.1/firebase-auth.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/7.17.1/firebase-firestore.js"></script>
     <script>      
       const firebaseConfig = {
         apiKey: "AIzaSyAgG4im6FlXXmd1CV38vVRqQ4Kge4rF59Y",
@@ -34,6 +37,10 @@
       };
       firebase.initializeApp(firebaseConfig);
       firebase.analytics();
+      var defaultStorage = firebase.storage();
+      var defaultFirestore = firebase.firestore();
     </script>
+    <!-- mailchimp -->
+    <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/eb89624098c8ce40b7f3b26ef/bb8b8e9264c123a305a7077b7.js");</script>
   </body>
 </html>

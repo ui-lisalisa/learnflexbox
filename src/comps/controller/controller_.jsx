@@ -1,6 +1,7 @@
 import React, {useRef} from 'react';
 import {handleSort, handleRemove} from './controller_helpers.jsx';
 import '../../styles/github_animations.scss';
+import {postCount} from '../../firebase/actions_.jsx';
 
 let controls = [],
   isActive = [],
@@ -60,10 +61,11 @@ const ControlPanel = (props) => {
 
     isActive.map((i) => inQuery.push(`${i}`));
     props.handleData(inQuery.toString());
+    postCount();
   };
 
   return (
-    <div style={{margin: '0 40px', width: '100%', height: '450px'}}>
+    <div style={{margin: '0 40px', width: '50%', height: '450px'}}>
       <div
         style={{
           display: 'flex',
@@ -71,8 +73,10 @@ const ControlPanel = (props) => {
           width: '100%',
           height: '100%',
         }}>
-        <span class="Progress Progress--large">
-          <span class="Progress-item bg-green" style={{width: '100%'}}></span>
+        <span className="Progress Progress--large">
+          <span
+            className="Progress-item bg-green"
+            style={{width: '100%'}}></span>
         </span>
         {controls.map((control, i) => (
           <button
