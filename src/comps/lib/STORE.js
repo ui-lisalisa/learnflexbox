@@ -1,6 +1,8 @@
+// prettier-ignore
 export const STORE = {
   '0': {
-    css: `.parent {
+    css:
+`.parent {
   display: flex;  
 }`,
     html: `<div class="parent">

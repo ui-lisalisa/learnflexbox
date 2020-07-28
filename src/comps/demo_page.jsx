@@ -5,6 +5,7 @@ import {STORE} from './lib/STORE';
 import {ArrowRightIcon, ClippyIcon} from '@primer/octicons-react';
 import './github_animations.scss';
 import './animistas.css';
+import {clsx} from 'clsx';
 
 const defaults = {
   width: '100%',
@@ -29,7 +30,11 @@ const Tooltip = (props) => {
   return (
     <small
       ref={props.ref}
-      className="border rounded-0 p-1 slide-in-right"
+      className={
+        props.clipped === true
+          ? 'border rounded-0 p-1 slide-in-right'
+          : 'border rounded-0 p-1 slide-out-left'
+      }
       style={{background: '#f6f8fa'}}>
       {'Copied to clipboard!'}
     </small>
@@ -38,6 +43,7 @@ const Tooltip = (props) => {
 
 const Clipboard = (props) => {
   const [clipped, setClipped] = useState(false);
+  const [unclipped, setUnclipped] = useState(false);
   const tooltipRef = useRef();
 
   useEffect(() => {
@@ -46,8 +52,9 @@ const Clipboard = (props) => {
 
   const handleTooltip = () => {
     setClipped(!clipped);
-    setTimeout(() => {}, 3000);
-    console.log(clipped);
+    setTimeout(() => {
+      setClipped(!clipped);
+    }, 3000);
   };
 
   return (
@@ -87,7 +94,7 @@ const Copy = (props) => {
     );
   } else {
     return (
-      <section style={defaults}>
+      <section style={defaults} className="blankslate">
         <div
           style={{
             display: 'flex',
