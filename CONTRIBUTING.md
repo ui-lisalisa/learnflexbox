@@ -1,6 +1,6 @@
 # Contributing to Flexbox Generator
 
-[Flexbox Generator](https://github.com/hi-matbub/flexbox) is a fun way to quickly understand flexbox.
+[Flexbox Learn](http://learnflexbox.us/) is a fun way to quickly understand flexbox.
 
 # Code of Conduct
 
@@ -14,6 +14,6 @@
 
 # Reporting Inappropriate Behavior
 
-<a href='mailto:hi@matbub.co'>Get in touch.</a>
+<a href='mailto:support@learnflexbox.us'>Get in touch.</a>
 
-We take these things serious. The quickest way to report inappropriate behavior in the link above. We will look into the matter as quickly as deemed necessary.
+We take these things serious. The quickest way to report inappropriate behavior is by using the link above.
