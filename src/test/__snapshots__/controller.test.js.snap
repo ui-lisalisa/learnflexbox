@@ -21,10 +21,10 @@ exports[`renders snapshot as expected 1`] = `
     }
   >
     <span
-      class="Progress Progress--large"
+      className="Progress Progress--large"
     >
       <span
-        class="Progress-item bg-green"
+        className="Progress-item bg-green"
         style={
           Object {
             "width": "100%",
