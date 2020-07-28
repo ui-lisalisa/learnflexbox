@@ -50,6 +50,7 @@ exports[`renders snapshot as expected 1`] = `
       }
     >
       <section
+        className="blankslate"
         style={
           Object {
             "background": "#eee",
@@ -309,26 +310,6 @@ exports[`renders snapshot as expected 1`] = `
       }
     >
       <div
-        className="hover-grow"
-      >
-        <a
-          href="https://www.buymeacoffee.com/himatbub"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          <img
-            alt="Buy Me A Coffee"
-            src="https://cdn.buymeacoffee.com/buttons/default-blue.png"
-            style={
-              Object {
-                "height": "51px",
-                "width": "217px",
-              }
-            }
-          />
-        </a>
-      </div>
-      <div
         style={
           Object {
             "display": "flex",
@@ -379,7 +360,7 @@ exports[`renders snapshot as expected 1`] = `
       style={
         Object {
           "display": "flex",
-          "fontFamily": "\\"Rubik\\", sans-serif",
+          "fontFamily": "'Rubik', sans-serif",
           "justifyContent": "center",
         }
       }

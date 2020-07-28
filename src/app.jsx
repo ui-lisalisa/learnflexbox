@@ -26,7 +26,7 @@ const Footer = () => {
   return (
     <footer style={{padding: '40px', marginTop: '40px'}}>
       <div style={{display: 'flex', justifyContent: 'space-between'}}>
-        <div className="hover-grow">
+        {/* <div className="hover-grow">
           <a
             href="https://www.buymeacoffee.com/himatbub"
             target="_blank"
@@ -37,7 +37,7 @@ const Footer = () => {
               style={{height: '51px', width: '217px'}}
             />
           </a>
-        </div>
+        </div> */}
         <div style={{display: 'flex', flexDirection: 'column'}}>
           <a
             href="https://github.com/hi-matbub/flexbox/blob/master/LICENSE"
@@ -53,7 +53,8 @@ const Footer = () => {
           <a
             href="https://github.com/hi-matbub/flexbox/blob/master/CONTRIBUTING.md"
             style={{
-              fontFamily: "'Rubik', sans-serif",
+              // prettier-ignore
+              fontFamily: '\'Rubik\', sans-serif',
               lineHeight: '28px',
               letterSpacing: '1px',
             }}>
@@ -62,7 +63,8 @@ const Footer = () => {
           <a
             href="https://github.com/hi-matbub/flexbox/issues"
             style={{
-              fontFamily: "'Rubik', sans-serif",
+              // prettier-ignore
+              fontFamily: '\'Rubik\', sans-serif',
               lineHeight: '28px',
               letterSpacing: '1px',
             }}>
@@ -72,7 +74,8 @@ const Footer = () => {
       </div>
       <small
         style={{
-          fontFamily: '"Rubik", sans-serif',
+          // prettier-ignore
+          fontFamily: '\'Rubik\', sans-serif',
           display: 'flex',
           justifyContent: 'center',
         }}>
