@@ -12,14 +12,11 @@ const Header = () => {
           fontWeight: '500',
           letterSpacing: '1px',
         }}>
-        <Link className='hover-grow' to='/' style={{color: '#f1f8ff'}}>Flexbox Generator</Link>
+        <Link className='hover-grow' to='/' style={{color: '#f1f8ff'}}>Learn Flexbox</Link>
       </h1>
       <div style={{display: 'flex', alignItems: 'flex-end'}}>
-        <Link className='hover-grow' to='/about' style={{color: '#f1f8ff',fontFamily: '\'Rubik\', sans-serif', letterSpacing:'1px', padding: '0 20px', fontSize:'16px'}}>About</Link>
         <Link className='hover-grow' to='/' style={{color: '#f1f8ff',fontFamily: '\'Rubik\', sans-serif', letterSpacing:'1px', padding: '0 20px', fontSize:'16px'}}>Generator</Link>
-        <Link className='hover-grow' to='/' style={{color: '#f1f8ff',fontFamily: '\'Rubik\', sans-serif', letterSpacing:'1px', padding: '0 20px', fontSize:'16px'}}>Home</Link>
-        <Link className='hover-grow' to='/' style={{color: '#f1f8ff',fontFamily: '\'Rubik\', sans-serif', letterSpacing:'1px', padding: '0 20px', fontSize:'16px'}}>Assessments</Link>
-        <Link className='hover-grow' to='/' style={{color: '#f1f8ff',fontFamily: '\'Rubik\', sans-serif', letterSpacing:'1px', padding: '0 20px', fontSize:'16px'}}>UI Challenges</Link>
+        <Link className='hover-grow' to='/challenges' style={{color: '#f1f8ff',fontFamily: '\'Rubik\', sans-serif', letterSpacing:'1px', padding: '0 20px', fontSize:'16px'}}>UI Challenges</Link>
       </div>
     </div>
   );
