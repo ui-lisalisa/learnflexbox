@@ -6,6 +6,7 @@ import ComingSoon from '../../comps/coming-soon_';
 import MailChimp from '../plugins/mailchimp_';
 import NotFound from '../../pages/not-found_page';
 import About from '../../pages/about_page';
+import License from '../../pages/license_';
 
 const AppPaths = () => {
   return (
@@ -21,6 +22,7 @@ const AppPaths = () => {
         render={() => <ComingSoon />}
       />
       <Route exact path={'/about'} render={() => <About />} />
+      <Route exact path={'/license'} render={() => <License />} />
       <Route exact path={'/subscribe'} render={() => <MailChimp />} />
       <Route render={() => <NotFound />} />
     </Switch>

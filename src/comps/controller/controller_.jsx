@@ -63,30 +63,17 @@ const ControlPanel = (props) => {
   };
 
   return (
-    <div style={{margin: '0 40px', width: '50%', height: '450px'}}>
-      <div
-        style={{
-          display: 'flex',
-          flexWrap: 'wrap',
-          width: '100%',
-          height: '100%',
-        }}>
-        <span className="Progress Progress--large">
-          <span
-            className="Progress-item bg-green"
-            style={{width: '100%'}}></span>
-        </span>
-        {controls.map((control, i) => (
-          <button
-            className={'hover-grow'}
-            ref={(ref) => (status.current[i] = ref)}
-            type={'button'}
-            style={box}
-            key={i}
-            act_status={control.act_status}
-            onClick={() => handleClick(control, i)}></button>
-        ))}
-      </div>
+    <div className={'cb-con control'}>
+      {controls.map((control, i) => (
+        <button
+          className={'hover-grow'}
+          ref={(ref) => (status.current[i] = ref)}
+          type={'button'}
+          style={box}
+          key={i}
+          act_status={control.act_status}
+          onClick={() => handleClick(control, i)}></button>
+      ))}
     </div>
   );
 };

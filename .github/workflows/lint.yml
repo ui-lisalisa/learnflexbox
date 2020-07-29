@@ -27,4 +27,4 @@ jobs:
           # Enable linters
           eslint: true
           prettier: true
-          stylelint: true
+          

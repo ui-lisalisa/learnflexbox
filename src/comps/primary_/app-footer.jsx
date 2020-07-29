@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import '../../styles/page-queries.css';
 
 const Path = (props) => {
   return (
@@ -21,27 +22,14 @@ const Footer = () => {
   let date = new Date().getFullYear();
   return (
     <footer style={{padding: '40px 0', marginTop: '40px'}}>
-      <section
-        style={{
-          display: 'flex',
-          justifyContent: 'flex-end',
-          alignItems: 'flex-start',
-          marginBottom: '60px',
-          paddingTop: '20px',
-          borderTop: '1px solid #000',
-        }}>
-        <div
-          style={{
-            display: 'flex',
-            flexDirection: 'column',
-            width: '20%',
-          }}>
+      <section className={'footer-cont'}>
+        <div>
           <h2 style={{marginBottom: '20px'}}>{'Learn Flexbox'}</h2>
           <Path path={'/about'} name={'About'} color={'#FFF'} />
           <Path path={'/'} name={'Generator'} />
           <Path path={'/challenges'} name={'UI Challenges'} />
         </div>
-        <div style={{display: 'flex', flexDirection: 'column', width: '20%'}}>
+        <div>
           <h2 style={{marginBottom: '20px'}}>{'Get In Touch'}</h2>
           <Path path={'/subscribe'} name={'Subscribe'} />
           <Path path={'/contribute'} name={'Contribute'} />
