@@ -2,6 +2,8 @@
 
 [Flexbox Learn](http://learnflexbox.us/) is a fun way to quickly understand flexbox.
 
+To get started, take a look at the [Open Issues](https://github.com/hi-matbub/learnflexbox/issues). Issues labeled **good first issue** are a good place to begin.
+
 # Code of Conduct
 
 - Be a friend.
