@@ -75,7 +75,7 @@ const Footer = () => {
         </small>
         <img
           style={{marginTop: '20px'}}
-          src="https://travis-ci.com/hi-matbub/learnflexbox.svg?branch=master"
+          src="https://travis-ci.com/hi-matbub/flexbox.svg?branch=master"
           alt="build status"
         />
       </div>

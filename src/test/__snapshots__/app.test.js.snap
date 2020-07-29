@@ -36,7 +36,7 @@ exports[`renders snapshot as expected 1`] = `
           }
         }
       >
-        Flexbox Generator
+        Learn Flexbox
       </a>
     </h1>
     <div
@@ -47,22 +47,6 @@ exports[`renders snapshot as expected 1`] = `
         }
       }
     >
-      <a
-        className="hover-grow"
-        href="/about"
-        onClick={[Function]}
-        style={
-          Object {
-            "color": "#f1f8ff",
-            "fontFamily": "'Rubik', sans-serif",
-            "fontSize": "16px",
-            "letterSpacing": "1px",
-            "padding": "0 20px",
-          }
-        }
-      >
-        About
-      </a>
       <a
         className="hover-grow"
         href="/"
@@ -81,39 +65,7 @@ exports[`renders snapshot as expected 1`] = `
       </a>
       <a
         className="hover-grow"
-        href="/"
-        onClick={[Function]}
-        style={
-          Object {
-            "color": "#f1f8ff",
-            "fontFamily": "'Rubik', sans-serif",
-            "fontSize": "16px",
-            "letterSpacing": "1px",
-            "padding": "0 20px",
-          }
-        }
-      >
-        Home
-      </a>
-      <a
-        className="hover-grow"
-        href="/"
-        onClick={[Function]}
-        style={
-          Object {
-            "color": "#f1f8ff",
-            "fontFamily": "'Rubik', sans-serif",
-            "fontSize": "16px",
-            "letterSpacing": "1px",
-            "padding": "0 20px",
-          }
-        }
-      >
-        Assessments
-      </a>
-      <a
-        className="hover-grow"
-        href="/"
+        href="/challenges"
         onClick={[Function]}
         style={
           Object {
@@ -473,7 +425,7 @@ exports[`renders snapshot as expected 1`] = `
             }
           }
         >
-          Flexbox
+          Learn Flexbox
         </h2>
         <a
           href="/about"
@@ -488,20 +440,6 @@ exports[`renders snapshot as expected 1`] = `
         >
            
           About
-        </a>
-        <a
-          href="/assessments"
-          onClick={[Function]}
-          style={
-            Object {
-              "fontFamily": "'Rubik', sans-serif",
-              "letterSpacing": "1px",
-              "lineHeight": "28px",
-            }
-          }
-        >
-           
-          Assessments
         </a>
         <a
           href="/"
@@ -535,125 +473,77 @@ exports[`renders snapshot as expected 1`] = `
       <div
         style={
           Object {
-            "alignItems": "flex-end",
             "display": "flex",
-            "width": "40%",
+            "flexDirection": "column",
+            "width": "20%",
           }
         }
       >
-        <div
+        <h2
           style={
             Object {
-              "display": "flex",
-              "flexDirection": "column",
-              "width": "50%",
+              "marginBottom": "20px",
             }
           }
         >
-          <h2
-            style={
-              Object {
-                "marginBottom": "20px",
-              }
-            }
-          >
-            Get In Touch
-          </h2>
-          <a
-            href="/subscribe"
-            onClick={[Function]}
-            style={
-              Object {
-                "fontFamily": "'Rubik', sans-serif",
-                "letterSpacing": "1px",
-                "lineHeight": "28px",
-              }
-            }
-          >
-             
-            Subscribe
-          </a>
-          <a
-            href="/login"
-            onClick={[Function]}
-            style={
-              Object {
-                "fontFamily": "'Rubik', sans-serif",
-                "letterSpacing": "1px",
-                "lineHeight": "28px",
-              }
-            }
-          >
-             
-            Log in / Sign up
-          </a>
-          <a
-            href="/support"
-            onClick={[Function]}
-            style={
-              Object {
-                "fontFamily": "'Rubik', sans-serif",
-                "letterSpacing": "1px",
-                "lineHeight": "28px",
-              }
-            }
-          >
-             
-            Support
-          </a>
-        </div>
-        <div
+          Get In Touch
+        </h2>
+        <a
+          href="/subscribe"
+          onClick={[Function]}
           style={
             Object {
-              "display": "flex",
-              "flexDirection": "column",
-              "width": "20%",
+              "fontFamily": "'Rubik', sans-serif",
+              "letterSpacing": "1px",
+              "lineHeight": "28px",
             }
           }
         >
-          <a
-            href="/https://github.com/hi-matbub/flexbox/blob/master/CONTRIBUTING.md"
-            onClick={[Function]}
-            style={
-              Object {
-                "fontFamily": "'Rubik', sans-serif",
-                "letterSpacing": "1px",
-                "lineHeight": "28px",
-              }
+           
+          Subscribe
+        </a>
+        <a
+          href="/contribute"
+          onClick={[Function]}
+          style={
+            Object {
+              "fontFamily": "'Rubik', sans-serif",
+              "letterSpacing": "1px",
+              "lineHeight": "28px",
             }
-          >
-             
-            Contributing
-          </a>
-          <a
-            href="/https://github.com/hi-matbub/flexbox/blob/master/LICENSE"
-            onClick={[Function]}
-            style={
-              Object {
-                "fontFamily": "'Rubik', sans-serif",
-                "letterSpacing": "1px",
-                "lineHeight": "28px",
-              }
+          }
+        >
+           
+          Contribute
+        </a>
+        <a
+          href="/license"
+          onClick={[Function]}
+          style={
+            Object {
+              "fontFamily": "'Rubik', sans-serif",
+              "letterSpacing": "1px",
+              "lineHeight": "28px",
             }
-          >
-             
-            License
-          </a>
-          <a
-            href="/https://github.com/hi-matbub/flexbox/issues"
-            onClick={[Function]}
-            style={
-              Object {
-                "fontFamily": "'Rubik', sans-serif",
-                "letterSpacing": "1px",
-                "lineHeight": "28px",
-              }
+          }
+        >
+           
+          License
+        </a>
+        <a
+          href="/report"
+          onClick={[Function]}
+          style={
+            Object {
+              "fontFamily": "'Rubik', sans-serif",
+              "letterSpacing": "1px",
+              "lineHeight": "28px",
             }
-          >
-             
-            Report a bug
-          </a>
-        </div>
+          }
+        >
+           
+          Report a bug
+        </a>
       </div>
     </section>
     <div
