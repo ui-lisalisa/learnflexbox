@@ -2,189 +2,160 @@
 
 exports[`renders snapshot as expected 1`] = `
 <div
-  style={
-    Object {
-      "height": "450px",
-      "margin": "0 40px",
-      "width": "50%",
-    }
-  }
+  className="cb-con control"
 >
-  <div
+  <button
+    act_status={false}
+    className="hover-grow"
+    onClick={[Function]}
     style={
       Object {
-        "display": "flex",
-        "flexWrap": "wrap",
-        "height": "100%",
-        "width": "100%",
+        "background": "#c8e1ff",
+        "border": "none",
+        "borderRadius": "6px",
+        "cursor": "pointer",
+        "height": "32%",
+        "margin": "2px",
+        "width": "32%",
       }
     }
-  >
-    <span
-      className="Progress Progress--large"
-    >
-      <span
-        className="Progress-item bg-green"
-        style={
-          Object {
-            "width": "100%",
-          }
-        }
-      />
-    </span>
-    <button
-      act_status={false}
-      className="hover-grow"
-      onClick={[Function]}
-      style={
-        Object {
-          "background": "#c8e1ff",
-          "border": "none",
-          "borderRadius": "6px",
-          "cursor": "pointer",
-          "height": "32%",
-          "margin": "2px",
-          "width": "32%",
-        }
+    type="button"
+  />
+  <button
+    act_status={false}
+    className="hover-grow"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#c8e1ff",
+        "border": "none",
+        "borderRadius": "6px",
+        "cursor": "pointer",
+        "height": "32%",
+        "margin": "2px",
+        "width": "32%",
       }
-      type="button"
-    />
-    <button
-      act_status={false}
-      className="hover-grow"
-      onClick={[Function]}
-      style={
-        Object {
-          "background": "#c8e1ff",
-          "border": "none",
-          "borderRadius": "6px",
-          "cursor": "pointer",
-          "height": "32%",
-          "margin": "2px",
-          "width": "32%",
-        }
+    }
+    type="button"
+  />
+  <button
+    act_status={false}
+    className="hover-grow"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#c8e1ff",
+        "border": "none",
+        "borderRadius": "6px",
+        "cursor": "pointer",
+        "height": "32%",
+        "margin": "2px",
+        "width": "32%",
       }
-      type="button"
-    />
-    <button
-      act_status={false}
-      className="hover-grow"
-      onClick={[Function]}
-      style={
-        Object {
-          "background": "#c8e1ff",
-          "border": "none",
-          "borderRadius": "6px",
-          "cursor": "pointer",
-          "height": "32%",
-          "margin": "2px",
-          "width": "32%",
-        }
+    }
+    type="button"
+  />
+  <button
+    act_status={false}
+    className="hover-grow"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#c8e1ff",
+        "border": "none",
+        "borderRadius": "6px",
+        "cursor": "pointer",
+        "height": "32%",
+        "margin": "2px",
+        "width": "32%",
       }
-      type="button"
-    />
-    <button
-      act_status={false}
-      className="hover-grow"
-      onClick={[Function]}
-      style={
-        Object {
-          "background": "#c8e1ff",
-          "border": "none",
-          "borderRadius": "6px",
-          "cursor": "pointer",
-          "height": "32%",
-          "margin": "2px",
-          "width": "32%",
-        }
+    }
+    type="button"
+  />
+  <button
+    act_status={false}
+    className="hover-grow"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#c8e1ff",
+        "border": "none",
+        "borderRadius": "6px",
+        "cursor": "pointer",
+        "height": "32%",
+        "margin": "2px",
+        "width": "32%",
       }
-      type="button"
-    />
-    <button
-      act_status={false}
-      className="hover-grow"
-      onClick={[Function]}
-      style={
-        Object {
-          "background": "#c8e1ff",
-          "border": "none",
-          "borderRadius": "6px",
-          "cursor": "pointer",
-          "height": "32%",
-          "margin": "2px",
-          "width": "32%",
-        }
+    }
+    type="button"
+  />
+  <button
+    act_status={false}
+    className="hover-grow"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#c8e1ff",
+        "border": "none",
+        "borderRadius": "6px",
+        "cursor": "pointer",
+        "height": "32%",
+        "margin": "2px",
+        "width": "32%",
       }
-      type="button"
-    />
-    <button
-      act_status={false}
-      className="hover-grow"
-      onClick={[Function]}
-      style={
-        Object {
-          "background": "#c8e1ff",
-          "border": "none",
-          "borderRadius": "6px",
-          "cursor": "pointer",
-          "height": "32%",
-          "margin": "2px",
-          "width": "32%",
-        }
+    }
+    type="button"
+  />
+  <button
+    act_status={false}
+    className="hover-grow"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#c8e1ff",
+        "border": "none",
+        "borderRadius": "6px",
+        "cursor": "pointer",
+        "height": "32%",
+        "margin": "2px",
+        "width": "32%",
       }
-      type="button"
-    />
-    <button
-      act_status={false}
-      className="hover-grow"
-      onClick={[Function]}
-      style={
-        Object {
-          "background": "#c8e1ff",
-          "border": "none",
-          "borderRadius": "6px",
-          "cursor": "pointer",
-          "height": "32%",
-          "margin": "2px",
-          "width": "32%",
-        }
+    }
+    type="button"
+  />
+  <button
+    act_status={false}
+    className="hover-grow"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#c8e1ff",
+        "border": "none",
+        "borderRadius": "6px",
+        "cursor": "pointer",
+        "height": "32%",
+        "margin": "2px",
+        "width": "32%",
       }
-      type="button"
-    />
-    <button
-      act_status={false}
-      className="hover-grow"
-      onClick={[Function]}
-      style={
-        Object {
-          "background": "#c8e1ff",
-          "border": "none",
-          "borderRadius": "6px",
-          "cursor": "pointer",
-          "height": "32%",
-          "margin": "2px",
-          "width": "32%",
-        }
+    }
+    type="button"
+  />
+  <button
+    act_status={false}
+    className="hover-grow"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#c8e1ff",
+        "border": "none",
+        "borderRadius": "6px",
+        "cursor": "pointer",
+        "height": "32%",
+        "margin": "2px",
+        "width": "32%",
       }
-      type="button"
-    />
-    <button
-      act_status={false}
-      className="hover-grow"
-      onClick={[Function]}
-      style={
-        Object {
-          "background": "#c8e1ff",
-          "border": "none",
-          "borderRadius": "6px",
-          "cursor": "pointer",
-          "height": "32%",
-          "margin": "2px",
-          "width": "32%",
-        }
-      }
-      type="button"
-    />
-  </div>
+    }
+    type="button"
+  />
 </div>
 `;
