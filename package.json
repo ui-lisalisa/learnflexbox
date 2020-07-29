@@ -63,6 +63,9 @@
     ],
     "*.md": [
       "yarn prettier-docs"
+    ],
+    "*.css": [
+      "yarn stylelint"
     ]
   },
   "husky": {

@@ -3,8 +3,10 @@ import {Switch, Route} from 'react-router-dom';
 //pages
 import Demo from '../../pages/demo_page';
 import ComingSoon from '../../comps/coming-soon_';
+import MailChimp from '../plugins/mailchimp_';
 import NotFound from '../../pages/not-found_page';
 import About from '../../pages/about_page';
+import License from '../../pages/license_';
 
 const AppPaths = () => {
   return (
@@ -16,17 +18,12 @@ const AppPaths = () => {
       />
       <Route
         exact
-        path={[
-          '/assessments',
-          '/challenges',
-          '/support',
-          '/login',
-          '/signup',
-          '/subscribe',
-        ]}
+        path={['/assessments', '/challenges', '/support']}
         render={() => <ComingSoon />}
       />
       <Route exact path={'/about'} render={() => <About />} />
+      <Route exact path={'/license'} render={() => <License />} />
+      <Route exact path={'/subscribe'} render={() => <MailChimp />} />
       <Route render={() => <NotFound />} />
     </Switch>
   );

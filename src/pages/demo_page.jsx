@@ -13,7 +13,7 @@ const defaults = {
   width: '100%',
   height: '450px',
   display: 'flex',
-  // margin: '0 40px',
+  borderRadius: '6px',
   flexDirection: 'column',
   background: '#eee',
   overflowY: 'scroll',
@@ -81,7 +81,7 @@ const Copy = (props) => {
   const keys = Object.keys(STORE);
   if (keys.includes(props.data)) {
     return (
-      <div style={{width: '50%'}}>
+      <div className='cb-pre'>
         <section style={defaults}>
           {/* <Clipboard /> */}
           {/**
@@ -97,7 +97,7 @@ const Copy = (props) => {
 
 /** ------------------------------------------
  * Generated on ${moments}
- * by Flexbox-generator under the MIT license 
+ * by Learn Flexbox under the MIT license 
  ** ------------------------------------------*/
 
 `}
@@ -112,13 +112,13 @@ const Copy = (props) => {
           </pre>
         </section>
         <div>
-          <p>Don't forget to set the set the <b>height</b> and <b>width</b> for the <code>.parent</code> class.</p>
+          <p style={{marginTop: '40px', textAlign: 'center'}}>Don't forget to set the set the <b>height</b> and <b>width</b> for the <code>.parent</code> class.</p>
         </div>
       </div>
     );
   } else {
     return (
-      <div style={{width: '50%'}}>
+      <div className='cb-pre'>
         <section style={defaults} className="blankslate">
           <div
             style={{
@@ -149,7 +149,7 @@ const Demo = () => {
 
   return (
     <main style={{width: '100%'}}>
-      <div style={{display: 'flex'}}>
+      <div className="layout">
         <Copy data={data} />
         <ControlPanel handleData={(i) => setData(i)} />
       </div>

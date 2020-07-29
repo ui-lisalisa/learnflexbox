@@ -1,0 +1,51 @@
+.page-head {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px 40px;
+  background: #79b8ff;
+}
+
+.page-title {
+  font-family: 'Rubik', sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.header-link {
+  color: #f1f8ff;
+  font-family: 'font-family: ''Rubik', sans-serif;
+  letter-spacing: 1px;
+  padding: 0 40px 0 0;
+  font-size: 14px;
+}
+
+/* @media (min-width: 576px) {
+
+} */
+
+@media (min-width: 768px) {
+  .page-title {
+    font-size: 28px;
+  }
+
+  .header-link {
+    font-size: 16px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .page-head {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+
+/* @media (min-width: 1200px) {
+
+} */
