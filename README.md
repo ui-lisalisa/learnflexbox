@@ -9,7 +9,7 @@
 1. Clone and install
 
 ```
-$ git clone https://github.com/hi-matbub/flexbox.git
+$ git clone https://github.com/hi-matbub/learnflexbox.git
 $ cd flexbox
 $ yarn
 ```
@@ -22,7 +22,7 @@ $ yarn start
 
 ## Contributing
 
-If you want to get involved take a look at the [Contributing guide](https://github.com/hi-matbub/flexbox/blob/master/CONTRIBUTING.md).
+If you want to get involved take a look at the [Contributing guide](https://github.com/hi-matbub/learnflexbox/blob/master/CONTRIBUTING.md). 
 
 ## More Info
 
