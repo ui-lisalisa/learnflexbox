@@ -6,7 +6,8 @@ export const STORE = {
   display: flex;  
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child"></div>
 </div>`,
   },
@@ -17,7 +18,8 @@ export const STORE = {
   justify-content: center;      
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child"></div>
 </div>`,
   },
@@ -28,7 +30,8 @@ export const STORE = {
   justify-content: flex-end;
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child"></div>
 </div>`,
   },
@@ -40,7 +43,8 @@ export const STORE = {
   justify-content: center;
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child"></div>
 </div>`,
   },
@@ -53,7 +57,8 @@ export const STORE = {
   justify-content: center;
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child"></div>
 </div>`,
   },
@@ -66,7 +71,8 @@ export const STORE = {
   justify-content: center;
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child"></div>
 </div>`,
   },
@@ -78,7 +84,8 @@ export const STORE = {
   justify-content: flex-end;
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child"></div>
 </div>`,
   },
@@ -91,7 +98,8 @@ export const STORE = {
   justify-content: flex-end;
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child"></div>
 </div>`,
   },
@@ -104,7 +112,8 @@ export const STORE = {
   justify-content: flex-end;
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child"></div>
 </div>`,
   },
@@ -114,7 +123,8 @@ export const STORE = {
   display: flex;
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
 </div>`,
@@ -126,7 +136,8 @@ export const STORE = {
   justify-content: center;
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
 </div>`,
@@ -138,7 +149,8 @@ export const STORE = {
   flex-direction: row;
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
 </div>`,
@@ -155,7 +167,8 @@ export const STORE = {
 }
 `,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
 </div>`,
@@ -175,7 +188,8 @@ export const STORE = {
   align-self: flex-end;
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
 </div>`,
@@ -188,7 +202,8 @@ export const STORE = {
   justify-content: space-between; 
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
 </div>`,
@@ -205,7 +220,8 @@ export const STORE = {
   align-self: center;
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
 </div>`,
@@ -222,7 +238,8 @@ export const STORE = {
   align-self: flex-end;
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
 </div>`,
@@ -234,7 +251,8 @@ export const STORE = {
   justify-content: flex-end;
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
 </div>`,
@@ -250,7 +268,8 @@ export const STORE = {
   align-self: center;
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
 </div>`,
@@ -263,7 +282,8 @@ export const STORE = {
   align-items: center;  
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
 </div>`,
@@ -283,7 +303,8 @@ export const STORE = {
   align-self: flex-end;
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
 </div>`,
@@ -300,7 +321,8 @@ export const STORE = {
   align-self: center;
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
 </div>`,
@@ -321,7 +343,8 @@ export const STORE = {
   align-self: center;
 } `,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
 </div>`,
@@ -342,7 +365,8 @@ export const STORE = {
   align-self: flex-end;
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
 </div>`,
@@ -362,7 +386,8 @@ export const STORE = {
   align-self: flex-start;
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
 </div>`,
@@ -382,7 +407,8 @@ export const STORE = {
   align-self: center;
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
 </div>`,
@@ -402,7 +428,8 @@ export const STORE = {
   align-self: flex-end;
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
 </div>`,
@@ -419,7 +446,8 @@ export const STORE = {
   align-self: flex-end;
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
 </div>`,
@@ -440,7 +468,8 @@ export const STORE = {
   align-self: center;
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
 </div>`,
@@ -461,7 +490,8 @@ export const STORE = {
   align-self: flex-end;
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
 </div>`,
@@ -473,7 +503,8 @@ export const STORE = {
   align-items: center;
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
 </div>`,
@@ -486,7 +517,8 @@ export const STORE = {
   align-items: center;
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
 </div>`,
@@ -499,7 +531,8 @@ export const STORE = {
   justify-content: flex-end; 
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
 </div>`,
@@ -516,7 +549,8 @@ export const STORE = {
   align-self: center;
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
 </div>`,
@@ -533,7 +567,8 @@ export const STORE = {
   align-self: flex-end;
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
 </div>`,
@@ -550,7 +585,8 @@ export const STORE = {
   align-self: flex-end;
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
 </div>`,
@@ -568,7 +604,8 @@ export const STORE = {
   align-self: flex-start;
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
 </div>`,
@@ -582,7 +619,8 @@ export const STORE = {
   justify-content: flex-end;  
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
 </div>`,
@@ -599,7 +637,8 @@ export const STORE = {
   align-self: flex-end;
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
 </div>`,
@@ -621,7 +660,8 @@ export const STORE = {
   align-self: flex-start;
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
 </div>`,
@@ -639,7 +679,8 @@ export const STORE = {
   align-self: flex-end;
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
 </div>`,
@@ -658,7 +699,8 @@ export const STORE = {
   align-self: flex-end;
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
 </div>`,
@@ -671,7 +713,8 @@ export const STORE = {
   align-items: flex-end;      
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
 </div>`,
@@ -685,7 +728,8 @@ export const STORE = {
   justify-content: space-between;
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
 </div>`,
@@ -699,7 +743,8 @@ export const STORE = {
   justify-content: flex-end;
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
 </div>`,
@@ -710,7 +755,8 @@ export const STORE = {
   display: flex;
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
   <div class="child"></div>
@@ -727,7 +773,8 @@ export const STORE = {
   display: flex;
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child">
     <div class="grandchild"></div>
     <div class="grandchild"></div>
@@ -750,7 +797,8 @@ export const STORE = {
   align-self: center;
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child">
     <div class="grandchild"></div>
     <div class="grandchild"></div>
@@ -773,7 +821,8 @@ export const STORE = {
   align-self: flex-end;
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child">
     <div class="grandchild"></div>
     <div class="grandchild"></div>
@@ -793,7 +842,8 @@ export const STORE = {
   display: flex;
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child">
     <div class="grandchild"></div>
     <div class="grandchild"></div>
@@ -817,7 +867,8 @@ export const STORE = {
   align-self: center;
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child">
     <div class="grandchild"></div>
     <div class="grandchild"></div>
@@ -841,7 +892,8 @@ export const STORE = {
   align-self: flex-end;
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child">
     <div class="grandchild"></div>
     <div class="grandchild"></div>
@@ -861,7 +913,8 @@ export const STORE = {
   justify-content: space-between;
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child">
     <div class="grandchild"></div>
     <div class="grandchild"></div>
@@ -885,7 +938,8 @@ export const STORE = {
   align-self: center;
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child">
     <div class="grandchild"></div>
     <div class="grandchild"></div>
@@ -909,7 +963,8 @@ export const STORE = {
   align-self: flex-end;
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child">
     <div class="grandchild"></div>
     <div class="grandchild"></div>
@@ -930,7 +985,8 @@ export const STORE = {
   justify-content: space-between;
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child">
     <div class="grandchild"></div>
     <div class="grandchild"></div>
@@ -955,7 +1011,8 @@ export const STORE = {
   align-self: center;
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child">
     <div class="grandchild"></div>
     <div class="grandchild"></div>
@@ -980,7 +1037,8 @@ export const STORE = {
   align-self: flex-end;
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child">
     <div class="grandchild"></div>
     <div class="grandchild"></div>
@@ -999,7 +1057,8 @@ export const STORE = {
   display: flex;
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child"></div>
   <div class="child">
     <div class="grandchild"></div>
@@ -1019,7 +1078,8 @@ export const STORE = {
   justify-content: space-between;
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child"></div>
   <div class="child">
     <div class="grandchild"></div>
@@ -1034,7 +1094,8 @@ export const STORE = {
   flex-direction: column;
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
   <div class="child"></div>
@@ -1057,7 +1118,8 @@ export const STORE = {
   align-self: flex-start;
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child"></div>
   <div class="child">
     <div class="grandchild"></div>
@@ -1086,7 +1148,8 @@ export const STORE = {
   align-self: flex-end;
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child"></div>
   <div class="child">
     <div class="grandchild"></div>
@@ -1106,7 +1169,8 @@ export const STORE = {
   justify-content: flex-end;
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child"></div>
   <div class="child">
     <div class="grandchild"></div>
@@ -1131,7 +1195,8 @@ export const STORE = {
   align-self: flex-start;
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child"></div>
   <div class="child">
     <div class="grandchild"></div>
@@ -1152,7 +1217,8 @@ export const STORE = {
   align-items: center;
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child"></div>
   <div class="child">
     <div class="grandchild"></div>
@@ -1177,7 +1243,8 @@ export const STORE = {
   align-self: flex-end;
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child"></div>
   <div class="child">
     <div class="grandchild"></div>
@@ -1206,7 +1273,8 @@ export const STORE = {
   align-self: flex-start;
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child"></div>
   <div class="child">
     <div class="grandchild"></div>
@@ -1231,7 +1299,8 @@ export const STORE = {
   align-self: flex-end;
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child"></div>
   <div class="child">
     <div class="grandchild"></div>
@@ -1252,7 +1321,8 @@ export const STORE = {
   align-items: flex-end;
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child"></div>
   <div class="child">
     <div class="grandchild"></div>
@@ -1272,7 +1342,8 @@ export const STORE = {
   display: flex;
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child"></div>
   <div class="child">
     <div class="grandchild"></div>
@@ -1293,7 +1364,8 @@ export const STORE = {
   justify-content: space-between;
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child"></div>
   <div class="child">
     <div class="grandchild"></div>
@@ -1314,7 +1386,8 @@ export const STORE = {
   justify-content: flex-end;
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child"></div>
   <div class="child">
     <div class="grandchild"></div>
@@ -1334,7 +1407,8 @@ export const STORE = {
   align-self: flex-end;
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child">
     <div class="grandchild"></div>
     <div class="grandchild"></div>
@@ -1355,7 +1429,8 @@ export const STORE = {
   align-self: flex-end;
 }`,
     html:
-`<div class="parent">  
+`
+<div class="parent">  
   <div class="child">
     <div class="grandchild"></div>
     <div class="grandchild"></div>
@@ -1375,7 +1450,8 @@ export const STORE = {
   display: flex;
 }`,
     html:
-`<div class="parent">  
+`
+<div class="parent">  
   <div class="child">
     <div class="grandchild"></div>
     <div class="grandchild"></div>
@@ -1400,7 +1476,8 @@ export const STORE = {
   align-self: flex-start;
 }`,
     html:
-`<div class="parent">  
+`
+<div class="parent">  
   <div class="child">
     <div class="grandchild"></div>
     <div class="grandchild"></div>
@@ -1425,7 +1502,8 @@ export const STORE = {
   align-self: center;
 }`,
     html:
-`<div class="parent">  
+`
+<div class="parent">  
   <div class="child">
     <div class="grandchild"></div>
     <div class="grandchild"></div>
@@ -1446,7 +1524,8 @@ export const STORE = {
   display: flex;
 }`,
     html:
-`<div class="parent">  
+`
+<div class="parent">  
   <div class="child">
     <div class="grandchild"></div>
     <div class="grandchild"></div>
@@ -1465,7 +1544,8 @@ export const STORE = {
   display: flex;
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child"></div>
   <div class="child">
     <div class="grandchild"></div>
@@ -1485,7 +1565,8 @@ export const STORE = {
   justify-content: space-between; 
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child"></div>
   <div class="child">
     <div class="grandchild"></div>
@@ -1506,7 +1587,8 @@ export const STORE = {
   align-self: flex-start;
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
   <div class="child"></div>
@@ -1528,7 +1610,8 @@ export const STORE = {
   align-self: center;
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
   <div class="child"></div>
@@ -1550,7 +1633,8 @@ export const STORE = {
   align-self: flex-end;
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
   <div class="child"></div>
@@ -1572,7 +1656,8 @@ export const STORE = {
   align-self: flex-end;
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child"></div>
   <div class="child">
     <div class="grandchild"></div>
@@ -1592,7 +1677,8 @@ export const STORE = {
   align-self: flex-start;
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
   <div class="child"></div>
@@ -1606,7 +1692,8 @@ export const STORE = {
   align-items: center;
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
   <div class="child"></div>
@@ -1624,7 +1711,8 @@ export const STORE = {
   align-self: flex-end;
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
   <div class="child"></div>
@@ -1645,7 +1733,8 @@ export const STORE = {
   align-self: flex-end;
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
   <div class="child"></div>
@@ -1663,7 +1752,8 @@ export const STORE = {
   align-self: flex-end;
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
   <div class="child"></div>
@@ -1681,7 +1771,8 @@ export const STORE = {
   align-self: center;
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
   <div class="child"></div>
@@ -1699,7 +1790,8 @@ export const STORE = {
   display: flex;
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child"></div>
   <div class="child">
     <div class="grandchild"></div>
@@ -1720,7 +1812,8 @@ export const STORE = {
   justify-content: space-between;
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child"></div>
   <div class="child">
     <div class="grandchild"></div>
@@ -1741,7 +1834,8 @@ export const STORE = {
   align-self: flex-end;
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child"></div>
   <div class="child">
     <div class="grandchild"></div>
@@ -1764,7 +1858,8 @@ export const STORE = {
   display: flex;
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child"></div>
   <div class="child">
     <div class="grandchild"></div>
@@ -1788,7 +1883,8 @@ export const STORE = {
   justify-content: space-between;
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child"></div>
   <div class="child">
     <div class="grandchild"></div>
@@ -1807,7 +1903,8 @@ export const STORE = {
   align-self: flex-end;
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
   <div class="child"></div>
@@ -1828,7 +1925,8 @@ export const STORE = {
   align-self: center;
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
   <div class="child"></div>
@@ -1849,7 +1947,8 @@ export const STORE = {
   align-self: flex-end;
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
   <div class="child"></div>
@@ -1871,7 +1970,8 @@ export const STORE = {
   align-self: flex-end;
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child"></div>
   <div class="child">
       <div class="grandchild"></div>
@@ -1898,7 +1998,8 @@ export const STORE = {
   align-self: flex-start;
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
   <div class="child"></div>
@@ -1916,7 +2017,8 @@ export const STORE = {
   align-self: flex-end;
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
   <div class="child"></div>
@@ -1934,7 +2036,8 @@ export const STORE = {
   align-self: center;
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
   <div class="child"></div>
@@ -1952,7 +2055,8 @@ export const STORE = {
   align-self: flex-start;
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
   <div class="child"></div>
@@ -1970,7 +2074,8 @@ export const STORE = {
   align-self: center;
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
   <div class="child"></div>
@@ -1984,7 +2089,8 @@ export const STORE = {
   align-items: flex-end;
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
   <div class="child"></div>
@@ -1998,7 +2104,8 @@ export const STORE = {
   align-items: center;
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
   <div class="child"></div>
@@ -2040,7 +2147,8 @@ export const STORE = {
   align-self: center;
 }`,
     html:
-`<div class="parent">    
+`
+<div class="parent">    
   <div class="child">
     <div class="grandchild"></div>
     <div class="grandchild"></div>
@@ -2063,7 +2171,7 @@ export const STORE = {
 .child:nth-child(2){  
   align-self: flex-end;
 }`,
-    html:
+    html :
 `<div class="parent">    
   <div class="child">
     <div class="grandchild"></div>
@@ -2089,7 +2197,8 @@ export const STORE = {
   align-self: flex-start;
 }`,
     html:
-`<div class="parent">    
+`
+<div class="parent">    
   <div class="child">
     <div class="grandchild"></div>
     <div class="grandchild"></div>
@@ -2114,7 +2223,8 @@ export const STORE = {
   align-self: center;
 }`,
     html:
-`<div class="parent">    
+`
+<div class="parent">    
   <div class="child">
     <div class="grandchild"></div>
     <div class="grandchild"></div>
@@ -2139,7 +2249,8 @@ export const STORE = {
   align-self: flex-end;
 }`,
     html:
-`<div class="parent">    
+`
+<div class="parent">    
   <div class="child">
     <div class="grandchild"></div>
     <div class="grandchild"></div>
@@ -2159,7 +2270,8 @@ export const STORE = {
   display: flex;
 }`,
     html:
-`<div class="parent">    
+`
+<div class="parent">    
   <div class="child"></div>  
   <div class="child">
     <div class="grandchild"></div>
@@ -2180,7 +2292,8 @@ export const STORE = {
   justify-content: space-between;
 }`,
     html:
-`<div class="parent">    
+`
+<div class="parent">    
   <div class="child"></div>  
   <div class="child">
     <div class="grandchild"></div>
@@ -2201,7 +2314,8 @@ export const STORE = {
   justify-content: flex-end;
 }`,
     html:
-`<div class="parent">    
+`
+<div class="parent">    
   <div class="child"></div>  
   <div class="child">
     <div class="grandchild"></div>
@@ -2221,7 +2335,8 @@ export const STORE = {
   display: flex; 
 }`,
     html:
-`<div class="parent">      
+`
+<div class="parent">      
   <div class="child">
     <div class="grandchild"></div>
     <div class="grandchild"></div>
@@ -2245,7 +2360,8 @@ export const STORE = {
    align-self: center;
 }`,
     html:
-`<div class="parent">       
+`
+<div class="parent">       
   <div class="child">
     <div class="grandchild"></div>
     <div class="grandchild"></div>
@@ -2269,7 +2385,8 @@ export const STORE = {
    align-self: flex-end;
 }`,
     html:
-`<div class="parent">       
+`
+<div class="parent">       
   <div class="child">
     <div class="grandchild"></div>
     <div class="grandchild"></div>
@@ -2293,7 +2410,8 @@ export const STORE = {
    display: flex;
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child"></div>
   <div class="child">
     <div class="grandchild"></div>
@@ -2318,7 +2436,8 @@ export const STORE = {
    justify-content: space-between;
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child"></div>
   <div class="child">
     <div class="grandchild"></div>
@@ -2333,7 +2452,8 @@ export const STORE = {
   align-items: flex-end;
 }`,
     html:
-`<div class="parent">
+`
+<div class="parent">
   <div class="child"></div>
   <div class="child"></div>
   <div class="child"></div>

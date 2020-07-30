@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import '../../styles/github_animations.scss';
+// import '../../styles/github_animations.scss';
 import '../../styles/header-styles.css';
 
 // prettier-ignore
