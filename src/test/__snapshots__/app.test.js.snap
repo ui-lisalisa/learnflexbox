@@ -76,14 +76,25 @@ exports[`renders snapshot as expected 1`] = `
           }
         }
       >
+        <div>
+          <h2
+            className="blog-title"
+          >
+            Flexbox Generator
+          </h2>
+          <p
+            className="blog-cont"
+          >
+            Use the key pad to generate an immediate flexable layout.
+          </p>
+        </div>
         <div
           className="layout"
         >
           <div
-            className="cb-pre"
+            className="cb-pre hom"
           >
             <section
-              className="blankslate"
               style={
                 Object {
                   "background": "#eee",
@@ -98,6 +109,7 @@ exports[`renders snapshot as expected 1`] = `
               }
             >
               <div
+                className="hover-grow"
                 style={
                   Object {
                     "alignItems": "center",
@@ -107,47 +119,36 @@ exports[`renders snapshot as expected 1`] = `
                   }
                 }
               >
-                <div
-                  className="hover-grow"
+                <h2
                   style={
                     Object {
-                      "alignItems": "center",
-                      "display": "flex",
-                      "justifyContent": "center",
+                      "fontFamily": "\\"Rubik\\", sans-serif",
                     }
                   }
                 >
-                  <h2
-                    style={
-                      Object {
-                        "fontFamily": "\\"Rubik\\", sans-serif",
-                      }
+                  Try me!
+                </h2>
+                <svg
+                  aria-hidden="true"
+                  className="octicon"
+                  dangerouslySetInnerHTML={
+                    Object {
+                      "__html": "<path fill-rule=\\"evenodd\\" d=\\"M13.22 19.03a.75.75 0 001.06 0l6.25-6.25a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 10-1.06 1.06l4.97 4.97H3.75a.75.75 0 000 1.5h14.44l-4.97 4.97a.75.75 0 000 1.06z\\"></path>",
                     }
-                  >
-                    Try me!
-                  </h2>
-                  <svg
-                    aria-hidden="true"
-                    className="octicon"
-                    dangerouslySetInnerHTML={
-                      Object {
-                        "__html": "<path fill-rule=\\"evenodd\\" d=\\"M13.22 19.03a.75.75 0 001.06 0l6.25-6.25a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 10-1.06 1.06l4.97 4.97H3.75a.75.75 0 000 1.5h14.44l-4.97 4.97a.75.75 0 000 1.06z\\"></path>",
-                      }
+                  }
+                  fill="currentColor"
+                  height={60}
+                  role="img"
+                  style={
+                    Object {
+                      "display": "inline-block",
+                      "userSelect": "none",
+                      "verticalAlign": "text-bottom",
                     }
-                    fill="currentColor"
-                    height={60}
-                    role="img"
-                    style={
-                      Object {
-                        "display": "inline-block",
-                        "userSelect": "none",
-                        "verticalAlign": "text-bottom",
-                      }
-                    }
-                    viewBox="0 0 24 24"
-                    width={60}
-                  />
-                </div>
+                  }
+                  viewBox="0 0 24 24"
+                  width={60}
+                />
               </div>
             </section>
           </div>

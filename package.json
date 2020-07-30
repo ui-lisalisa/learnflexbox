@@ -1,7 +1,7 @@
 {
-  "name": "flexbox",
-  "version": "0.1.4",
-  "private": true,
+  "name": "learnflexbox",
+  "version": "1.1",
+  "private": false,
   "dependencies": {
     "@primer/components": "^20.0.0",
     "@primer/css": "^15.0.0",
