@@ -26,6 +26,8 @@
       "no-use-before-define": "error",
       "no-redeclare": "error",      
       "brace-style": "error",
+      "prefer-const": "error",
+      "no-var": "error",
       "indent": [
           "error",
           2
