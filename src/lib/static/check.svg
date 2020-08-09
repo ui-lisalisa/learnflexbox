@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="51" height="47" viewBox="0 0 51 47">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke: #2ea1e6;
+      }
+
+      .cls-2 {
+        fill: #2046f6;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+
+      .cls-4 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="Group_147" data-name="Group 147" transform="translate(-285 -1128)">
+    <g id="Rectangle_133" data-name="Rectangle 133" class="cls-1" transform="translate(285 1128)">
+      <rect class="cls-3" width="51" height="47" rx="16"/>
+      <rect class="cls-4" x="0.5" y="0.5" width="50" height="46" rx="15.5"/>
+    </g>
+    <path id="Checkbox" class="cls-2" d="M9.236,16.062,0,6.826,1.874,4.953,9.236,12.18,21.416,0,23.29,1.874Z" transform="translate(299 1143.255)"/>
+  </g>
+</svg>
