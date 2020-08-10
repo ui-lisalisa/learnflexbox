@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 // import '../../styles/github_animations.scss';
-import '../../styles/header-styles.css';
+import './app-header.css';
 
 // prettier-ignore
 const Header = () => {

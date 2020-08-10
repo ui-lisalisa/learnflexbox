@@ -1,0 +1,26 @@
+.form-cont {
+  display: flex;
+  align-items: center;
+  border: 1px solid #000000b7;
+  border-radius: 4px;
+  padding: 4px 8px;
+  margin-top: 16px;
+}
+
+#mc_embed_signup {
+  width: 100%;
+}
+
+#mc_embed_signup form {
+  padding: 0;
+}
+
+#mc_embed_signup .button {
+  margin: 0;
+  background: #2046f6;
+  border-radius: 4px;
+}
+
+#mc_embed_signup .button:hover {
+  background: #173eeb;
+}

@@ -19,7 +19,7 @@ const Path = (props) => {
 };
 
 const Footer = () => {
-  let date = new Date().getFullYear();
+  const date = new Date().getFullYear();
   return (
     <footer style={{padding: '40px 0', marginTop: '40px'}}>
       <section className={'footer-cont'}>

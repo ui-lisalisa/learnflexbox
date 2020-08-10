@@ -2,11 +2,11 @@ import React, {useRef} from 'react';
 import {handleSort, handleRemove} from './controller_helpers.jsx';
 // import '../../styles/github_animations.scss';
 
-let controls = [],
-  isActive = [],
-  inQuery = [];
+const controls = [];
+const isActive = [];
+let inQuery = [];
 
-let box = {
+const box = {
   height: '32%',
   width: '32%',
   borderRadius: '6px',

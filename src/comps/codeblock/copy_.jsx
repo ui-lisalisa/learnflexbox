@@ -5,7 +5,6 @@ import moment from 'moment';
 import {STORE} from '../../lib/STORE';
 //comps
 import Code from './code_';
-import GenProTip from '../../lib/gen_protip';
 //styles
 import '../../styles/github_animations.scss';
 import '../../styles/page-queries.css';
@@ -23,11 +22,11 @@ const defaults = {
 
 // prettier-ignore
 const Copy = (props) => {
-  let moments = moment().format('llll');
+  const moments = moment().format('llll');
   const keys = Object.keys(STORE);
 
   if (keys.includes(props.data)) {
-    let print = `<style>
+    const print = `<style>
 
 /** -------------------------------------
  * Generated on ${moments}
@@ -42,7 +41,6 @@ ${STORE[props.data].html}`;
     return (
       <div className={'cb-pre'}>
         <Code print={print} defaults={defaults}/>
-        <GenProTip />
       </div>
     );
   } else {
