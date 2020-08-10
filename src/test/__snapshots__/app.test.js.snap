@@ -4,593 +4,335 @@ exports[`renders snapshot as expected 1`] = `
 <div
   className="App"
 >
-  <header
-    className="page-head"
-  >
-    <h1
-      className="page-title"
-    >
-      <a
-        className="hover-grow"
-        href="/"
-        onClick={[Function]}
-        style={
-          Object {
-            "color": "#f1f8ff",
-          }
-        }
-      >
-        Learn Flexbox
-      </a>
-    </h1>
-    <div
-      style={
-        Object {
-          "alignItems": "flex-end",
-          "display": "flex",
-        }
-      }
-    >
-      <a
-        className="hover-grow header-link"
-        href="/"
-        onClick={[Function]}
-      >
-        Generator
-      </a>
-      <a
-        className="hover-grow header-link"
-        href="/challenges"
-        onClick={[Function]}
-      >
-        UI Challenges
-      </a>
-    </div>
-  </header>
-  <div
+  <main
     style={
       Object {
-        "display": "flex",
-        "margin": "120px 0",
+        "width": "100%",
       }
     }
   >
-    <div
-      style={
-        Object {
-          "width": "10%",
-        }
-      }
-    />
-    <div
-      style={
-        Object {
-          "width": "80%",
-        }
-      }
+    <header
+      className="header"
     >
-      <main
-        style={
-          Object {
-            "width": "100%",
-          }
-        }
+      <div
+        className="col col-cont"
       >
-        <div>
-          <h2
-            className="blog-title"
-          >
-            Flexbox Generator
-          </h2>
-          <p
-            className="blog-cont"
-          >
-            Use the key pad to generate an immediate flexable layout.
-          </p>
-        </div>
         <div
-          className="layout"
+          className="lfb-cont"
         >
-          <div
-            className="cb-pre hom"
+          <span
+            className="learnflexbox"
           >
-            <section
-              style={
-                Object {
-                  "background": "#eee",
-                  "borderRadius": "6px",
-                  "display": "flex",
-                  "flexDirection": "column",
-                  "height": "450px",
-                  "overflowY": "scroll",
-                  "position": "relative",
-                  "width": "100%",
-                }
-              }
+            #
+            <h1>
+              learn
+              <span>
+                flexbox
+              </span>
+            </h1>
+          </span>
+          <p
+            className="alt-text hw"
+          >
+            Subscribe for 30 days of Wire-framing Challenges.
+          </p>
+          <div
+            id="mc_embed_signup"
+          >
+            <form
+              action="https://matbub.us17.list-manage.com/subscribe/post?u=eb89624098c8ce40b7f3b26ef&id=909f807d9f"
+              className="validate"
+              id="mc-embedded-subscribe-form"
+              method="post"
+              name="mc-embedded-subscribe-form"
+              noValidate={true}
+              target="_blank"
             >
               <div
-                className="hover-grow"
-                style={
-                  Object {
-                    "alignItems": "center",
-                    "display": "flex",
-                    "height": "100%",
-                    "justifyContent": "center",
-                  }
-                }
+                className="form-cont"
               >
-                <h2
+                <input
+                  aria-label="Repository description"
+                  className="email"
+                  defaultValue=""
+                  id="mce-EMAIL"
+                  name="EMAIL"
+                  placeholder="e.g. hi@matbub.co"
                   style={
                     Object {
-                      "fontFamily": "\\"Rubik\\", sans-serif",
+                      "border": 0,
                     }
                   }
-                >
-                  Try me!
-                </h2>
-                <svg
-                  aria-hidden="true"
-                  className="octicon"
-                  dangerouslySetInnerHTML={
-                    Object {
-                      "__html": "<path fill-rule=\\"evenodd\\" d=\\"M13.22 19.03a.75.75 0 001.06 0l6.25-6.25a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 10-1.06 1.06l4.97 4.97H3.75a.75.75 0 000 1.5h14.44l-4.97 4.97a.75.75 0 000 1.06z\\"></path>",
-                    }
-                  }
-                  fill="currentColor"
-                  height={60}
-                  role="img"
-                  style={
-                    Object {
-                      "display": "inline-block",
-                      "userSelect": "none",
-                      "verticalAlign": "text-bottom",
-                    }
-                  }
-                  viewBox="0 0 24 24"
-                  width={60}
+                  type="email"
                 />
+                <div
+                  className="clear"
+                  id="mce-responses"
+                >
+                  <div
+                    className="response"
+                    id="mce-error-response"
+                    style={
+                      Object {
+                        "display": "none",
+                      }
+                    }
+                  />
+                  <div
+                    className="response"
+                    id="mce-success-response"
+                    style={
+                      Object {
+                        "display": "none",
+                      }
+                    }
+                  />
+                </div>
+                <button
+                  className="button"
+                  id="mc-embedded-subscribe"
+                  name="subscribe"
+                  type="submit"
+                >
+                  Subscribe
+                </button>
               </div>
-            </section>
-          </div>
-          <div
-            className="cb-con control"
-          >
-            <button
-              act_status={false}
-              className="hover-grow"
-              onClick={[Function]}
-              style={
-                Object {
-                  "background": "#c8e1ff",
-                  "border": "none",
-                  "borderRadius": "6px",
-                  "cursor": "pointer",
-                  "height": "32%",
-                  "margin": "2px",
-                  "width": "32%",
-                }
-              }
-              type="button"
-            />
-            <button
-              act_status={false}
-              className="hover-grow"
-              onClick={[Function]}
-              style={
-                Object {
-                  "background": "#c8e1ff",
-                  "border": "none",
-                  "borderRadius": "6px",
-                  "cursor": "pointer",
-                  "height": "32%",
-                  "margin": "2px",
-                  "width": "32%",
-                }
-              }
-              type="button"
-            />
-            <button
-              act_status={false}
-              className="hover-grow"
-              onClick={[Function]}
-              style={
-                Object {
-                  "background": "#c8e1ff",
-                  "border": "none",
-                  "borderRadius": "6px",
-                  "cursor": "pointer",
-                  "height": "32%",
-                  "margin": "2px",
-                  "width": "32%",
-                }
-              }
-              type="button"
-            />
-            <button
-              act_status={false}
-              className="hover-grow"
-              onClick={[Function]}
-              style={
-                Object {
-                  "background": "#c8e1ff",
-                  "border": "none",
-                  "borderRadius": "6px",
-                  "cursor": "pointer",
-                  "height": "32%",
-                  "margin": "2px",
-                  "width": "32%",
-                }
-              }
-              type="button"
-            />
-            <button
-              act_status={false}
-              className="hover-grow"
-              onClick={[Function]}
-              style={
-                Object {
-                  "background": "#c8e1ff",
-                  "border": "none",
-                  "borderRadius": "6px",
-                  "cursor": "pointer",
-                  "height": "32%",
-                  "margin": "2px",
-                  "width": "32%",
-                }
-              }
-              type="button"
-            />
-            <button
-              act_status={false}
-              className="hover-grow"
-              onClick={[Function]}
-              style={
-                Object {
-                  "background": "#c8e1ff",
-                  "border": "none",
-                  "borderRadius": "6px",
-                  "cursor": "pointer",
-                  "height": "32%",
-                  "margin": "2px",
-                  "width": "32%",
-                }
-              }
-              type="button"
-            />
-            <button
-              act_status={false}
-              className="hover-grow"
-              onClick={[Function]}
-              style={
-                Object {
-                  "background": "#c8e1ff",
-                  "border": "none",
-                  "borderRadius": "6px",
-                  "cursor": "pointer",
-                  "height": "32%",
-                  "margin": "2px",
-                  "width": "32%",
-                }
-              }
-              type="button"
-            />
-            <button
-              act_status={false}
-              className="hover-grow"
-              onClick={[Function]}
-              style={
-                Object {
-                  "background": "#c8e1ff",
-                  "border": "none",
-                  "borderRadius": "6px",
-                  "cursor": "pointer",
-                  "height": "32%",
-                  "margin": "2px",
-                  "width": "32%",
-                }
-              }
-              type="button"
-            />
-            <button
-              act_status={false}
-              className="hover-grow"
-              onClick={[Function]}
-              style={
-                Object {
-                  "background": "#c8e1ff",
-                  "border": "none",
-                  "borderRadius": "6px",
-                  "cursor": "pointer",
-                  "height": "32%",
-                  "margin": "2px",
-                  "width": "32%",
-                }
-              }
-              type="button"
-            />
+            </form>
           </div>
         </div>
-        <div
-          className="demo-content"
-        >
-          <h3
-            className="demo-h3"
-          >
-            Basic Flexbox Examples
-          </h3>
-          <p>
-            While there are several ways to go about aligning content on the dom, us folks over hear at Learn Flexbox prefer to use flexbox. It wouldn't hurt to get familiar with a few of these layouts below.
-          </p>
-          <div
-            className="cont-wrap"
-          >
-            <img
-              alt="flex"
-              className="demo-img"
-              src="flex.png"
-            />
-            <pre
-              className="code"
-            >
-              <code>
-                
-  .parent {
-    display: flex;
-  }
-          
-              </code>
-            </pre>
-          </div>
-          <div
-            className="cont-wrap"
-          >
-            <img
-              alt="flex"
-              className="demo-img"
-              src="flex-column.png"
-            />
-            <pre
-              className="code"
-            >
-              <code>
-                
-  .parent {
-    display: flex;
-    flex-direction: column;
-  }
-          
-              </code>
-            </pre>
-          </div>
-          <div
-            className="cont-wrap"
-          >
-            <img
-              alt="flex"
-              className="demo-img"
-              src="col-center-center.png"
-            />
-            <pre
-              className="code"
-            >
-              <code>
-                
-  .parent {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-          
-              </code>
-            </pre>
-          </div>
-          <div
-            className="cont-wrap"
-          >
-            <img
-              alt="flex"
-              className="demo-img"
-              src="row-center-center.png"
-            />
-            <pre
-              className="code"
-            >
-              <code>
-                
-  .parent {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-          
-              </code>
-            </pre>
-          </div>
-        </div>
-      </main>
-    </div>
-    <div
-      style={
-        Object {
-          "width": "10%",
-        }
-      }
-    />
-  </div>
-  <footer
-    style={
-      Object {
-        "marginTop": "40px",
-        "padding": "40px 0",
-      }
-    }
-  >
-    <section
-      className="footer-cont"
-    >
-      <div>
-        <h2
-          style={
-            Object {
-              "marginBottom": "20px",
-            }
-          }
-        >
-          Learn Flexbox
-        </h2>
-        <a
-          href="/about"
-          onClick={[Function]}
-          style={
-            Object {
-              "fontFamily": "'Rubik', sans-serif",
-              "letterSpacing": "1px",
-              "lineHeight": "28px",
-            }
-          }
-        >
-           
-          About
-        </a>
-        <a
-          href="/"
-          onClick={[Function]}
-          style={
-            Object {
-              "fontFamily": "'Rubik', sans-serif",
-              "letterSpacing": "1px",
-              "lineHeight": "28px",
-            }
-          }
-        >
-           
-          Generator
-        </a>
-        <a
-          href="/challenges"
-          onClick={[Function]}
-          style={
-            Object {
-              "fontFamily": "'Rubik', sans-serif",
-              "letterSpacing": "1px",
-              "lineHeight": "28px",
-            }
-          }
-        >
-           
-          UI Challenges
-        </a>
       </div>
-      <div>
-        <h2
-          style={
-            Object {
-              "marginBottom": "20px",
-            }
-          }
-        >
-          Get In Touch
-        </h2>
-        <a
-          href="/subscribe"
-          onClick={[Function]}
-          style={
-            Object {
-              "fontFamily": "'Rubik', sans-serif",
-              "letterSpacing": "1px",
-              "lineHeight": "28px",
-            }
-          }
-        >
-           
-          Subscribe
-        </a>
-        <a
-          href="/contribute"
-          onClick={[Function]}
-          style={
-            Object {
-              "fontFamily": "'Rubik', sans-serif",
-              "letterSpacing": "1px",
-              "lineHeight": "28px",
-            }
-          }
-        >
-           
-          Contribute
-        </a>
-        <a
-          href="/license"
-          onClick={[Function]}
-          style={
-            Object {
-              "fontFamily": "'Rubik', sans-serif",
-              "letterSpacing": "1px",
-              "lineHeight": "28px",
-            }
-          }
-        >
-           
-          License
-        </a>
-        <a
-          href="/report"
-          onClick={[Function]}
-          style={
-            Object {
-              "fontFamily": "'Rubik', sans-serif",
-              "letterSpacing": "1px",
-              "lineHeight": "28px",
-            }
-          }
-        >
-           
-          Report a bug
-        </a>
-      </div>
-    </section>
-    <div
-      style={
-        Object {
-          "alignItems": "center",
-          "display": "flex",
-          "flexDirection": "column",
-          "justifyContent": "center",
-        }
-      }
-    >
-      <small
-        style={
-          Object {
-            "fontFamily": "'Rubik', sans-serif",
-          }
-        }
+      <div
+        className="col col-char"
       >
-        <i>
-          © 
-          2020
-            |   
-          say
-          <a
-            href="https://www.buymeacoffee.com/himatbub"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-             
-            hi-matbub
-          </a>
-        </i>
-      </small>
-      <img
-        alt="build status"
-        src="https://travis-ci.com/hi-matbub/learnflexbox.svg?branch=master"
-        style={
-          Object {
-            "marginTop": "20px",
+        <img
+          alt="character"
+          className="char"
+          src="char-001.svg"
+        />
+      </div>
+    </header>
+    <div
+      className="layout"
+    >
+      <div
+        className="cb-pre hom"
+      >
+        <section
+          style={
+            Object {
+              "background": "#eee",
+              "borderRadius": "6px",
+              "display": "flex",
+              "flexDirection": "column",
+              "height": "450px",
+              "overflowY": "scroll",
+              "position": "relative",
+              "width": "100%",
+            }
           }
-        }
-      />
+        >
+          <div
+            className="hover-grow"
+            style={
+              Object {
+                "alignItems": "center",
+                "display": "flex",
+                "height": "100%",
+                "justifyContent": "center",
+              }
+            }
+          >
+            <h2
+              style={
+                Object {
+                  "fontFamily": "\\"Rubik\\", sans-serif",
+                }
+              }
+            >
+              Try me!
+            </h2>
+            <svg
+              aria-hidden="true"
+              className="octicon"
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "<path fill-rule=\\"evenodd\\" d=\\"M13.22 19.03a.75.75 0 001.06 0l6.25-6.25a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 10-1.06 1.06l4.97 4.97H3.75a.75.75 0 000 1.5h14.44l-4.97 4.97a.75.75 0 000 1.06z\\"></path>",
+                }
+              }
+              fill="currentColor"
+              height={60}
+              role="img"
+              style={
+                Object {
+                  "display": "inline-block",
+                  "userSelect": "none",
+                  "verticalAlign": "text-bottom",
+                }
+              }
+              viewBox="0 0 24 24"
+              width={60}
+            />
+          </div>
+        </section>
+      </div>
+      <div
+        className="cb-con control"
+      >
+        <button
+          act_status={false}
+          className="hover-grow"
+          onClick={[Function]}
+          style={
+            Object {
+              "background": "#c8e1ff",
+              "border": "none",
+              "borderRadius": "6px",
+              "cursor": "pointer",
+              "height": "32%",
+              "margin": "2px",
+              "width": "32%",
+            }
+          }
+          type="button"
+        />
+        <button
+          act_status={false}
+          className="hover-grow"
+          onClick={[Function]}
+          style={
+            Object {
+              "background": "#c8e1ff",
+              "border": "none",
+              "borderRadius": "6px",
+              "cursor": "pointer",
+              "height": "32%",
+              "margin": "2px",
+              "width": "32%",
+            }
+          }
+          type="button"
+        />
+        <button
+          act_status={false}
+          className="hover-grow"
+          onClick={[Function]}
+          style={
+            Object {
+              "background": "#c8e1ff",
+              "border": "none",
+              "borderRadius": "6px",
+              "cursor": "pointer",
+              "height": "32%",
+              "margin": "2px",
+              "width": "32%",
+            }
+          }
+          type="button"
+        />
+        <button
+          act_status={false}
+          className="hover-grow"
+          onClick={[Function]}
+          style={
+            Object {
+              "background": "#c8e1ff",
+              "border": "none",
+              "borderRadius": "6px",
+              "cursor": "pointer",
+              "height": "32%",
+              "margin": "2px",
+              "width": "32%",
+            }
+          }
+          type="button"
+        />
+        <button
+          act_status={false}
+          className="hover-grow"
+          onClick={[Function]}
+          style={
+            Object {
+              "background": "#c8e1ff",
+              "border": "none",
+              "borderRadius": "6px",
+              "cursor": "pointer",
+              "height": "32%",
+              "margin": "2px",
+              "width": "32%",
+            }
+          }
+          type="button"
+        />
+        <button
+          act_status={false}
+          className="hover-grow"
+          onClick={[Function]}
+          style={
+            Object {
+              "background": "#c8e1ff",
+              "border": "none",
+              "borderRadius": "6px",
+              "cursor": "pointer",
+              "height": "32%",
+              "margin": "2px",
+              "width": "32%",
+            }
+          }
+          type="button"
+        />
+        <button
+          act_status={false}
+          className="hover-grow"
+          onClick={[Function]}
+          style={
+            Object {
+              "background": "#c8e1ff",
+              "border": "none",
+              "borderRadius": "6px",
+              "cursor": "pointer",
+              "height": "32%",
+              "margin": "2px",
+              "width": "32%",
+            }
+          }
+          type="button"
+        />
+        <button
+          act_status={false}
+          className="hover-grow"
+          onClick={[Function]}
+          style={
+            Object {
+              "background": "#c8e1ff",
+              "border": "none",
+              "borderRadius": "6px",
+              "cursor": "pointer",
+              "height": "32%",
+              "margin": "2px",
+              "width": "32%",
+            }
+          }
+          type="button"
+        />
+        <button
+          act_status={false}
+          className="hover-grow"
+          onClick={[Function]}
+          style={
+            Object {
+              "background": "#c8e1ff",
+              "border": "none",
+              "borderRadius": "6px",
+              "cursor": "pointer",
+              "height": "32%",
+              "margin": "2px",
+              "width": "32%",
+            }
+          }
+          type="button"
+        />
+      </div>
     </div>
-  </footer>
+  </main>
 </div>
 `;
