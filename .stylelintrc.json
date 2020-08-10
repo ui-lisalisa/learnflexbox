@@ -1,7 +1,7 @@
 {
-  "extends": "stylelint-config-standard",
+  "extends": ["stylelint-prettier/recommended"],
+  "plugins": ["stylelint-prettier"],
   "rules": {
-    "color-no-invalid-hex": true,
-    "font-family-no-duplicate-names": true
+    "prettier/prettier": true
   }
 }

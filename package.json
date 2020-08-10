@@ -19,6 +19,8 @@
     "react-scripts": "3.4.1",
     "react-test-renderer": "^16.13.1",
     "styled-components": "^5.1.1",
+    "stylelint-config-prettier": "^8.0.2",
+    "stylelint-prettier": "^1.1.2",
     "typescript": "^3.9.7"
   },
   "devDependencies": {
@@ -37,6 +39,7 @@
     "eject": "react-scripts eject",
     "prettier": "prettier --config .prettierrc --write \"**/*.{js,ts,jsx}\"",
     "prettier-docs": "prettier --config .prettierrc --write \"**/*.md\"",
+    "prettier-style": "prettier --config .prettierrc --write \"**/*.css\"",
     "lint": "yarn lint:js && yarn lint:style",
     "lint:js": "eslint --cache \"**/*.{js,jsx,ts,tsx}\"",
     "lint:style": "stylelint \"**/*.css\""
@@ -58,14 +61,15 @@
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
-      "yarn eslint --fix",
-      "yarn prettier"
+      "yarn prettier",
+      "yarn eslint --fix"
     ],
     "*.md": [
       "yarn prettier-docs"
     ],
     "*.css": [
-      "yarn stylelint"
+      "yarn prettier-style",
+      "yarn lint:style"
     ]
   },
   "husky": {
