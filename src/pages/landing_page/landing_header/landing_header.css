@@ -59,6 +59,10 @@ h1 > span {
   .lfb-cont {
     width: 65%;
   }
+
+  .char {
+    width: 70%;
+  }
 }
 
 @media screen and (max-width: 992px) {

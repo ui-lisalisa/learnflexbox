@@ -1,0 +1,50 @@
+.control {
+  display: none;
+}
+
+@media (min-width: 576px) {
+  .control {
+    margin: 36.5% 2% 2% 11.5%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 51%;
+    height: 120px !important;
+  }
+
+  .control_switch {
+    height: 47px;
+    width: 30.5%;
+  }
+}
+
+@media (min-width: 768px) {
+  .control {
+    margin: 22% 2% 2% 17%;
+    width: 51.5%;
+  }
+
+  .control_switch {
+    height: 63.5px;
+  }
+}
+
+@media (min-width: 992px) {
+  .control {
+    margin: 12% 2% 2% 9.5%;
+    width: 51%;
+  }
+
+  .control_switch {
+    height: 83px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .control {
+    margin: 12% 2% 2% 6.5%;
+  }
+
+  .control_switch {
+    height: 83px;
+  }
+}

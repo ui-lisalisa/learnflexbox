@@ -1,0 +1,45 @@
+.control_panel {
+  display: none;
+}
+
+.control_panel_wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 576px) {
+  .control_panel {
+    height: 680px;
+    width: 576px;
+    max-width: 576px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+  }
+}
+
+@media (min-width: 768px) {
+  .control_panel {
+    width: 768px;
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 992px) {
+  .control_panel {
+    width: 992px;
+    max-width: 992px;
+  }
+
+  .pro-tips-col {
+    width: 25%;
+    padding-top: 80px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .pro-tips-col {
+    width: 28%;
+  }
+}
