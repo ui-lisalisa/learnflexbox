@@ -15,9 +15,9 @@ const LandingPage = () => {
       <LandingHeader />
       <ControlPanel handleData={(i) => setData(i)} />
 
-      <div className="layout">
+      {/* <div className="layout">
         <Copy data={data} />
-      </div>
+      </div> */}
     </main>
   );
 };
