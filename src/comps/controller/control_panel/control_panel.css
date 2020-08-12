@@ -1,10 +1,12 @@
-.control_panel {
-  display: none;
-}
-
 .control_panel_wrapper {
   display: flex;
   justify-content: center;
+}
+
+.pro-tips-col {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
 }
 
 @media (min-width: 576px) {

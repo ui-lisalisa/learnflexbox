@@ -70,3 +70,31 @@ h1 > span {
     width: 100%;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .header {
+    margin-top: 80px;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .col {
+    width: 100%;
+  }
+
+  .col-char {
+    display: flex;
+    justify-content: center;
+  }
+
+  .char {
+    width: 70%;
+  }
+
+  .lfb-cont {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+}

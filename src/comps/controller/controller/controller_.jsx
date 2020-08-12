@@ -10,7 +10,6 @@ let inQuery = [];
 const box = {
   borderRadius: '6px',
   border: 'none',
-  background: '#c8c8c8',
   margin: '2px',
   cursor: 'pointer',
 };
