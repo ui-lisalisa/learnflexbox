@@ -15,7 +15,9 @@ const defaults = {
   display: 'flex',
   borderRadius: '6px',
   flexDirection: 'column',
-  background: '#eee',
+  background: '#26282B',
+  color: '#EEE',
+  letterSpacing: '1px',
   overflowY: 'scroll',
   position: 'relative',
 };
@@ -38,29 +40,15 @@ ${STORE[props.data].css}
 </style>
   
 ${STORE[props.data].html}`;
+
+
     return (
-      <div className={'cb-pre'}>
+      <div className={'codeblock'}>
         <Code print={print} defaults={defaults}/>
       </div>
     );
   } else {
-    return (
-      <div className={'cb-pre hom'}>
-        <section style={defaults}>
-          <div
-            className="hover-grow"
-            style={{
-              display: 'flex',
-              justifyContent: 'center',
-              alignItems: 'center',
-              height: '100%',
-            }}>
-            <h2 style={{fontFamily: '"Rubik", sans-serif'}}>Try me!</h2>
-            <ArrowRightIcon size={60} />
-          </div>
-        </section>
-      </div>
-    );
+    return null;
   }
 };
 

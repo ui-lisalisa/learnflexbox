@@ -3,6 +3,7 @@ import React, {useState} from 'react';
 import Copy from '../../comps/codeblock/copy_';
 import ControlPanel from '../../comps/controller/control_panel/control_panel';
 import LandingHeader from './landing_header/landing_header';
+import LandingFooter from '../../comps/landing_footer/landing_footer';
 // styles
 import '../../styles/animistas.css';
 import './landing_main.css';
@@ -14,10 +15,7 @@ const LandingPage = () => {
     <main className="main">
       <LandingHeader />
       <ControlPanel handleData={(i) => setData(i)} />
-
-      {/* <div className="layout">
-        <Copy data={data} />
-      </div> */}
+      <LandingFooter data={data} />
     </main>
   );
 };
