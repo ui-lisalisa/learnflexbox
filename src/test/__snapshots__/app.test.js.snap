@@ -661,6 +661,18 @@ exports[`renders snapshot as expected 1`] = `
         </div>
       </div>
     </div>
+    <div
+      className="landing-footer"
+    >
+      <div
+        className="footer-img"
+      >
+        <img
+          alt="char"
+          src="char-002.svg"
+        />
+      </div>
+    </div>
   </main>
 </div>
 `;
