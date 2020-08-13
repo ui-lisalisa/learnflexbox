@@ -6,7 +6,7 @@ exports[`renders snapshot as expected 1`] = `
 >
   <button
     act_status={false}
-    className="hover-grow control_switch"
+    className="control_switch"
     onClick={[Function]}
     style={
       Object {
@@ -21,7 +21,7 @@ exports[`renders snapshot as expected 1`] = `
   />
   <button
     act_status={false}
-    className="hover-grow control_switch"
+    className="control_switch"
     onClick={[Function]}
     style={
       Object {
@@ -36,7 +36,7 @@ exports[`renders snapshot as expected 1`] = `
   />
   <button
     act_status={false}
-    className="hover-grow control_switch"
+    className="control_switch"
     onClick={[Function]}
     style={
       Object {
@@ -51,7 +51,7 @@ exports[`renders snapshot as expected 1`] = `
   />
   <button
     act_status={false}
-    className="hover-grow control_switch"
+    className="control_switch"
     onClick={[Function]}
     style={
       Object {
@@ -66,7 +66,7 @@ exports[`renders snapshot as expected 1`] = `
   />
   <button
     act_status={false}
-    className="hover-grow control_switch"
+    className="control_switch"
     onClick={[Function]}
     style={
       Object {
@@ -81,7 +81,7 @@ exports[`renders snapshot as expected 1`] = `
   />
   <button
     act_status={false}
-    className="hover-grow control_switch"
+    className="control_switch"
     onClick={[Function]}
     style={
       Object {
@@ -96,7 +96,7 @@ exports[`renders snapshot as expected 1`] = `
   />
   <button
     act_status={false}
-    className="hover-grow control_switch"
+    className="control_switch"
     onClick={[Function]}
     style={
       Object {
@@ -111,7 +111,7 @@ exports[`renders snapshot as expected 1`] = `
   />
   <button
     act_status={false}
-    className="hover-grow control_switch"
+    className="control_switch"
     onClick={[Function]}
     style={
       Object {
@@ -126,7 +126,7 @@ exports[`renders snapshot as expected 1`] = `
   />
   <button
     act_status={false}
-    className="hover-grow control_switch"
+    className="control_switch"
     onClick={[Function]}
     style={
       Object {

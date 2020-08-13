@@ -1,13 +1,14 @@
 import React from 'react';
-import Body from './comps/primary_/app-body';
-import './styles/github_animations.scss';
 import {BrowserRouter as Router} from 'react-router-dom';
+import Routes from './comps/routes_';
+import './styles/global.css';
 
 const App = () => {
   return (
     <Router>
-      <Body />
+      <Routes />
     </Router>
   );
 };
+
 export default App;

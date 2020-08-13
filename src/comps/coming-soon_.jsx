@@ -1,5 +1,6 @@
 import React from 'react';
-import Subscribe from './subscribe/subscribe';
+import Subscribe from './subscribe';
+
 //prettier-ignore
 const ComingSoon = () => {
   return (
