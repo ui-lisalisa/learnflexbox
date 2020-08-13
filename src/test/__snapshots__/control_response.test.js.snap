@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders snapshot as expected 1`] = `
+Array [
+  <h1
+    style={
+      Object {
+        "textAlign": "center",
+      }
+    }
+  >
+    It's almost here! Be the first to know
+  </h1>,
+  <div
+    id="mc_embed_signup"
+  >
+    <form
+      action="https://matbub.us17.list-manage.com/subscribe/post?u=eb89624098c8ce40b7f3b26ef&id=909f807d9f"
+      className="validate"
+      id="mc-embedded-subscribe-form"
+      method="post"
+      name="mc-embedded-subscribe-form"
+      noValidate={true}
+      target="_blank"
+    >
+      <div
+        className="form-cont"
+      >
+        <input
+          aria-label="Repository description"
+          className="email"
+          defaultValue=""
+          id="mce-EMAIL"
+          name="EMAIL"
+          placeholder="e.g. hi@matbub.co"
+          style={
+            Object {
+              "border": 0,
+            }
+          }
+          type="email"
+        />
+        <div
+          className="clear"
+          id="mce-responses"
+        >
+          <div
+            className="response"
+            id="mce-error-response"
+            style={
+              Object {
+                "display": "none",
+              }
+            }
+          />
+          <div
+            className="response"
+            id="mce-success-response"
+            style={
+              Object {
+                "display": "none",
+              }
+            }
+          />
+        </div>
+        <button
+          className="button"
+          id="mc-embedded-subscribe"
+          name="subscribe"
+          type="submit"
+        >
+          Subscribe
+        </button>
+      </div>
+    </form>
+  </div>,
+]
+`;

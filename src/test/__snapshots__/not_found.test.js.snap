@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders snapshot as expected 1`] = `
+Array [
+  <h1>
+    404
+  </h1>,
+  <p>
+    Whoops, that wasnt there!
+  </p>,
+  <a
+    href="/flexbox"
+  >
+    Go Home
+  </a>,
+]
+`;

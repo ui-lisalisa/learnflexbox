@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders snapshot as expected 1`] = `
+<section
+  className="code-wrapper"
+>
+  <pre>
+    <code />
+  </pre>
+</section>
+`;
