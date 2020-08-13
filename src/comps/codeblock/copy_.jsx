@@ -5,7 +5,6 @@ import moment from 'moment';
 import {STORE} from '../../lib/STORE';
 //comps
 import Code from './code_';
-import GenProTip from '../../lib/gen_protip';
 //styles
 import '../../styles/github_animations.scss';
 import '../../styles/page-queries.css';
@@ -16,18 +15,20 @@ const defaults = {
   display: 'flex',
   borderRadius: '6px',
   flexDirection: 'column',
-  background: '#eee',
+  background: '#26282B',
+  color: '#EEE',
+  letterSpacing: '1px',
   overflowY: 'scroll',
   position: 'relative',
 };
 
 // prettier-ignore
 const Copy = (props) => {
-  let moments = moment().format('llll');
+  const moments = moment().format('llll');
   const keys = Object.keys(STORE);
 
   if (keys.includes(props.data)) {
-    let print = `<style>
+    const print = `<style>
 
 /** -------------------------------------
  * Generated on ${moments}
@@ -39,30 +40,15 @@ ${STORE[props.data].css}
 </style>
   
 ${STORE[props.data].html}`;
+
+
     return (
-      <div className={'cb-pre'}>
+      <div className={'codeblock'}>
         <Code print={print} defaults={defaults}/>
-        <GenProTip />
       </div>
     );
   } else {
-    return (
-      <div className={'cb-pre hom'}>
-        <section style={defaults}>
-          <div
-            className="hover-grow"
-            style={{
-              display: 'flex',
-              justifyContent: 'center',
-              alignItems: 'center',
-              height: '100%',
-            }}>
-            <h2 style={{fontFamily: '"Rubik", sans-serif'}}>Try me!</h2>
-            <ArrowRightIcon size={60} />
-          </div>
-        </section>
-      </div>
-    );
+    return null;
   }
 };
 

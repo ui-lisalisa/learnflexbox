@@ -1,20 +1,10 @@
 import React from 'react';
 import AppPaths from './app-paths';
-import Header from './app-header';
-import Footer from './app-footer';
 
 const Body = () => {
   return (
     <div className="App">
-      <Header />
-      <div style={{display: 'flex', margin: '120px 0'}}>
-        <div style={{width: '10%'}}></div>
-        <div style={{width: '80%'}}>
-          <AppPaths />
-        </div>
-        <div style={{width: '10%'}}></div>
-      </div>
-      <Footer />
+      <AppPaths />
     </div>
   );
 };

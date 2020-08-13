@@ -2,157 +2,139 @@
 
 exports[`renders snapshot as expected 1`] = `
 <div
-  className="cb-con control"
+  className="control"
 >
   <button
     act_status={false}
-    className="hover-grow"
+    className="hover-grow control_switch"
     onClick={[Function]}
     style={
       Object {
-        "background": "#c8e1ff",
+        "background": "#c8c8c8",
         "border": "none",
         "borderRadius": "6px",
         "cursor": "pointer",
-        "height": "32%",
         "margin": "2px",
-        "width": "32%",
       }
     }
     type="button"
   />
   <button
     act_status={false}
-    className="hover-grow"
+    className="hover-grow control_switch"
     onClick={[Function]}
     style={
       Object {
-        "background": "#c8e1ff",
+        "background": "#c8c8c8",
         "border": "none",
         "borderRadius": "6px",
         "cursor": "pointer",
-        "height": "32%",
         "margin": "2px",
-        "width": "32%",
       }
     }
     type="button"
   />
   <button
     act_status={false}
-    className="hover-grow"
+    className="hover-grow control_switch"
     onClick={[Function]}
     style={
       Object {
-        "background": "#c8e1ff",
+        "background": "#c8c8c8",
         "border": "none",
         "borderRadius": "6px",
         "cursor": "pointer",
-        "height": "32%",
         "margin": "2px",
-        "width": "32%",
       }
     }
     type="button"
   />
   <button
     act_status={false}
-    className="hover-grow"
+    className="hover-grow control_switch"
     onClick={[Function]}
     style={
       Object {
-        "background": "#c8e1ff",
+        "background": "#c8c8c8",
         "border": "none",
         "borderRadius": "6px",
         "cursor": "pointer",
-        "height": "32%",
         "margin": "2px",
-        "width": "32%",
       }
     }
     type="button"
   />
   <button
     act_status={false}
-    className="hover-grow"
+    className="hover-grow control_switch"
     onClick={[Function]}
     style={
       Object {
-        "background": "#c8e1ff",
+        "background": "#c8c8c8",
         "border": "none",
         "borderRadius": "6px",
         "cursor": "pointer",
-        "height": "32%",
         "margin": "2px",
-        "width": "32%",
       }
     }
     type="button"
   />
   <button
     act_status={false}
-    className="hover-grow"
+    className="hover-grow control_switch"
     onClick={[Function]}
     style={
       Object {
-        "background": "#c8e1ff",
+        "background": "#c8c8c8",
         "border": "none",
         "borderRadius": "6px",
         "cursor": "pointer",
-        "height": "32%",
         "margin": "2px",
-        "width": "32%",
       }
     }
     type="button"
   />
   <button
     act_status={false}
-    className="hover-grow"
+    className="hover-grow control_switch"
     onClick={[Function]}
     style={
       Object {
-        "background": "#c8e1ff",
+        "background": "#c8c8c8",
         "border": "none",
         "borderRadius": "6px",
         "cursor": "pointer",
-        "height": "32%",
         "margin": "2px",
-        "width": "32%",
       }
     }
     type="button"
   />
   <button
     act_status={false}
-    className="hover-grow"
+    className="hover-grow control_switch"
     onClick={[Function]}
     style={
       Object {
-        "background": "#c8e1ff",
+        "background": "#c8c8c8",
         "border": "none",
         "borderRadius": "6px",
         "cursor": "pointer",
-        "height": "32%",
         "margin": "2px",
-        "width": "32%",
       }
     }
     type="button"
   />
   <button
     act_status={false}
-    className="hover-grow"
+    className="hover-grow control_switch"
     onClick={[Function]}
     style={
       Object {
-        "background": "#c8e1ff",
+        "background": "#c8c8c8",
         "border": "none",
         "borderRadius": "6px",
         "cursor": "pointer",
-        "height": "32%",
         "margin": "2px",
-        "width": "32%",
       }
     }
     type="button"

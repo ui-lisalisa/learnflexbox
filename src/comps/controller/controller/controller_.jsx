@@ -1,19 +1,18 @@
 import React, {useRef} from 'react';
-import {handleSort, handleRemove} from './controller_helpers.jsx';
-// import '../../styles/github_animations.scss';
+import {handleSort, handleRemove} from '../controller_helpers.jsx';
+import './controller.css';
+import '../../../styles/github_animations.scss';
 
-let controls = [],
-  isActive = [],
-  inQuery = [];
+const controls = [];
+const isActive = [];
+let inQuery = [];
 
-let box = {
-  height: '32%',
-  width: '32%',
+const box = {
   borderRadius: '6px',
   border: 'none',
-  background: '#c8e1ff',
   margin: '2px',
   cursor: 'pointer',
+  background: '#c8c8c8',
 };
 
 const makeControls = () => {
@@ -25,7 +24,7 @@ const makeControls = () => {
 
 makeControls(); //build array
 
-const ControlPanel = (props) => {
+const Controller = (props) => {
   const status = useRef([]);
 
   const handleClick = (cont, i) => {
@@ -39,7 +38,7 @@ const ControlPanel = (props) => {
        *
        */
       handleRemove(isActive, i);
-      status.current[i].style.background = '#c8e1ff';
+      status.current[i].style.background = '#c8c8c8';
     } else if (isActive.length < 3 && controls[i].act_status === false) {
       /**
        *
@@ -51,7 +50,7 @@ const ControlPanel = (props) => {
        */
       isActive.push(i);
       handleSort(isActive);
-      status.current[i].style.background = '#79b8ff';
+      status.current[i].style.background = '#C8D6FA';
     }
 
     controls[i].act_status = !cont; // toggle boolean
@@ -63,10 +62,10 @@ const ControlPanel = (props) => {
   };
 
   return (
-    <div className={'cb-con control'}>
+    <div className={'control'}>
       {controls.map((control, i) => (
         <button
-          className={'hover-grow'}
+          className={'hover-grow control_switch'}
           ref={(ref) => (status.current[i] = ref)}
           type={'button'}
           style={box}
@@ -78,4 +77,4 @@ const ControlPanel = (props) => {
   );
 };
 
-export default ControlPanel;
+export default Controller;

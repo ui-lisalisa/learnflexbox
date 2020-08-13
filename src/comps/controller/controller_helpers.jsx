@@ -27,7 +27,7 @@ export const handleSort = (nums) => {
 };
 
 export const handleRemove = (arr, val) => {
-  for (var i = arr.length; i--; ) {
+  for (let i = arr.length; i--; ) {
     if (arr[i] === val) {
       arr.splice(i, 1);
     }

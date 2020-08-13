@@ -1,0 +1,9 @@
+.protip_i {
+  display: flex;
+  align-items: center;
+}
+
+.pt-content {
+  width: 95%;
+  font-size: 14px;
+}
