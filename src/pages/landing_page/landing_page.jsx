@@ -16,6 +16,9 @@ const LandingPage = () => {
       <LandingHeader />
       <ControlPanel handleData={(i) => setData(i)} />
       <LandingFooter data={data} />
+      <footer>
+        <p>2020</p>
+      </footer>
     </main>
   );
 };

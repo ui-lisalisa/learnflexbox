@@ -538,6 +538,7 @@ exports[`renders snapshot as expected 1`] = `
             onClick={[Function]}
             style={
               Object {
+                "background": "#c8c8c8",
                 "border": "none",
                 "borderRadius": "6px",
                 "cursor": "pointer",
@@ -552,6 +553,7 @@ exports[`renders snapshot as expected 1`] = `
             onClick={[Function]}
             style={
               Object {
+                "background": "#c8c8c8",
                 "border": "none",
                 "borderRadius": "6px",
                 "cursor": "pointer",
@@ -566,6 +568,7 @@ exports[`renders snapshot as expected 1`] = `
             onClick={[Function]}
             style={
               Object {
+                "background": "#c8c8c8",
                 "border": "none",
                 "borderRadius": "6px",
                 "cursor": "pointer",
@@ -580,6 +583,7 @@ exports[`renders snapshot as expected 1`] = `
             onClick={[Function]}
             style={
               Object {
+                "background": "#c8c8c8",
                 "border": "none",
                 "borderRadius": "6px",
                 "cursor": "pointer",
@@ -594,6 +598,7 @@ exports[`renders snapshot as expected 1`] = `
             onClick={[Function]}
             style={
               Object {
+                "background": "#c8c8c8",
                 "border": "none",
                 "borderRadius": "6px",
                 "cursor": "pointer",
@@ -608,6 +613,7 @@ exports[`renders snapshot as expected 1`] = `
             onClick={[Function]}
             style={
               Object {
+                "background": "#c8c8c8",
                 "border": "none",
                 "borderRadius": "6px",
                 "cursor": "pointer",
@@ -622,6 +628,7 @@ exports[`renders snapshot as expected 1`] = `
             onClick={[Function]}
             style={
               Object {
+                "background": "#c8c8c8",
                 "border": "none",
                 "borderRadius": "6px",
                 "cursor": "pointer",
@@ -636,6 +643,7 @@ exports[`renders snapshot as expected 1`] = `
             onClick={[Function]}
             style={
               Object {
+                "background": "#c8c8c8",
                 "border": "none",
                 "borderRadius": "6px",
                 "cursor": "pointer",
@@ -650,6 +658,7 @@ exports[`renders snapshot as expected 1`] = `
             onClick={[Function]}
             style={
               Object {
+                "background": "#c8c8c8",
                 "border": "none",
                 "borderRadius": "6px",
                 "cursor": "pointer",
@@ -673,6 +682,11 @@ exports[`renders snapshot as expected 1`] = `
         />
       </div>
     </div>
+    <footer>
+      <p>
+        2020
+      </p>
+    </footer>
   </main>
 </div>
 `;

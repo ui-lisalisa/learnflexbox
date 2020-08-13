@@ -12,6 +12,7 @@ const box = {
   border: 'none',
   margin: '2px',
   cursor: 'pointer',
+  background: '#c8c8c8',
 };
 
 const makeControls = () => {
@@ -37,7 +38,7 @@ const Controller = (props) => {
        *
        */
       handleRemove(isActive, i);
-      status.current[i].style.background = '#C8D6FA';
+      status.current[i].style.background = '#c8c8c8';
     } else if (isActive.length < 3 && controls[i].act_status === false) {
       /**
        *
@@ -49,7 +50,7 @@ const Controller = (props) => {
        */
       isActive.push(i);
       handleSort(isActive);
-      status.current[i].style.background = '#c8c8c8';
+      status.current[i].style.background = '#C8D6FA';
     }
 
     controls[i].act_status = !cont; // toggle boolean
