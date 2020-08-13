@@ -8,6 +8,10 @@
         "jsx": true
     }
   },
+  "globals": {
+    "supertest": true,
+    "expect": true
+  },
   "rules": {
     "no-duplicate-case":"error",
       "no-empty":"error",
