@@ -1,0 +1,16 @@
+.code-wrapper {
+  width: 100%;
+  height: 450px;
+  display: flex;
+  border-radius: 6px;
+  flex-direction: column;
+  background: #26282b;
+  color: #eee;
+  letter-spacing: 1px;
+  overflow-y: scroll;
+  position: relative;
+}
+
+pre {
+  padding: 20px;
+}

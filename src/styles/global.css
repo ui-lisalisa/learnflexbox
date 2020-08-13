@@ -1,0 +1,10 @@
+@media (min-width: 992px) {
+  .pro-tips-col {
+    padding-top: 50px;
+    margin-left: 10px;
+  }
+
+  .pt-co {
+    margin: 0;
+  }
+}

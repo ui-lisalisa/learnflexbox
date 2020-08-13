@@ -1,0 +1,20 @@
+.protip-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.pro-tip {
+  display: flex;
+  flex-direction: column;
+  margin-left: 8px;
+}
+
+.pro-tip-content {
+  width: 95%;
+  font-size: 14px;
+}
+
+.pro-tip-author {
+  font-size: 12px;
+  margin-top: 6px;
+}
