@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders snapshot as expected 1`] = `
+<div
+  className="pro-tips-col"
+>
+  <span
+    className="pro-tips-title"
+  >
+    <h2>
+      Try the Flexbox Generator!
+    </h2>
+  </span>
+</div>
+`;

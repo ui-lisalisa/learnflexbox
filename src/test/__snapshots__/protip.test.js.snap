@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders snapshot as expected 1`] = `
+<div
+  className="protip-wrapper"
+>
+  <div
+    className="check_box"
+  >
+    <img
+      alt="check"
+      src="check.svg"
+    />
+  </div>
+  <div
+    className="pro-tip"
+  >
+    <span
+      className="pro-tip-content"
+    />
+    <span
+      className="pro-tip-author"
+    />
+  </div>
+</div>
+`;

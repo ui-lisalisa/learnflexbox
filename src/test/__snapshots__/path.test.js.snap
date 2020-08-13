@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders snapshot as expected 1`] = `
+<a
+  href=""
+  onClick={[Function]}
+  style={
+    Object {
+      "color": "#000",
+      "letterSpacing": "1px",
+      "lineHeight": "28px",
+    }
+  }
+>
+   
+</a>
+`;

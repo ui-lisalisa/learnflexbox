@@ -1,0 +1,167 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders snapshot as expected 1`] = `
+<div
+  className="control_panel_wrapper"
+>
+  <div
+    className="control_panel"
+    style={
+      Object {
+        "backgroundImage": "url(bg01.svg)",
+      }
+    }
+  >
+    <div
+      className="pro-tips-col"
+    >
+      <span
+        className="pro-tips-title"
+      >
+        <h2>
+          Try the Flexbox Generator!
+        </h2>
+      </span>
+    </div>
+    <div
+      className="control"
+    >
+      <button
+        act_status={false}
+        className="control_switch"
+        onClick={[Function]}
+        style={
+          Object {
+            "background": "#c8c8c8",
+            "border": "none",
+            "borderRadius": "6px",
+            "cursor": "pointer",
+            "margin": "2px",
+          }
+        }
+        type="button"
+      />
+      <button
+        act_status={false}
+        className="control_switch"
+        onClick={[Function]}
+        style={
+          Object {
+            "background": "#c8c8c8",
+            "border": "none",
+            "borderRadius": "6px",
+            "cursor": "pointer",
+            "margin": "2px",
+          }
+        }
+        type="button"
+      />
+      <button
+        act_status={false}
+        className="control_switch"
+        onClick={[Function]}
+        style={
+          Object {
+            "background": "#c8c8c8",
+            "border": "none",
+            "borderRadius": "6px",
+            "cursor": "pointer",
+            "margin": "2px",
+          }
+        }
+        type="button"
+      />
+      <button
+        act_status={false}
+        className="control_switch"
+        onClick={[Function]}
+        style={
+          Object {
+            "background": "#c8c8c8",
+            "border": "none",
+            "borderRadius": "6px",
+            "cursor": "pointer",
+            "margin": "2px",
+          }
+        }
+        type="button"
+      />
+      <button
+        act_status={false}
+        className="control_switch"
+        onClick={[Function]}
+        style={
+          Object {
+            "background": "#c8c8c8",
+            "border": "none",
+            "borderRadius": "6px",
+            "cursor": "pointer",
+            "margin": "2px",
+          }
+        }
+        type="button"
+      />
+      <button
+        act_status={false}
+        className="control_switch"
+        onClick={[Function]}
+        style={
+          Object {
+            "background": "#c8c8c8",
+            "border": "none",
+            "borderRadius": "6px",
+            "cursor": "pointer",
+            "margin": "2px",
+          }
+        }
+        type="button"
+      />
+      <button
+        act_status={false}
+        className="control_switch"
+        onClick={[Function]}
+        style={
+          Object {
+            "background": "#c8c8c8",
+            "border": "none",
+            "borderRadius": "6px",
+            "cursor": "pointer",
+            "margin": "2px",
+          }
+        }
+        type="button"
+      />
+      <button
+        act_status={false}
+        className="control_switch"
+        onClick={[Function]}
+        style={
+          Object {
+            "background": "#c8c8c8",
+            "border": "none",
+            "borderRadius": "6px",
+            "cursor": "pointer",
+            "margin": "2px",
+          }
+        }
+        type="button"
+      />
+      <button
+        act_status={false}
+        className="control_switch"
+        onClick={[Function]}
+        style={
+          Object {
+            "background": "#c8c8c8",
+            "border": "none",
+            "borderRadius": "6px",
+            "cursor": "pointer",
+            "margin": "2px",
+          }
+        }
+        type="button"
+      />
+    </div>
+  </div>
+</div>
+`;
